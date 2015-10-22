@@ -1,0 +1,15 @@
+CLIN26, CONLL NERC and NED evaluation
+
+Structure:
+- score-XXX.py (Python scripts for evaluation)
+- key (folder containing golden data)
+- response (folder containing predicted data)
+
+The script uses relative pathes. Do not change the structure and follow the instructions below:
+
+1. Put your output in the response folder next to the key folder
+2. Make sure the files have the same name as the files in the key folder
+3. Response and key files need to be in the CONLL 2011 format
+4. Run the score.py script from the command line 
+
+The script write report to default stdout and stderr.
