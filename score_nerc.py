@@ -4,14 +4,18 @@ Created on Oct 13, 2015
 
 @author: Minh Ngoc Le
 '''
-import os
-import re
-import numpy as np
 from StringIO import StringIO
-import sys
 from collections import defaultdict
 from itertools import ifilter
+import os
+import re
 from subprocess import call
+import sys
+
+import pytest
+
+import numpy as np
+
 
 def find_last_item_by_tag(stack, tag):
     for i in range(len(stack)-1, -1, -1):
@@ -112,12 +116,12 @@ def test_read_spans_conll():
     spans = sorted(spans)
     assert(spans[0] == (1, 1, 3, 'PRO'))
     assert(spans[1] == (1, 2, 3, 'PER'))
-    try:
-        s = '1\tB\t(PRO\thttp://\n2\tC\tPRO|(PER\t_\n3\tD\tPRO)|PER)\t_'
+    with pytest.raises(AssertionError):
+        s = '1\tB\t(PRO\thttp://\n2\tC\tPRO|(PER\t_\n3\tD\tPRO)\t_'
         read_spans_conll(StringIO(s))
-        assert False, 'Accepted wrong string: %s' %s
-    except AssertionError:
-        pass
+    with pytest.raises(AssertionError):
+        s = '1\tB\t(1342\thttp://\n2\tC\tPRO|(PER\t_\n3\tD\tPRO)\t_'
+        read_spans_conll(StringIO(s))
 
 def test_compute_performance():
     p = compute_performance([[0, 10, 0]])
@@ -141,11 +145,11 @@ if __name__ == '__main__':
     filter_tags = ('PER', 'LOC', 'PRO', 'ORG', 'FIN', '__ALL__')
     if len(os.listdir('key')) < len(os.listdir('response')):
         sys.stderr.write('WARN: response folder holds more files than key folder. Some files will be ignored.\n')
-    for fname in os.listdir('key'):
-        path = 'key/%s' %fname
+    for fname in os.listdir('key/ne'):
+        path = 'key/ne/%s' %fname
         with open(path) as f:
             key = read_spans_conll(first_five_sentences(f), path)
-        path = 'response/%s' %fname
+        path = 'response/ne/%s' %fname
         with open(path) as f:
             res = read_spans_conll(first_five_sentences(f), path)
         for filter_tag in filter_tags:

@@ -4,12 +4,14 @@ Created on Oct 13, 2015
 
 @author: Minh Ngoc Le
 '''
-import os
-import numpy as np
 from StringIO import StringIO
-import sys
 from collections import defaultdict
+import os
 from subprocess import call
+import sys
+
+import numpy as np
+
 
 def next_line(f):
     try:
@@ -108,12 +110,6 @@ def test_read_spans_conll():
     spans = sorted(spans)
     assert(spans[0] == (1, 1, 1, 'http://'))
     assert(spans[1] == (1, 3, 3, 'http://'))
-    try:
-        s = '1\tB\t(PRO\thttp://\n2\tC\tPRO|(PER\t_\n3\tD\tPRO)|PER)\t_'
-        read_spans_conll(StringIO(s))
-        assert False, 'Accepted wrong string: %s' %s
-    except AssertionError:
-        pass
 
 def test_compute_performance():
     p = compute_performance([[0, 10, 0]])
@@ -136,11 +132,11 @@ if __name__ == '__main__':
     data = defaultdict(list)
     if len(os.listdir('key')) < len(os.listdir('response')):
         sys.stderr.write('WARN: response folder holds more files than key folder. Some files will be ignored.\n')
-    for fname in os.listdir('key'):
-        path = 'key/%s' %fname
+    for fname in os.listdir('key/ne'):
+        path = 'key/ne/%s' %fname
         with open(path) as f:
             key = read_spans_conll(first_five_sentences(f), path)
-        path = 'response/%s' %fname
+        path = 'response/ne/%s' %fname
         with open(path) as f:
             res = read_spans_conll(first_five_sentences(f), path)
         data['exact'].append(compare_spans_exact(key, res))
