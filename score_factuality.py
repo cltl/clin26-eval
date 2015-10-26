@@ -239,6 +239,23 @@ def test_read_spans_conll():
     assert len(read_event_spans_conll(StringIO(s))) == 2
     assert len(read_polarity_spans_conll(StringIO(s))) == 2
     assert len(read_certainty_spans_conll(StringIO(s))) == 2
+    s = '1\tA\tB-E\tB-CERTAIN\tB-POS\n2\tB\t_\t_\t_\n3\tC\tI-E\tI-CERTAIN\tI-POS'
+    event_spans = read_event_spans_conll(StringIO(s))
+    assert len(event_spans) == 1, 'Discontinuous event span'
+    assert list(event_spans)[0] == (1, (1, 3))
+    polarity_spans = read_polarity_spans_conll(StringIO(s))
+    assert len(polarity_spans) == 1, 'Discontinuous polarity span'
+    assert list(polarity_spans)[0] == (1, (1, 3), 'POS')
+    certainty_spans = read_certainty_spans_conll(StringIO(s))
+    assert len(certainty_spans) == 1, 'Discontinuous certainty span'
+    assert list(certainty_spans)[0] == (1, (1, 3), 'CERTAIN')
+    s = '1\tA\tB-E\tB-CERTAIN\tB-POS\n2\tB\t_\t_\t_\n3\tC\tI-E\tI-CERTAIN\tI-POS\n4\tD\tB-E\t_\t_'
+    event_spans = read_event_spans_conll(StringIO(s))
+    assert len(event_spans) == 2, 'Discontinuous span followed by singleton span'
+    assert list(event_spans)[0] == (1, (1, 3))
+    assert list(event_spans)[1] == (1, (4,))
+    assert len(read_polarity_spans_conll(StringIO(s))) == 1
+    assert len(read_certainty_spans_conll(StringIO(s))) == 1
     with pytest.raises(AssertionError):
         s = '1\tA\tB-E\tB-CERTAIN\tB-POS\n2\tB\tB-X\tB-CERTAIN\tI-POS'
         read_event_spans_conll(StringIO(s))
