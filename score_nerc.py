@@ -139,17 +139,23 @@ def test_all():
     sys.stderr.write('Passed all tests.\n')
 
 if __name__ == '__main__':
+    import argparse
+    parser = argparse.ArgumentParser(description='Score the response of a system at Named-Entity Recognition and Classification.')
+    parser.add_argument('key', help='path to a directory containing all key files')
+    parser.add_argument('response', help='path to a directory containing all response files')
+    args = parser.parse_args()
+
     call('date')
     test_all() # never run evaluation script without thorough testing
     data = defaultdict(list)
     filter_tags = ('PER', 'LOC', 'PRO', 'ORG', 'FIN', '__ALL__')
     if len(os.listdir('key')) < len(os.listdir('response')):
         sys.stderr.write('WARN: response folder holds more files than key folder. Some files will be ignored.\n')
-    for fname in os.listdir('key/ne'):
-        path = 'key/ne/%s' %fname
+    for fname in os.listdir(args.key):
+        path = os.path.join(args.key, fname)
         with open(path) as f:
             key = read_spans_conll(first_five_sentences(f), path)
-        path = 'response/ne/%s' %fname
+        path = os.path.join(args.response, fname)
         with open(path) as f:
             res = read_spans_conll(first_five_sentences(f), path)
         for filter_tag in filter_tags:
