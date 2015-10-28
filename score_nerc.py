@@ -149,15 +149,18 @@ if __name__ == '__main__':
     test_all() # never run evaluation script without thorough testing
     data = defaultdict(list)
     filter_tags = ('PER', 'LOC', 'PRO', 'ORG', 'FIN', '__ALL__')
-    if len(os.listdir('key')) < len(os.listdir('response')):
+    if len(os.listdir(args.key)) < len(os.listdir(args.response)):
         sys.stderr.write('WARN: response folder holds more files than key folder. Some files will be ignored.\n')
     for fname in os.listdir(args.key):
         path = os.path.join(args.key, fname)
         with open(path) as f:
             key = read_spans_conll(first_five_sentences(f), path)
         path = os.path.join(args.response, fname)
-        with open(path) as f:
-            res = read_spans_conll(first_five_sentences(f), path)
+        if os.path.exists(path):
+            with open(path) as f:
+                res = read_spans_conll(first_five_sentences(f), path)
+        else:
+            res = set()
         for filter_tag in filter_tags:
             data[filter_tag].append(compare_spans(key, res, filter_tag))
     for filter_tag in filter_tags:

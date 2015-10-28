@@ -136,15 +136,18 @@ if __name__ == '__main__':
     call('date')
     test_all() # never run evaluation script without thorough testing
     data = defaultdict(list)
-    if len(os.listdir('key')) < len(os.listdir('response')):
+    if len(os.listdir(args.key)) < len(os.listdir(args.response)):
         sys.stderr.write('WARN: response folder holds more files than key folder. Some files will be ignored.\n')
     for fname in os.listdir(args.key):
         path = os.path.join(args.key, fname)
         with open(path) as f:
             key = read_spans_conll(first_five_sentences(f), path)
         path = os.path.join(args.response, fname)
-        with open(path) as f:
-            res = read_spans_conll(first_five_sentences(f), path)
+        if os.path.exists(path):
+            with open(path) as f:
+                res = read_spans_conll(first_five_sentences(f), path)
+        else:
+            res = set()
         data['exact'].append(compare_spans_exact(key, res))
         data['partial'].append(compare_spans_partial(key, res))
     for name in data:

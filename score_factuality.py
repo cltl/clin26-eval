@@ -385,7 +385,7 @@ if __name__ == '__main__':
     call('date')
     test_all() # never run evaluation script without thorough testing
     data = defaultdict(list)
-    if len(os.listdir('key')) < len(os.listdir('response')):
+    if len(os.listdir(args.key)) < len(os.listdir(args.response)):
         sys.stderr.write('WARN: response folder holds more files than key folder. Some files will be ignored.\n')
     for fname in os.listdir(args.key):
         path = os.path.join(args.key, fname)
@@ -393,9 +393,12 @@ if __name__ == '__main__':
         with open(path) as f: key_polarity = read_polarity_spans_conll(first_five_sentences(f), path)
         with open(path) as f: key_certainty = read_certainty_spans_conll(first_five_sentences(f), path)
         path = os.path.join(args.response, fname)
-        with open(path) as f: res_event = read_event_spans_conll(first_five_sentences(f), path)
-        with open(path) as f: res_polarity = read_polarity_spans_conll(first_five_sentences(f), path)
-        with open(path) as f: res_certainty = read_certainty_spans_conll(first_five_sentences(f), path)
+        if os.path.exists(path):
+            with open(path) as f: res_event = read_event_spans_conll(first_five_sentences(f), path)
+            with open(path) as f: res_polarity = read_polarity_spans_conll(first_five_sentences(f), path)
+            with open(path) as f: res_certainty = read_certainty_spans_conll(first_five_sentences(f), path)
+        else:
+            res_event = res_polarity = res_certainty = set() 
         data['event'].append(compare_spans(key_event, key_event))
         data['polarity'].append(compare_dependent_spans(key_polarity, res_polarity, key_event, key_event))
         data['certainty'].append(compare_dependent_spans(key_certainty, res_certainty, key_event, key_event))
