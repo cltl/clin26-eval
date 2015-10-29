@@ -1,4 +1,4 @@
-## CLIN26, CONLL NERC, NED, COREF, and factuality evaluation
+## CLIN-26: CONLL NERC, NED, COREF, and Factuality evaluation
 
 ### Terminology
 
@@ -58,3 +58,21 @@ bash score_coref.sh task key response measurement
 The development key folder can be found at: `/dev_corpora/coref`.
 
 The measurement is always: `blanc`.
+
+#### Named-Entity Recognition and Classification (NERC)
+
+```bash
+python score_nerc.py key response
+```
+
+#### Named-Entity Disambiguation (NED)
+
+```bash
+python score_nerc.py key response
+```
+
+#### Factuality
+
+```bash
+python score_factuality.py key response
+```
