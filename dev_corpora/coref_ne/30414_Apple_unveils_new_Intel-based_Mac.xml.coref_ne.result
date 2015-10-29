@@ -1,0 +1,38 @@
+version: 8.01 /Users/marten/git/clin26-eval/coref_scorer/coref-scorer-v8.01/lib/CorScorer.pm
+====> (30414_Apple_unveils_new_Intel-based_Mac.xml.coref_ne);:
+File (30414_Apple_unveils_new_Intel-based_Mac.xml.coref_ne);:
+Entity 0: (0,0) (7,8)
+Entity 1: (2,5) (11,19) (22,28) (46,46) (64,66)
+Entity 2: (22,23) (55,56)
+Entity 3: (25,28) (30,35) (61,62)
+Entity 4: (34,34)
+Entity 5: (46,47)
+Entity 6: (70,74) (77,77) (80,80) (83,90)
+====> (30414_Apple_unveils_new_Intel-based_Mac.xml.coref_ne);:
+File (30414_Apple_unveils_new_Intel-based_Mac.xml.coref_ne);:
+Entity 0: (0,0) (7,8)
+Entity 1: (2,5) (11,19) (22,28) (46,46) (64,66)
+Entity 2: (22,23) (55,56)
+Entity 3: (25,28) (30,35) (61,62)
+Entity 4: (34,34)
+Entity 5: (46,47)
+Entity 6: (70,74) (77,77) (80,80) (83,90)
+:
+Total key mentions: 18
+Total response mentions: 18
+Strictly correct identified mentions: 18
+Partially correct identified mentions: 0
+No identified: 0
+Invented: 0
+
+====== TOTALS =======
+Identification of Mentions: Recall: (18 / 18) 100%	Precision: (18 / 18) 100%	F1: 100%
+--------------------------------------------------------------------------
+
+Coreference:
+Coreference links: Recall: (21 / 21) 100%	Precision: (21 / 21) 100%	F1: 100%
+--------------------------------------------------------------------------
+Non-coreference links: Recall: (132 / 132) 100%	Precision: (132 / 132) 100%	F1: 100%
+--------------------------------------------------------------------------
+BLANC: Recall: (1 / 1) 100%	Precision: (1 / 1) 100%	F1: 100%
+--------------------------------------------------------------------------

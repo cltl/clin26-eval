@@ -1,0 +1,58 @@
+version: 8.01 /Users/marten/git/clin26-eval/coref_scorer/coref-scorer-v8.01/lib/CorScorer.pm
+====> (9549_Reactions_to_Apple.xml.coref_ne);:
+File (9549_Reactions_to_Apple.xml.coref_ne);:
+Entity 0: (0,6)
+Entity 1: (2,6) (24,39) (93,93) (98,99) (95,99) (141,142) (152,153)
+Entity 2: (6,6) (38,39) (65,65) (90,90)
+Entity 3: (9,9)
+Entity 4: (12,13)
+Entity 5: (16,18)
+Entity 6: (16,20)
+Entity 7: (41,49) (53,53)
+Entity 8: (41,55)
+Entity 9: (57,65) (67,70)
+Entity 10: (60,63)
+Entity 11: (104,105) (137,139)
+Entity 12: (107,110)
+Entity 13: (110,110) (113,116) (118,119) (121,121) (123,130) (121,130)
+Entity 14: (144,144) (146,147) (158,159)
+Entity 15: (149,153)
+Entity 16: (156,156)
+====> (9549_Reactions_to_Apple.xml.coref_ne);:
+File (9549_Reactions_to_Apple.xml.coref_ne);:
+Entity 0: (0,6)
+Entity 1: (2,6) (24,39) (93,93) (98,99) (95,99) (141,142) (152,153)
+Entity 2: (6,6) (38,39) (65,65) (90,90)
+Entity 3: (9,9)
+Entity 4: (12,13)
+Entity 5: (16,18)
+Entity 6: (16,20)
+Entity 7: (41,49) (53,53)
+Entity 8: (41,55)
+Entity 9: (57,65) (67,70)
+Entity 10: (60,63)
+Entity 11: (104,105) (137,139)
+Entity 12: (107,110)
+Entity 13: (110,110) (113,116) (118,119) (121,121) (123,130) (121,130)
+Entity 14: (144,144) (146,147) (158,159)
+Entity 15: (149,153)
+Entity 16: (156,156)
+:
+Total key mentions: 36
+Total response mentions: 36
+Strictly correct identified mentions: 36
+Partially correct identified mentions: 0
+No identified: 0
+Invented: 0
+
+====== TOTALS =======
+Identification of Mentions: Recall: (36 / 36) 100%	Precision: (36 / 36) 100%	F1: 100%
+--------------------------------------------------------------------------
+
+Coreference:
+Coreference links: Recall: (48 / 48) 100%	Precision: (48 / 48) 100%	F1: 100%
+--------------------------------------------------------------------------
+Non-coreference links: Recall: (582 / 582) 100%	Precision: (582 / 582) 100%	F1: 100%
+--------------------------------------------------------------------------
+BLANC: Recall: (1 / 1) 100%	Precision: (1 / 1) 100%	F1: 100%
+--------------------------------------------------------------------------

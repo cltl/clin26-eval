@@ -1,0 +1,40 @@
+version: 8.01 /Users/marten/git/clin26-eval/coref_scorer/coref-scorer-v8.01/lib/CorScorer.pm
+====> (287096_Apple_Inc_co_founder.xml.coref_ne);:
+File (287096_Apple_Inc_co_founder.xml.coref_ne);:
+Entity 0: (0,5) (11,23) (44,44) (47,49) (51,51) (59,59)
+Entity 1: (2,3) (22,23) (37,38) (49,49) (71,72) (74,74) (82,87)
+Entity 2: (31,38)
+Entity 3: (34,38)
+Entity 4: (57,57)
+Entity 5: (67,68)
+Entity 6: (76,81)
+Entity 7: (90,90)
+====> (287096_Apple_Inc_co_founder.xml.coref_ne);:
+File (287096_Apple_Inc_co_founder.xml.coref_ne);:
+Entity 0: (0,5) (11,23) (44,44) (47,49) (51,51) (59,59)
+Entity 1: (2,3) (22,23) (37,38) (49,49) (71,72) (74,74) (82,87)
+Entity 2: (31,38)
+Entity 3: (34,38)
+Entity 4: (57,57)
+Entity 5: (67,68)
+Entity 6: (76,81)
+Entity 7: (90,90)
+:
+Total key mentions: 19
+Total response mentions: 19
+Strictly correct identified mentions: 19
+Partially correct identified mentions: 0
+No identified: 0
+Invented: 0
+
+====== TOTALS =======
+Identification of Mentions: Recall: (19 / 19) 100%	Precision: (19 / 19) 100%	F1: 100%
+--------------------------------------------------------------------------
+
+Coreference:
+Coreference links: Recall: (36 / 36) 100%	Precision: (36 / 36) 100%	F1: 100%
+--------------------------------------------------------------------------
+Non-coreference links: Recall: (135 / 135) 100%	Precision: (135 / 135) 100%	F1: 100%
+--------------------------------------------------------------------------
+BLANC: Recall: (1 / 1) 100%	Precision: (1 / 1) 100%	F1: 100%
+--------------------------------------------------------------------------

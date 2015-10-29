@@ -1,0 +1,50 @@
+/Users/marten/git/clin26-eval/dev_corpora	trial
+Date	Thu Oct 29 11:09:48 CET 2015
+
+Nr. of result files	30
+MENTIONS (key mentions=663)
+# response mentions	663
+# missed mentions	0
+# invented mentions	0
+# strictly correct identified mentions	663
+# partially correct identified mentions	0
+ recall	100.0%
+ precision	100.0%
+ f1	100.0%
+
+REFERENCE (BLANC)
+# reference links	7388.0
+# response reference links	7388.0
+# correct reference links	7388.0
+ recall	100.0%
+ precision	100.0%
+ f1	100.0%
+
+COREFERENCE
+# key coreference links	1096.0
+# response coreference links	1096.0
+# correct coreference links	1096.0
+ recall	100.0%
+ precision	100.0%
+ f1	100.0%
+
+NOREFERENCE
+# key non-coreference links	6292.0
+# response non-coreference links	6292.0
+# correct non-coreference links	6292.0
+ recall	100.0%
+ precision	100.0%
+ f1	100.0%
+
+
+Macro average over all result files reported by the coref scorer:
+Macro average identification of Mentions
+recall	100.0%
+precision	100.0%
+f1	100.0%
+
+Macro average blanc
+recall	100.0%
+precision	100.0%
+f1	100.0%
+
