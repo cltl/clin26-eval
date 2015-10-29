@@ -3,16 +3,17 @@
 <h3>Terminology</h3>
 
 Key and response:
-1. **key**: expected output
-2. **response**: system output
+<p>1. **key**: expected output</p>
+<p>2. **response**: system output</p>
+
 
 The folder **dev_corpora** contains six folders:
-1. **factuality**: factuality data
-2. **ne**: named entity data
-3. **e**: entity data
-4. **coref_ne**: named entity coreference
-5. **coref_event**: event coreference
-6. **coref**: named entity and event coreference
+<p>1. **factuality**: factuality data</p>
+<p>2. **ne**: named entity data</p>
+<p>3. **e**: entity data</p>
+<p>4. **coref_ne**: named entity coreference</p>
+<p>5. **coref_event**: event coreference</p>
+<p>6. **coref**: named entity and event coreference</p>
 
 <h3>General instructions</h3>
 <p>1. Put your response files in one flat directory (dev corpus and test corpus will be provided in this repository)</p>
