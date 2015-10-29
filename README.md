@@ -17,7 +17,7 @@ The folder **dev_corpora** contains six folders:
 5. **coref_event**: event coreference
 6. **coref**: named entity and event coreference
 
-## General instructions
+### General instructions
 
 1. Put your response files in one flat directory (dev corpus and test corpus will be provided in this repository)
 2. Make sure the files in the response directory have the same name as those in key directory (otherwise, they will be ignored)
