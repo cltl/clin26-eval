@@ -32,7 +32,7 @@ The script write report to default `stdout` and `stderr`.
 #### Entity coreference
 
 ```bash
-bash score_coref.sh task key response measurement
+bash score_coref.sh coref_ne key response measurement
 ```
 
 The development key folder can be found at: `/dev_corpora/coref_ne`.
@@ -42,7 +42,7 @@ The measurement is always: `blanc`.
 #### Event coreference
 
 ```bash
-bash score_coref.sh task key response measurement
+bash score_coref.sh coref_event key response measurement
 ```
 
 The development key folder can be found at: `/dev_corpora/coref_event`.
@@ -52,7 +52,7 @@ The measurement is always: `blanc`.
 #### Entity and event coreference
 
 ```bash
-bash score_coref.sh task key response measurement
+bash score_coref.sh coref key response measurement
 ```
 
 The development key folder can be found at: `/dev_corpora/coref`.
