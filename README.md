@@ -19,6 +19,7 @@ The folder **dev_corpora** contains six folders:
 ### Requirements
 
 The scripts scoring NED, NERC and Factuality make use of **numpy** and **pytest**.
+They are tested on Python 2.7.
 
 ### General instructions
 
