@@ -7,7 +7,6 @@ Key and response:
 1. **key**: expected output
 2. **response**: system output
 
-
 The folder **dev_corpora** contains six folders:
 
 1. **factuality**: factuality data
@@ -17,6 +16,10 @@ The folder **dev_corpora** contains six folders:
 5. **coref_event**: event coreference
 6. **coref**: named entity and event coreference
 
+### Requirements
+
+The scripts scoring NED, NERC and Factuality make use of **numpy** and **pytest**.
+
 ### General instructions
 
 1. Put your response files in one flat directory (dev corpus and test corpus will be provided in this repository)
@@ -25,7 +28,7 @@ The folder **dev_corpora** contains six folders:
 4. A response file needs to be provided for each key file.
 5. Run the `score-XXX.py` or `score-XXX.sh` script from the command line. Run each script without commands to see information about how to run the script.
 
-The script write report to default `stdout` and `stderr`.
+Reports are written to default `stdout` and `stderr`.
 
 ### Task-specific instructions
 
@@ -68,7 +71,7 @@ python score_nerc.py key response
 #### Named-Entity Disambiguation (NED)
 
 ```bash
-python score_nerc.py key response
+python score_ned.py key response
 ```
 
 #### Factuality
