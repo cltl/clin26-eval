@@ -400,9 +400,9 @@ if __name__ == '__main__':
         else:
             res_event = res_polarity = res_certainty = set() 
         data['event'].append(compare_spans(key_event, key_event))
-        data['polarity'].append(compare_dependent_spans(key_polarity, res_polarity, key_event, key_event))
-        data['certainty'].append(compare_dependent_spans(key_certainty, res_certainty, key_event, key_event))
-        data['polarity+certainty'].append(compare_dependent_spans2(key_polarity, res_polarity, key_certainty, res_certainty, key_event, key_event))
+        data['polarity'].append(compare_dependent_spans(key_polarity, res_polarity, key_event, res_event))
+        data['certainty'].append(compare_dependent_spans(key_certainty, res_certainty, key_event, res_event))
+        data['polarity+certainty'].append(compare_dependent_spans2(key_polarity, res_polarity, key_certainty, res_certainty, key_event, res_event))
     for name in data:
         print('\n\nPerformance (%s spans):\n' %name)
         p = compute_performance(data[name])
