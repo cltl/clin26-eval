@@ -170,6 +170,7 @@ def compare_dependent_spans2(key1, res1, key2, res2, key_event, res_event):
     res2 = sorted(res2)
     it1 = iter(res1)
     it2 = iter(res2)
+    s1 = s2 = None
     try: # zip the two lists of spans
         s1 = next(it1)
         s2 = next(it2)
@@ -269,6 +270,7 @@ def test_read_spans_conll():
 def test_compare_spans():
     # span format: (<sentence id>, (<tuple ids>) [, <label>])
     # answer format: (<correct>, <total gold>, <total predicted>)
+    assert compare_spans((), ()) == (0,0,0)
     assert compare_spans(((1,(1,2)), (1,(3,))), 
                          ((1,(1,2)), (1,(3,)))) == (2,2,2)
     assert compare_spans(((1,(1,2)), (1,(3,))), 
@@ -277,6 +279,11 @@ def test_compare_spans():
                          ((1,(1,2)), (1,(3,)))) == (1,1,2)
     assert compare_spans(((1,(1,2)), (1,(4,5))), 
                          ((1,(1,2)), (1,(3,)))) == (1,2,2)
+    assert compare_dependent_spans((), # key
+                                   (), # res
+                                   (), # key_event
+                                   () # res_event
+                                   ) == (0,0,0), 'handle empty tuples'
     assert compare_dependent_spans(((1,(1,2),'POS'), (1,(3,),'NEG')), # key
                                    ((1,(1,2),'POS'), (1,(3,),'NEG')), # res
                                    ((1,(1,2)), (1,(3,))), # key_event
@@ -302,61 +309,68 @@ def test_compare_spans():
                                    ((1,(1,2)), (1,(3,))), # key_event
                                    ((1,(1,2)), (1,(3,))) # res_event
                                    ) == (1,2,2), 'one should have been incorrect because of wrong polarity label'
+    assert compare_dependent_spans2((), # key (polarity)
+                                    (), # res (polarity)
+                                    (), # key (certainty)
+                                    (), # res (certainty)
+                                    (), # key_event
+                                    () # res_event
+                                   ) == (0,0,0), 'handle empty tuples'
     assert compare_dependent_spans2(((1,(1,2),'POS'), (1,(3,),'NEG')), # key (polarity)
-                                   ((1,(1,2),'POS'), (1,(3,),'NEG')), # res (polarity)
-                                   ((1,(1,2),'CERTAIN'), (1,(3,),'UNCERTAIN')), # key (certainty)
-                                   ((1,(1,2),'CERTAIN'), (1,(3,),'UNCERTAIN')), # res (certainty)
-                                   ((1,(1,2)), (1,(3,))), # key_event
-                                   ((1,(1,2)), (1,(3,))) # res_event
+                                    ((1,(1,2),'POS'), (1,(3,),'NEG')), # res (polarity)
+                                    ((1,(1,2),'CERTAIN'), (1,(3,),'UNCERTAIN')), # key (certainty)
+                                    ((1,(1,2),'CERTAIN'), (1,(3,),'UNCERTAIN')), # res (certainty)
+                                    ((1,(1,2)), (1,(3,))), # key_event
+                                    ((1,(1,2)), (1,(3,))) # res_event
                                    ) == (2,2,2), 'should have been all correct'
     assert compare_dependent_spans2(((1,(1,2),'POS'), (1,(3,),'XXX')), # key (polarity)
-                                   ((1,(1,2),'POS'), (1,(3,),'NEG')), # res (polarity)
-                                   ((1,(1,2),'CERTAIN'), (1,(3,),'UNCERTAIN')), # key (certainty)
-                                   ((1,(1,2),'CERTAIN'), (1,(3,),'UNCERTAIN')), # res (certainty)
-                                   ((1,(1,2)), (1,(3,))), # key_event
-                                   ((1,(1,2)), (1,(3,))) # res_event
+                                    ((1,(1,2),'POS'), (1,(3,),'NEG')), # res (polarity)
+                                    ((1,(1,2),'CERTAIN'), (1,(3,),'UNCERTAIN')), # key (certainty)
+                                    ((1,(1,2),'CERTAIN'), (1,(3,),'UNCERTAIN')), # res (certainty)
+                                    ((1,(1,2)), (1,(3,))), # key_event
+                                    ((1,(1,2)), (1,(3,))) # res_event
                                    ) == (1,2,2), 'one should have been incorrect because of wrong polarity label'
     assert compare_dependent_spans2(((1,(1,2),'POS'), (1,(3,),'NEG')), # key (polarity)
-                                   ((1,(1,2),'POS'), (1,(3,),'NEG')), # res (polarity)
-                                   ((1,(1,2),'CERTAIN'), (1,(3,),'UNCERTAIN')), # key (certainty)
-                                   ((1,(1,2),'CERTAIN'), (1,(3,),'CERTAIN')), # res (certainty)
-                                   ((1,(1,2)), (1,(3,))), # key_event
-                                   ((1,(1,2)), (1,(3,))) # res_event
+                                    ((1,(1,2),'POS'), (1,(3,),'NEG')), # res (polarity)
+                                    ((1,(1,2),'CERTAIN'), (1,(3,),'UNCERTAIN')), # key (certainty)
+                                    ((1,(1,2),'CERTAIN'), (1,(3,),'CERTAIN')), # res (certainty)
+                                    ((1,(1,2)), (1,(3,))), # key_event
+                                    ((1,(1,2)), (1,(3,))) # res_event
                                    ) == (1,2,2), 'one should have been incorrect because of wrong certainty label'
     assert compare_dependent_spans2(((1,(1,2),'POS'), (1,(3,),'NEG')), # key (polarity)
-                                   ((1,(1,2),'POS'), (1,(5,6),'NEG')), # res (polarity)
-                                   ((1,(1,2),'CERTAIN'), (1,(3,),'UNCERTAIN')), # key (certainty)
-                                   ((1,(1,2),'CERTAIN'), (1,(3,4,5,6),'UNCERTAIN')), # res (certainty)
-                                   ((1,(1,2)), (1,(3,))), # key_event
-                                   ((1,(1,2)), (1,(3,))) # res_event
+                                    ((1,(1,2),'POS'), (1,(5,6),'NEG')), # res (polarity)
+                                    ((1,(1,2),'CERTAIN'), (1,(3,),'UNCERTAIN')), # key (certainty)
+                                    ((1,(1,2),'CERTAIN'), (1,(3,4,5,6),'UNCERTAIN')), # res (certainty)
+                                    ((1,(1,2)), (1,(3,))), # key_event
+                                    ((1,(1,2)), (1,(3,))) # res_event
                                    ) == (1,2,2), "polarity and certainty spans should be counted as one because they are partially overlapping"
     assert compare_dependent_spans2(((1,(1,2),'POS'), (1,(3,),'NEG')), # key (polarity)
-                                   ((1,(1,2),'POS'), (1,(5,6),'NEG')), # res (polarity)
-                                   ((1,(1,2),'CERTAIN'), (1,(3,),'UNCERTAIN')), # key (certainty)
-                                   ((1,(1,2),'CERTAIN'), (1,(3,4),'UNCERTAIN')), # res (certainty)
-                                   ((1,(1,2)), (1,(3,))), # key_event
-                                   ((1,(1,2)), (1,(3,))) # res_event
+                                    ((1,(1,2),'POS'), (1,(5,6),'NEG')), # res (polarity)
+                                    ((1,(1,2),'CERTAIN'), (1,(3,),'UNCERTAIN')), # key (certainty)
+                                    ((1,(1,2),'CERTAIN'), (1,(3,4),'UNCERTAIN')), # res (certainty)
+                                    ((1,(1,2)), (1,(3,))), # key_event
+                                    ((1,(1,2)), (1,(3,))) # res_event
                                    ) == (1,2,3), "polarity and certainty spans should be counted as two because they are disjoint"
     assert compare_dependent_spans2(((1,(1,2),'POS'), (1,(3,),'NEG')), # key (polarity)
-                                   ((1,(1,2),'POS'), (1,(3,4,5,6),'NEG')), # res (polarity)
-                                   ((1,(1,2),'CERTAIN'), (1,(3,),'UNCERTAIN')), # key (certainty)
-                                   ((1,(1,2),'CERTAIN'), (1,(3,4,5,6),'UNCERTAIN')), # res (certainty)
-                                   ((1,(1,2)), (1,(3,))), # key_event
-                                   ((1,(1,2)), (1,(3,4,5,6))) # res_event
+                                    ((1,(1,2),'POS'), (1,(3,4,5,6),'NEG')), # res (polarity)
+                                    ((1,(1,2),'CERTAIN'), (1,(3,),'UNCERTAIN')), # key (certainty)
+                                    ((1,(1,2),'CERTAIN'), (1,(3,4,5,6),'UNCERTAIN')), # res (certainty)
+                                    ((1,(1,2)), (1,(3,))), # key_event
+                                    ((1,(1,2)), (1,(3,4,5,6))) # res_event
                                    ) == (1,2,2), 'one should have been incorrect because of wrong event span'
     assert compare_dependent_spans2(((1,(1,2),'POS'), (1,(3,),'NEG')), # key (polarity)
-                                   ((1,(1,2),'POS'), (1,(3,),'NEG')), # res (polarity)
-                                   ((1,(1,2),'CERTAIN'), (1,(3,),'UNCERTAIN')), # key (certainty)
-                                   ((1,(1,2),'CERTAIN'), ), # res (certainty)
-                                   ((1,(1,2)), (1,(3,))), # key_event
-                                   ((1,(1,2)), (1,(3,))) # res_event
+                                    ((1,(1,2),'POS'), (1,(3,),'NEG')), # res (polarity)
+                                    ((1,(1,2),'CERTAIN'), (1,(3,),'UNCERTAIN')), # key (certainty)
+                                    ((1,(1,2),'CERTAIN'), ), # res (certainty)
+                                    ((1,(1,2)), (1,(3,))), # key_event
+                                    ((1,(1,2)), (1,(3,))) # res_event
                                    ) == (1,2,2), 'one should have been incorrect because of missing certainty span'
     assert compare_dependent_spans2(((1,(1,2),'POS'), (1,(3,),'NEG')), # key (polarity)
-                                   ((1,(1,2),'POS'), ), # res (polarity)
-                                   ((1,(1,2),'CERTAIN'), (1,(3,),'UNCERTAIN')), # key (certainty)
-                                   ((1,(1,2),'CERTAIN'), (1,(3,),'UNCERTAIN')), # res (certainty)
-                                   ((1,(1,2)), (1,(3,))), # key_event
-                                   ((1,(1,2)), (1,(3,))) # res_event
+                                    ((1,(1,2),'POS'), ), # res (polarity)
+                                    ((1,(1,2),'CERTAIN'), (1,(3,),'UNCERTAIN')), # key (certainty)
+                                    ((1,(1,2),'CERTAIN'), (1,(3,),'UNCERTAIN')), # res (certainty)
+                                    ((1,(1,2)), (1,(3,))), # key_event
+                                    ((1,(1,2)), (1,(3,))) # res_event
                                    ) == (1,2,2), 'one should have been incorrect because of missing polarity span'
 
 def test_compute_performance():
