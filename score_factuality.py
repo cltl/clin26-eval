@@ -40,9 +40,9 @@ def read_event_spans_conll(f, path=''):
                 if (not line) or line == '\n' or fields[2] == 'B-E':
                     break
                 assert fields[2] == 'I-E' or fields[2] == '_', \
-                    ("Format error in file %s, sentence %d, token %d: "
+                    ("Format error in file %s, sentence %d, token %s: "
                     "an event begins with strange marker: %s"
-                    %(path, sent, token, fields[2]))
+                    %(path, sent, fields[0], fields[2]))
                 if fields[2] == 'I-E':
                     tokens.append(int(fields[0]))
             spans.add((sent, tuple(tokens)))
@@ -71,9 +71,9 @@ def read_polarity_spans_conll(f, path=''):
                 if (not line) or line == '\n' or fields[4].startswith('B-'):
                     break
                 assert fields[4] == 'I-' + label or fields[4] == '_', \
-                    ("Format error in file %s, sentence %d, token %d: "
-                    "an polarity span begins with strange marker: %s"
-                    %(path, sent, token, label))
+                    ("Format error in file %s, sentence %d, token %s: "
+                    "a strange polarity span: %s, expected %s"
+                    %(path, sent, fields[0], fields[4], 'I-' + label))
                 if fields[4] == 'I-' + label:
                     tokens.append(int(fields[0]))
             spans.add((sent, tuple(tokens), label))
