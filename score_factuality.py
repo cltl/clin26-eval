@@ -102,9 +102,9 @@ def read_certainty_spans_conll(f, path=''):
                 if (not line) or line == '\n' or fields[3].startswith('B-'):
                     break
                 assert fields[3] == ('I-' + label) or fields[3] == '_', \
-                    ("Format error in file %s, sentence %d, token %d: "
-                     "an certainty span begins with strange marker: %s"
-                     %(path, sent, token, label))
+                    ("Format error in file %s, sentence %d, token %s: "
+                     "an strange certainty span: %s, expected: %s"
+                     %(path, sent, fields[0], fields[3], 'I-' + label))
                 if fields[3] == ('I-' + label):
                     tokens.append(int(fields[0]))
             spans.add((sent, tuple(tokens), label))
