@@ -15,6 +15,7 @@ import sys
 import pytest
 
 import numpy as np
+from util import first_n_sentences
 
 
 def find_last_item_by_tag(stack, tag):
@@ -90,15 +91,6 @@ def compare_spans(key, res, filter_tag='__ALL__'):
     res_set = set(ifilter(criteria, res))
     return len(res_set.intersection(key_set)), len(key_set), len(res_set)
 
-def first_five_sentences(f):
-    sent = 1
-    for line in f:
-        if line == '\n':
-            sent += 1
-            if sent > 5:
-                return
-        yield line
-
 def test_read_spans_conll():
     s = '1\tA\t_\t_\n'
     assert(len(read_spans_conll(StringIO(s))) == 0)
@@ -143,6 +135,7 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='Score the response of a system at Named-Entity Recognition and Classification.')
     parser.add_argument('key', help='path to a directory containing all key files')
     parser.add_argument('response', help='path to a directory containing all response files')
+    parser.add_argument('-n', type=int, default=5, help='number of sentences to consider, 0 for all')
     args = parser.parse_args()
 
     call('date')
@@ -154,11 +147,11 @@ if __name__ == '__main__':
     for fname in os.listdir(args.key):
         path = os.path.join(args.key, fname)
         with open(path) as f:
-            key = read_spans_conll(first_five_sentences(f), path)
+            key = read_spans_conll(first_n_sentences(f, args.n), path)
         path = os.path.join(args.response, fname)
         if os.path.exists(path):
             with open(path) as f:
-                res = read_spans_conll(first_five_sentences(f), path)
+                res = read_spans_conll(first_n_sentences(f, args.n), path)
         else:
             res = set()
         for filter_tag in filter_tags:

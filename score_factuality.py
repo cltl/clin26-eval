@@ -13,6 +13,7 @@ import sys
 import pytest
 
 import numpy as np
+from util import first_n_sentences
 
 
 def next_line(f):
@@ -202,15 +203,6 @@ def compare_dependent_spans2(key1, res1, key2, res2, key_event, res_event):
                   and s1[:2] in key and (s1, s2) == key[s1[:2]])
     return correct, len(key), len(res)
 
-def first_five_sentences(f):
-    sent = 1
-    for line in f:
-        if line == '\n':
-            sent += 1
-            if sent > 5:
-                return
-        yield line
-
 def test_read_spans_conll():
     s = '1\tA\t_\t_\t_\n'
     assert len(read_event_spans_conll(StringIO(s))) == 0
@@ -389,28 +381,30 @@ def test_all():
     test_compare_spans()
     sys.stderr.write('Passed all tests.\n')
 
+test_all() # never run evaluation script without thorough testing
+
 if __name__ == '__main__':
     import argparse
     parser = argparse.ArgumentParser(description='Score the response of a system at factuality.')
     parser.add_argument('key', help='path to a directory containing all key files')
     parser.add_argument('response', help='path to a directory containing all response files')
+    parser.add_argument('-n', type=int, default=5, help='number of sentences to consider, 0 for all')
     args = parser.parse_args()
 
     call('date')
-    test_all() # never run evaluation script without thorough testing
     data = defaultdict(list)
     if len(os.listdir(args.key)) < len(os.listdir(args.response)):
         sys.stderr.write('WARN: response folder holds more files than key folder. Some files will be ignored.\n')
     for fname in os.listdir(args.key):
         path = os.path.join(args.key, fname)
-        with open(path) as f: key_event = read_event_spans_conll(first_five_sentences(f), path)
-        with open(path) as f: key_polarity = read_polarity_spans_conll(first_five_sentences(f), path)
-        with open(path) as f: key_certainty = read_certainty_spans_conll(first_five_sentences(f), path)
+        with open(path) as f: key_event = read_event_spans_conll(first_n_sentences(f, args.n), path)
+        with open(path) as f: key_polarity = read_polarity_spans_conll(first_n_sentences(f, args.n), path)
+        with open(path) as f: key_certainty = read_certainty_spans_conll(first_n_sentences(f, args.n), path)
         path = os.path.join(args.response, fname)
         if os.path.exists(path):
-            with open(path) as f: res_event = read_event_spans_conll(first_five_sentences(f), path)
-            with open(path) as f: res_polarity = read_polarity_spans_conll(first_five_sentences(f), path)
-            with open(path) as f: res_certainty = read_certainty_spans_conll(first_five_sentences(f), path)
+            with open(path) as f: res_event = read_event_spans_conll(first_n_sentences(f, args.n), path)
+            with open(path) as f: res_polarity = read_polarity_spans_conll(first_n_sentences(f, args.n), path)
+            with open(path) as f: res_certainty = read_certainty_spans_conll(first_n_sentences(f, args.n), path)
         else:
             res_event = res_polarity = res_certainty = set() 
         data['event'].append(compare_spans(key_event, key_event))
