@@ -448,7 +448,8 @@ if __name__ == '__main__':
                 key_event, key_polarity, key_certainty = read_tokens_conll((2, 3, 4), first_n_sentences(f, args.n), path)
             path = os.path.join(args.response, fname)
             if os.path.exists(path):
-                res_event, res_polarity, res_certainty = read_tokens_conll((2, 3, 4), first_n_sentences(f, args.n), path)
+                with open(path) as f:
+                    res_event, res_polarity, res_certainty = read_tokens_conll((2, 3, 4), first_n_sentences(f, args.n), path)
             else:
                 res_event = res_polarity = res_certainty = set() 
             data['event'].append(compare_tokens(key_event, key_event))
