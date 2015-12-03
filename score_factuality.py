@@ -241,7 +241,8 @@ def test_read_spans_conll():
     certainty_spans = read_certainty_spans_conll(StringIO(s))
     assert len(certainty_spans) == 1
     assert list(certainty_spans)[0] == (1, (1,), 'CERTAIN')
-    s = '1\tA\tB-E\tB-CERTAIN\tB-POS\n2\tB\tI-E\tI-CERTAIN\tI-POS'
+    s = ('1\tA\tB-E\tB-CERTAIN\tB-POS\n'
+         '2\tB\tI-E\tI-CERTAIN\tI-POS')
     event_spans = read_event_spans_conll(StringIO(s))
     assert len(event_spans) == 1
     assert list(event_spans)[0] == (1, (1, 2))
@@ -251,11 +252,14 @@ def test_read_spans_conll():
     certainty_spans = read_certainty_spans_conll(StringIO(s))
     assert len(certainty_spans) == 1
     assert list(certainty_spans)[0] == (1, (1, 2), 'CERTAIN')
-    s = '1\tA\tB-E\tB-CERTAIN\tB-POS\n2\tB\tB-E\tB-CERTAIN\tB-POS'
+    s = ('1\tA\tB-E\tB-CERTAIN\tB-POS\n'
+         '2\tB\tB-E\tB-CERTAIN\tB-POS')
     assert len(read_event_spans_conll(StringIO(s))) == 2
     assert len(read_polarity_spans_conll(StringIO(s))) == 2
     assert len(read_certainty_spans_conll(StringIO(s))) == 2
-    s = '1\tA\tB-E\tB-CERTAIN\tB-POS\n2\tB\t_\t_\t_\n3\tC\tI-E\tI-CERTAIN\tI-POS'
+    s = ('1\tA\tB-E\tB-CERTAIN\tB-POS\n'
+         '2\tB\t_\t_\t_\n'
+         '3\tC\tI-E\tI-CERTAIN\tI-POS')
     event_spans = read_event_spans_conll(StringIO(s))
     assert len(event_spans) == 1, 'Discontinuous event span'
     assert list(event_spans)[0] == (1, (1, 3))
@@ -286,7 +290,8 @@ def test_read_spans_conll():
         s = ('1\tA\tB-E\tB-CERTAIN\tB-POS\n'
              '2\tB\tB-X\tB-CERTAIN\tI-POS')
         read_event_spans_conll(StringIO(s))
-    
+        
+        
 def test_compare_spans():
     # span format: (<sentence id>, (<tuple ids>) [, <label>])
     # answer format: (<correct>, <total gold>, <total predicted>)
