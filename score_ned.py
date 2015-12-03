@@ -11,14 +11,7 @@ from subprocess import call
 import sys
 
 import numpy as np
-from util import first_n_sentences
-
-
-def next_line(f):
-    try:
-        return next(f)
-    except StopIteration:
-        return ''
+from util import first_n_sentences, next_line
 
 def read_spans_conll(f, path=''):
     spans = set()

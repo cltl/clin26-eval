@@ -13,6 +13,14 @@ def first_n_sentences(f, n):
             if n > 0 and sent > n:
                 return
 
+
+def next_line(f):
+    try:
+        return next(f)
+    except StopIteration:
+        return ''
+
+
 def test_first_n_sentences():
     lines = ['abc', '\n']*100
     assert sum(1 for line in first_n_sentences(lines, 0) if line == '\n') == 100
