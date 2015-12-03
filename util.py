@@ -5,13 +5,12 @@ Created on Dec 2, 2015
 '''
 
 def first_n_sentences(f, n):
-    if n <= 0: return f
     sent = 1
     for line in f:
         yield line
         if line == '\n':
             sent += 1
-            if sent > n:
+            if n > 0 and sent > n:
                 return
 
 
