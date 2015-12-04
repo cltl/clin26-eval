@@ -141,7 +141,10 @@ def compare_tokens(key, res):
 def compare_dependent_spans(key, res, key_event, res_event):
     key_set = set(key)
     res_set = set(res)
-    for s in key: assert s[:2] in key_event
+    for s in key: 
+        if s[:2] not in key_event:
+            sys.stderr.write("WARN: Error in gold data: Span does not match any event: "
+                             "sentence %d, tokens %s.\n" %(s[0], str(s[1])))
     correct = sum(1 for s in res
                   if s in key_set and s[:2] in res_event and s[:2] in key_event)
     return correct, len(key_set), len(res_set)
@@ -156,12 +159,20 @@ def compare_dependent_spans2(key1, res1, key2, res2, key_event, res_event):
     key = {}
     assert len(key1) == len(key2) <= len(key_event)
     for s in key1:
-        assert s[:2] in key_event
-        key[s[:2]] = s
+        if s[:2] not in key_event:
+            sys.stderr.write("WARN: Error in gold data: Span does not match any event: "
+                             "sentence %d, tokens %s.\n" %(s[0], str(s[1])))
+        key[s[:2]] = (s, None)
     for s in key2:
-        assert s[:2] in key_event
-        assert s[:2] in key
-        key[s[:2]] = (key[s[:2]], s) 
+        if s[:2] not in key_event:
+            sys.stderr.write("WARN: Error in gold data: Span does not match any event: "
+                             "sentence %d, tokens %s.\n" %(s[0], str(s[1])))
+        if s[:2] not in key:
+            sys.stderr.write("WARN: Error in gold data: Span does not match any span of other event type: "
+                             "sentence %d, tokens %s.\n" %(s[0], str(s[1])))
+            key[s[:2]] = (None, s)
+        else:
+            key[s[:2]] = (key[s[:2]][0], s)
     res = [] # because they may not completely match, we can't index them by span
     res1 = sorted(res1)
     res2 = sorted(res2)
@@ -432,6 +443,7 @@ if __name__ == '__main__':
         sys.stderr.write('WARN: response folder holds more files than key folder. Some files will be ignored.\n')
     for fname in os.listdir(args.key):
         if args.measurement == 'spans':
+            sys.stderr.write("Current file name: %s\n" %fname)
             path = os.path.join(args.key, fname)
             with open(path) as f: key_event = read_event_spans_conll(first_n_sentences(f, args.n), path)
             with open(path) as f: key_polarity = read_polarity_spans_conll(first_n_sentences(f, args.n), path)
