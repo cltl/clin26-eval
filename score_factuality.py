@@ -455,7 +455,7 @@ if __name__ == '__main__':
                 with open(path) as f: res_certainty = read_certainty_spans_conll(first_n_sentences(f, args.n), path)
             else:
                 res_event = res_polarity = res_certainty = set() 
-            data['event'].append(compare_spans(key_event, key_event))
+            data['event'].append(compare_spans(key_event, res_event))
             data['polarity'].append(compare_dependent_spans(key_polarity, res_polarity, key_event, res_event))
             data['certainty'].append(compare_dependent_spans(key_certainty, res_certainty, key_event, res_event))
             data['polarity+certainty'].append(compare_dependent_spans2(key_polarity, res_polarity, key_certainty, res_certainty, key_event, res_event))
@@ -469,7 +469,7 @@ if __name__ == '__main__':
                     res_event, res_polarity, res_certainty = read_tokens_conll((2, 3, 4), first_n_sentences(f, args.n), path)
             else:
                 res_event = res_polarity = res_certainty = set() 
-            data['event'].append(compare_tokens(key_event, key_event))
+            data['event'].append(compare_tokens(key_event, res_event))
             data['polarity'].append(compare_tokens(key_polarity, res_polarity))
             data['certainty'].append(compare_tokens(key_certainty, res_certainty))
         else:
