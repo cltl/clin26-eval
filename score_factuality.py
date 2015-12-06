@@ -475,7 +475,7 @@ if __name__ == '__main__':
         else:
             raise ValueError('Unsupported measurement: %s' %args.measurement)
     for name in data:
-        print('\n\nPerformance (%s spans):\n' %name)
+        print('\n\nPerformance (%s %s):\n' %(name, args.measurement))
         p = compute_performance(data[name])
         print('# response total: %d\n'
               '# missed: %d\n'
