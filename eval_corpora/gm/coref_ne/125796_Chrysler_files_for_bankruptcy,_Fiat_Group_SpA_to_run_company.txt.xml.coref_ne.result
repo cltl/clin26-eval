@@ -1,0 +1,52 @@
+version: 8.01 /home/postma/analysis_submissions_clin_shared_task/clin26-eval/coref_scorer/coref-scorer-v8.01/lib/CorScorer.pm
+====> (125796_Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company.txt.xml.coref_ne);:
+File (125796_Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company.txt.xml.coref_ne);:
+Entity 0: (0,0) (16,16) (13,16) (77,77)
+Entity 1: (5,7) (30,30) (27,30) (62,62) (95,95) (93,95)
+Entity 2: (14,14) (52,52) (51,53) (109,109) (108,110)
+Entity 3: (28,28)
+Entity 4: (35,35) (33,35) (106,106) (104,106)
+Entity 5: (44,46)
+Entity 6: (59,59) (58,60)
+Entity 7: (71,72) (71,77)
+Entity 8: (94,94)
+Entity 9: (96,97)
+Entity 10: (99,106)
+Entity 11: (112,113)
+====> (125796_Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company.txt.xml.coref_ne);:
+File (125796_Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company.txt.xml.coref_ne);:
+Entity 0: (0,0) (16,16) (35,35) (77,77) (106,106)
+Entity 1: (2,2) (19,19) (83,84)
+Entity 2: (5,7)
+Entity 3: (9,10)
+Entity 4: (13,16)
+Entity 5: (27,30)
+Entity 6: (30,30) (62,62) (95,95)
+Entity 7: (33,35) (104,106)
+Entity 8: (40,46)
+Entity 9: (44,46) (43,46) (80,80)
+Entity 10: (51,53)
+Entity 11: (58,60)
+Entity 12: (71,72) (74,77)
+Entity 13: (93,95)
+Entity 14: (102,106)
+Entity 15: (108,110)
+:
+Total key mentions: 29
+Total response mentions: 28
+Strictly correct identified mentions: 19
+Partially correct identified mentions: 0
+No identified: 10
+Invented: 9
+
+====== TOTALS =======
+Identification of Mentions: Recall: (19 / 29) 65.51%	Precision: (19 / 28) 67.85%	F1: 66.66%
+--------------------------------------------------------------------------
+
+Coreference:
+Coreference links: Recall: (8 / 39) 20.51%	Precision: (8 / 21) 38.09%	F1: 26.66%
+--------------------------------------------------------------------------
+Non-coreference links: Recall: (137 / 367) 37.32%	Precision: (137 / 357) 38.37%	F1: 37.84%
+--------------------------------------------------------------------------
+BLANC: Recall: (0.2892126039265 / 1) 28.92%	Precision: (0.382352941176471 / 1) 38.23%	F1: 32.25%
+--------------------------------------------------------------------------

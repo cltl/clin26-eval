@@ -1,0 +1,50 @@
+version: 8.01 /home/postma/analysis_submissions_clin_shared_task/clin26-eval/coref_scorer/coref-scorer-v8.01/lib/CorScorer.pm
+====> (5403_Boeing_allowed_to_bid_for_U.S._space_launch_contracts_again.txt.xml.coref_ne);:
+File (5403_Boeing_allowed_to_bid_for_U.S._space_launch_contracts_again.txt.xml.coref_ne);:
+Entity 0: (0,0) (26,26) (34,34) (55,56) (68,68) (82,82) (89,89)
+Entity 1: (5,5) (9,9) (31,31) (40,41) (100,100)
+Entity 2: (5,6) (31,32)
+Entity 3: (8,10) (86,87) (99,101)
+Entity 4: (14,26)
+Entity 5: (17,18)
+Entity 6: (20,21)
+Entity 7: (23,24)
+Entity 8: (40,42)
+Entity 9: (57,79)
+Entity 10: (57,63)
+Entity 11: (62,63) (65,68)
+Entity 12: (73,74)
+====> (5403_Boeing_allowed_to_bid_for_U.S._space_launch_contracts_again.txt.xml.coref_ne);:
+File (5403_Boeing_allowed_to_bid_for_U.S._space_launch_contracts_again.txt.xml.coref_ne);:
+Entity 0: (0,0) (26,26) (34,34) (68,68) (89,89) (86,89)
+Entity 1: (5,6) (31,32)
+Entity 2: (8,10) (99,101)
+Entity 3: (14,16) (14,26)
+Entity 4: (17,18)
+Entity 5: (20,21)
+Entity 6: (23,24)
+Entity 7: (37,42) (82,82)
+Entity 8: (40,42)
+Entity 9: (62,63)
+Entity 10: (87,87) (86,87)
+Entity 11: (91,93)
+Entity 12: (96,101)
+:
+Total key mentions: 27
+Total response mentions: 23
+Strictly correct identified mentions: 17
+Partially correct identified mentions: 0
+No identified: 10
+Invented: 6
+
+====== TOTALS =======
+Identification of Mentions: Recall: (17 / 27) 62.96%	Precision: (17 / 23) 73.91%	F1: 68%
+--------------------------------------------------------------------------
+
+Coreference:
+Coreference links: Recall: (12 / 36) 33.33%	Precision: (12 / 20) 60%	F1: 42.85%
+--------------------------------------------------------------------------
+Non-coreference links: Recall: (117 / 315) 37.14%	Precision: (117 / 233) 50.21%	F1: 42.7%
+--------------------------------------------------------------------------
+BLANC: Recall: (0.352380952380952 / 1) 35.23%	Precision: (0.551072961373391 / 1) 55.1%	F1: 42.77%
+--------------------------------------------------------------------------

@@ -1,0 +1,45 @@
+version: 8.01 /home/postma/analysis_submissions_clin_shared_task/clin26-eval/coref_scorer/coref-scorer-v8.01/lib/CorScorer.pm
+====> (141483_Bank_of_America_reports_losses.txt.xml.coref_ne);:
+File (141483_Bank_of_America_reports_losses.txt.xml.coref_ne);:
+Entity 0: (0,2) (12,15) (12,26) (31,31) (54,55) (81,83) (106,107) (122,122)
+Entity 1: (24,26)
+Entity 2: (62,62) (94,94)
+Entity 3: (69,72)
+Entity 4: (100,101) (100,107)
+Entity 5: (115,116)
+====> (141483_Bank_of_America_reports_losses.txt.xml.coref_ne);:
+File (141483_Bank_of_America_reports_losses.txt.xml.coref_ne);:
+Entity 0: (0,2) (81,83)
+Entity 1: (6,6) (41,41)
+Entity 2: (12,15) (25,26) (24,26)
+Entity 3: (31,31)
+Entity 4: (33,34)
+Entity 5: (38,41)
+Entity 6: (50,51)
+Entity 7: (54,55) (106,107)
+Entity 8: (57,58)
+Entity 9: (62,62) (94,94)
+Entity 10: (69,70)
+Entity 11: (97,98) (109,109) (120,120)
+Entity 12: (100,101) (103,107)
+Entity 13: (115,116)
+Entity 14: (122,125)
+:
+Total key mentions: 15
+Total response mentions: 24
+Strictly correct identified mentions: 11
+Partially correct identified mentions: 0
+No identified: 4
+Invented: 13
+
+====== TOTALS =======
+Identification of Mentions: Recall: (11 / 15) 73.33%	Precision: (11 / 24) 45.83%	F1: 56.41%
+--------------------------------------------------------------------------
+
+Coreference:
+Coreference links: Recall: (3 / 30) 10%	Precision: (3 / 11) 27.27%	F1: 14.63%
+--------------------------------------------------------------------------
+Non-coreference links: Recall: (38 / 75) 50.66%	Precision: (38 / 265) 14.33%	F1: 22.35%
+--------------------------------------------------------------------------
+BLANC: Recall: (0.303333333333333 / 1) 30.33%	Precision: (0.208061749571184 / 1) 20.8%	F1: 18.49%
+--------------------------------------------------------------------------

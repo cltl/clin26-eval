@@ -1,0 +1,51 @@
+version: 8.01 /home/postma/analysis_submissions_clin_shared_task/clin26-eval/coref_scorer/coref-scorer-v8.01/lib/CorScorer.pm
+====> (31706_Ford_Motor_Company_cutting_30,000_jobs_by_2012.txt.xml.coref_ne);:
+File (31706_Ford_Motor_Company_cutting_30,000_jobs_by_2012.txt.xml.coref_ne);:
+Entity 0: (0,2) (9,11) (9,20) (42,42) (77,77) (89,89) (107,107) (120,120)
+Entity 1: (4,5) (25,26) (95,96)
+Entity 2: (20,20) (55,55) (91,91) (109,109)
+Entity 3: (30,31) (112,113)
+Entity 4: (38,57) (62,63) (59,63)
+Entity 5: (69,72) (69,77)
+Entity 6: (103,109)
+Entity 7: (117,118)
+Entity 8: (133,134)
+Entity 9: (136,136)
+Entity 10: (138,139)
+====> (31706_Ford_Motor_Company_cutting_30,000_jobs_by_2012.txt.xml.coref_ne);:
+File (31706_Ford_Motor_Company_cutting_30,000_jobs_by_2012.txt.xml.coref_ne);:
+Entity 0: (0,2) (9,11) (9,20) (42,42) (77,77) (89,89) (107,107) (120,120)
+Entity 1: (20,20)
+Entity 2: (41,41)
+Entity 3: (50,50)
+Entity 4: (55,55) (91,91) (109,109)
+Entity 5: (59,65)
+Entity 6: (62,65)
+Entity 7: (69,72) (74,77)
+Entity 8: (82,83) (127,131)
+Entity 9: (86,91)
+Entity 10: (112,124)
+Entity 11: (117,120)
+Entity 12: (123,124)
+Entity 13: (130,131)
+Entity 14: (136,136)
+Entity 15: (138,139)
+:
+Total key mentions: 27
+Total response mentions: 27
+Strictly correct identified mentions: 15
+Partially correct identified mentions: 0
+No identified: 12
+Invented: 12
+
+====== TOTALS =======
+Identification of Mentions: Recall: (15 / 27) 55.55%	Precision: (15 / 27) 55.55%	F1: 55.55%
+--------------------------------------------------------------------------
+
+Coreference:
+Coreference links: Recall: (31 / 42) 73.8%	Precision: (31 / 33) 93.93%	F1: 82.66%
+--------------------------------------------------------------------------
+Non-coreference links: Recall: (71 / 309) 22.97%	Precision: (71 / 318) 22.32%	F1: 22.64%
+--------------------------------------------------------------------------
+BLANC: Recall: (0.483934350439205 / 1) 48.39%	Precision: (0.581332189822756 / 1) 58.13%	F1: 52.65%
+--------------------------------------------------------------------------

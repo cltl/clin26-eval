@@ -1,0 +1,42 @@
+version: 8.01 /home/postma/analysis_submissions_clin_shared_task/clin26-eval/coref_scorer/coref-scorer-v8.01/lib/CorScorer.pm
+====> (113330_Shares_worldwide_surge_due_to_US_government_plan.txt.xml.coref_ne);:
+File (113330_Shares_worldwide_surge_due_to_US_government_plan.txt.xml.coref_ne);:
+Entity 0: (0,0) (7,18)
+Entity 1: (4,4) (41,41) (40,42) (52,52)
+Entity 2: (16,18) (57,57)
+Entity 3: (32,34)
+Entity 4: (44,48)
+Entity 5: (52,53)
+Entity 6: (60,62) (55,62)
+Entity 7: (84,86)
+====> (113330_Shares_worldwide_surge_due_to_US_government_plan.txt.xml.coref_ne);:
+File (113330_Shares_worldwide_surge_due_to_US_government_plan.txt.xml.coref_ne);:
+Entity 0: (0,0)
+Entity 1: (9,11) (24,24)
+Entity 2: (17,18) (16,18)
+Entity 3: (40,42)
+Entity 4: (52,53) (43,53)
+Entity 5: (47,48)
+Entity 6: (61,61)
+Entity 7: (71,71)
+Entity 8: (85,86) (84,86)
+Entity 9: (91,91)
+:
+Total key mentions: 14
+Total response mentions: 14
+Strictly correct identified mentions: 5
+Partially correct identified mentions: 0
+No identified: 9
+Invented: 9
+
+====== TOTALS =======
+Identification of Mentions: Recall: (5 / 14) 35.71%	Precision: (5 / 14) 35.71%	F1: 35.71%
+--------------------------------------------------------------------------
+
+Coreference:
+Coreference links: Recall: (0 / 9) 0%	Precision: (0 / 4) 0%	F1: 0%
+--------------------------------------------------------------------------
+Non-coreference links: Recall: (10 / 82) 12.19%	Precision: (10 / 87) 11.49%	F1: 11.83%
+--------------------------------------------------------------------------
+BLANC: Recall: (0.0609756097560976 / 1) 6.09%	Precision: (0.0574712643678161 / 1) 5.74%	F1: 5.91%
+--------------------------------------------------------------------------

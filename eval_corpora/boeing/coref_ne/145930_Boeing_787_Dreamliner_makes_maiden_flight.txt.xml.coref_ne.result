@@ -1,0 +1,46 @@
+version: 8.01 /home/postma/analysis_submissions_clin_shared_task/clin26-eval/coref_scorer/coref-scorer-v8.01/lib/CorScorer.pm
+====> (145930_Boeing_787_Dreamliner_makes_maiden_flight.txt.xml.coref_ne);:
+File (145930_Boeing_787_Dreamliner_makes_maiden_flight.txt.xml.coref_ne);:
+Entity 0: (0,4) (10,15) (17,21) (30,30) (42,50) (63,66)
+Entity 1: (15,15) (39,39) (58,58)
+Entity 2: (35,37)
+Entity 3: (37,37)
+Entity 4: (55,58)
+Entity 5: (89,89)
+====> (145930_Boeing_787_Dreamliner_makes_maiden_flight.txt.xml.coref_ne);:
+File (145930_Boeing_787_Dreamliner_makes_maiden_flight.txt.xml.coref_ne);:
+Entity 0: (0,0) (15,15) (39,39) (58,58)
+Entity 1: (6,6) (30,30)
+Entity 2: (7,7)
+Entity 3: (29,29)
+Entity 4: (35,35)
+Entity 5: (35,37)
+Entity 6: (37,37)
+Entity 7: (55,58)
+Entity 8: (63,64)
+Entity 9: (68,70)
+Entity 10: (71,71)
+Entity 11: (74,75)
+Entity 12: (80,81)
+Entity 13: (83,84)
+Entity 14: (86,89)
+Entity 15: (89,89)
+:
+Total key mentions: 13
+Total response mentions: 20
+Strictly correct identified mentions: 8
+Partially correct identified mentions: 0
+No identified: 5
+Invented: 12
+
+====== TOTALS =======
+Identification of Mentions: Recall: (8 / 13) 61.53%	Precision: (8 / 20) 40%	F1: 48.48%
+--------------------------------------------------------------------------
+
+Coreference:
+Coreference links: Recall: (3 / 18) 16.66%	Precision: (3 / 7) 42.85%	F1: 24%
+--------------------------------------------------------------------------
+Non-coreference links: Recall: (25 / 60) 41.66%	Precision: (25 / 183) 13.66%	F1: 20.57%
+--------------------------------------------------------------------------
+BLANC: Recall: (0.291666666666667 / 1) 29.16%	Precision: (0.282591725214676 / 1) 28.25%	F1: 22.28%
+--------------------------------------------------------------------------

@@ -1,0 +1,52 @@
+version: 8.01 /home/postma/analysis_submissions_clin_shared_task/clin26-eval/coref_scorer/coref-scorer-v8.01/lib/CorScorer.pm
+====> (3835_Chinese_airlines_agree_purchase_of_Boeing_787_Dreamliners.txt.xml.coref_ne);:
+File (3835_Chinese_airlines_agree_purchase_of_Boeing_787_Dreamliners.txt.xml.coref_ne);:
+Entity 0: (0,0) (19,25) (44,44)
+Entity 1: (0,1) (59,61) (71,72) (74,92)
+Entity 2: (5,5) (31,31)
+Entity 3: (5,7) (31,33) (46,46) (55,55) (68,68) (94,95)
+Entity 4: (17,25)
+Entity 5: (51,52) (54,54)
+Entity 6: (74,75)
+Entity 7: (77,79)
+Entity 8: (81,83)
+Entity 9: (85,86)
+Entity 10: (88,89)
+Entity 11: (91,92)
+Entity 12: (104,104)
+====> (3835_Chinese_airlines_agree_purchase_of_Boeing_787_Dreamliners.txt.xml.coref_ne);:
+File (3835_Chinese_airlines_agree_purchase_of_Boeing_787_Dreamliners.txt.xml.coref_ne);:
+Entity 0: (5,7) (31,33) (68,68)
+Entity 1: (12,12) (37,37)
+Entity 2: (17,25)
+Entity 3: (20,20)
+Entity 4: (23,23) (54,54)
+Entity 5: (25,25) (44,44) (74,75)
+Entity 6: (46,46)
+Entity 7: (55,55)
+Entity 8: (59,61)
+Entity 9: (64,66)
+Entity 10: (77,79) (81,83) (85,86) (88,89) (91,92)
+Entity 11: (94,95)
+Entity 12: (100,104)
+Entity 13: (101,102) (100,102)
+Entity 14: (104,104)
+:
+Total key mentions: 25
+Total response mentions: 26
+Strictly correct identified mentions: 17
+Partially correct identified mentions: 0
+No identified: 8
+Invented: 9
+
+====== TOTALS =======
+Identification of Mentions: Recall: (17 / 25) 68%	Precision: (17 / 26) 65.38%	F1: 66.66%
+--------------------------------------------------------------------------
+
+Coreference:
+Coreference links: Recall: (3 / 26) 11.53%	Precision: (3 / 19) 15.78%	F1: 13.33%
+--------------------------------------------------------------------------
+Non-coreference links: Recall: (110 / 274) 40.14%	Precision: (110 / 306) 35.94%	F1: 37.93%
+--------------------------------------------------------------------------
+BLANC: Recall: (0.258422234699607 / 1) 25.84%	Precision: (0.258685930512556 / 1) 25.86%	F1: 25.63%
+--------------------------------------------------------------------------

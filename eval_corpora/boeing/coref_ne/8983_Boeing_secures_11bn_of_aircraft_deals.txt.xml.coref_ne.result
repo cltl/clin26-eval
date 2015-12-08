@@ -1,0 +1,44 @@
+version: 8.01 /home/postma/analysis_submissions_clin_shared_task/clin26-eval/coref_scorer/coref-scorer-v8.01/lib/CorScorer.pm
+====> (8983_Boeing_secures_11bn_of_aircraft_deals.txt.xml.coref_ne);:
+File (8983_Boeing_secures_11bn_of_aircraft_deals.txt.xml.coref_ne);:
+Entity 0: (0,0) (18,18)
+Entity 1: (9,13)
+Entity 2: (12,13)
+Entity 3: (16,17)
+Entity 4: (24,25) (31,32) (64,65) (67,77) (86,91)
+Entity 5: (28,29) (57,58)
+Entity 6: (42,43)
+Entity 7: (70,77)
+Entity 8: (81,82)
+====> (8983_Boeing_secures_11bn_of_aircraft_deals.txt.xml.coref_ne);:
+File (8983_Boeing_secures_11bn_of_aircraft_deals.txt.xml.coref_ne);:
+Entity 0: (0,0) (18,18) (16,18)
+Entity 1: (12,13)
+Entity 2: (24,25)
+Entity 3: (28,29)
+Entity 4: (31,32)
+Entity 5: (36,36) (50,50)
+Entity 6: (42,43)
+Entity 7: (45,50)
+Entity 8: (56,58)
+Entity 9: (74,74)
+Entity 10: (76,77)
+:
+Total key mentions: 15
+Total response mentions: 14
+Strictly correct identified mentions: 7
+Partially correct identified mentions: 0
+No identified: 8
+Invented: 7
+
+====== TOTALS =======
+Identification of Mentions: Recall: (7 / 15) 46.66%	Precision: (7 / 14) 50%	F1: 48.27%
+--------------------------------------------------------------------------
+
+Coreference:
+Coreference links: Recall: (1 / 12) 8.33%	Precision: (1 / 4) 25%	F1: 12.5%
+--------------------------------------------------------------------------
+Non-coreference links: Recall: (19 / 93) 20.43%	Precision: (19 / 87) 21.83%	F1: 21.11%
+--------------------------------------------------------------------------
+BLANC: Recall: (0.143817204301075 / 1) 14.38%	Precision: (0.234195402298851 / 1) 23.41%	F1: 16.8%
+--------------------------------------------------------------------------

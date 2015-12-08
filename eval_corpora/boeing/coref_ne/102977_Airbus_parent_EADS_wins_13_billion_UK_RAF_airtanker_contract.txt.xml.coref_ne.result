@@ -1,0 +1,55 @@
+version: 8.01 /home/postma/analysis_submissions_clin_shared_task/clin26-eval/coref_scorer/coref-scorer-v8.01/lib/CorScorer.pm
+====> (102977_Airbus_parent_EADS_wins_13_billion_UK_RAF_airtanker_contract.txt.xml.coref_ne);:
+File (102977_Airbus_parent_EADS_wins_13_billion_UK_RAF_airtanker_contract.txt.xml.coref_ne);:
+Entity 0: (0,0) (0,1) (26,26) (23,26) (89,89)
+Entity 1: (3,3) (29,36) (71,75)
+Entity 2: (4,4) (39,39) (52,52) (87,91) (93,93) (97,97) (99,99) (111,112) (127,127)
+Entity 3: (10,18) (20,26) (68,68)
+Entity 4: (24,24)
+Entity 5: (41,48) (123,123)
+Entity 6: (42,42) (79,79)
+Entity 7: (53,56) (129,134)
+Entity 8: (60,61) (63,68) (103,103) (105,105)
+Entity 9: (78,82)
+Entity 10: (106,108)
+Entity 11: (113,113)
+Entity 12: (114,117)
+Entity 13: (122,123)
+====> (102977_Airbus_parent_EADS_wins_13_billion_UK_RAF_airtanker_contract.txt.xml.coref_ne);:
+File (102977_Airbus_parent_EADS_wins_13_billion_UK_RAF_airtanker_contract.txt.xml.coref_ne);:
+Entity 0: (0,1)
+Entity 1: (1,1) (17,17) (68,68)
+Entity 2: (10,15) (23,26) (10,26)
+Entity 3: (26,26)
+Entity 4: (29,30)
+Entity 5: (34,34)
+Entity 6: (39,39) (52,52) (93,93) (105,105) (113,113)
+Entity 7: (42,45) (41,45) (99,99) (127,127)
+Entity 8: (47,47)
+Entity 9: (53,56)
+Entity 10: (60,61) (63,68) (60,68) (103,103)
+Entity 11: (97,97)
+Entity 12: (111,112) (106,112)
+Entity 13: (122,123)
+Entity 14: (129,134)
+Entity 15: (130,131)
+Entity 16: (133,133)
+:
+Total key mentions: 36
+Total response mentions: 32
+Strictly correct identified mentions: 19
+Partially correct identified mentions: 0
+No identified: 17
+Invented: 13
+
+====== TOTALS =======
+Identification of Mentions: Recall: (19 / 36) 52.77%	Precision: (19 / 32) 59.37%	F1: 55.88%
+--------------------------------------------------------------------------
+
+Coreference:
+Coreference links: Recall: (7 / 61) 11.47%	Precision: (7 / 29) 24.13%	F1: 15.55%
+--------------------------------------------------------------------------
+Non-coreference links: Recall: (133 / 569) 23.37%	Precision: (133 / 467) 28.47%	F1: 25.67%
+--------------------------------------------------------------------------
+BLANC: Recall: (0.174248753925495 / 1) 17.42%	Precision: (0.263087942110315 / 1) 26.3%	F1: 20.61%
+--------------------------------------------------------------------------

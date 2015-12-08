@@ -1,0 +1,64 @@
+version: 8.01 /home/postma/analysis_submissions_clin_shared_task/clin26-eval/coref_scorer/coref-scorer-v8.01/lib/CorScorer.pm
+====> (11714_Ryanair_exercises_options_on_five_Boeing_737s.txt.xml.coref_ne);:
+File (11714_Ryanair_exercises_options_on_five_Boeing_737s.txt.xml.coref_ne);:
+Entity 0: (0,0) (8,12) (17,18) (19,19) (32,32) (80,80) (101,101)
+Entity 1: (2,2) (20,20) (20,26)
+Entity 2: (4,6) (24,26) (45,47) (49,49)
+Entity 3: (5,5) (22,22) (41,43) (86,86) (91,91)
+Entity 4: (5,6)
+Entity 5: (9,9)
+Entity 6: (35,36)
+Entity 7: (42,42)
+Entity 8: (53,54) (90,92)
+Entity 9: (60,61)
+Entity 10: (73,76) (78,80) (83,83)
+Entity 11: (94,97)
+Entity 12: (103,106)
+Entity 13: (106,106)
+Entity 14: (107,110)
+Entity 15: (120,122)
+Entity 16: (124,124)
+====> (11714_Ryanair_exercises_options_on_five_Boeing_737s.txt.xml.coref_ne);:
+File (11714_Ryanair_exercises_options_on_five_Boeing_737s.txt.xml.coref_ne);:
+Entity 0: (0,0) (12,12) (32,32) (80,80) (101,101)
+Entity 1: (2,6)
+Entity 2: (8,12) (19,19) (83,83)
+Entity 3: (17,18)
+Entity 4: (22,22) (86,86) (91,92)
+Entity 5: (34,34)
+Entity 6: (35,36) (49,49)
+Entity 7: (38,38)
+Entity 8: (41,43)
+Entity 9: (50,50)
+Entity 10: (53,54)
+Entity 11: (60,61)
+Entity 12: (64,65)
+Entity 13: (73,74)
+Entity 14: (76,76)
+Entity 15: (78,80)
+Entity 16: (94,97)
+Entity 17: (103,106)
+Entity 18: (106,106)
+Entity 19: (107,112)
+Entity 20: (112,112)
+Entity 21: (118,118)
+Entity 22: (124,124)
+:
+Total key mentions: 35
+Total response mentions: 32
+Strictly correct identified mentions: 20
+Partially correct identified mentions: 0
+No identified: 15
+Invented: 12
+
+====== TOTALS =======
+Identification of Mentions: Recall: (20 / 35) 57.14%	Precision: (20 / 32) 62.5%	F1: 59.7%
+--------------------------------------------------------------------------
+
+Coreference:
+Coreference links: Recall: (8 / 44) 18.18%	Precision: (8 / 17) 47.05%	F1: 26.22%
+--------------------------------------------------------------------------
+Non-coreference links: Recall: (162 / 551) 29.4%	Precision: (162 / 479) 33.82%	F1: 31.45%
+--------------------------------------------------------------------------
+BLANC: Recall: (0.237914535555189 / 1) 23.79%	Precision: (0.404396414097998 / 1) 40.43%	F1: 28.84%
+--------------------------------------------------------------------------

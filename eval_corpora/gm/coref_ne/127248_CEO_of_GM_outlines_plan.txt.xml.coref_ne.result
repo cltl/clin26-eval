@@ -1,0 +1,51 @@
+version: 8.01 /home/postma/analysis_submissions_clin_shared_task/clin26-eval/coref_scorer/coref-scorer-v8.01/lib/CorScorer.pm
+====> (127248_CEO_of_GM_outlines_plan.txt.xml.coref_ne);:
+File (127248_CEO_of_GM_outlines_plan.txt.xml.coref_ne);:
+Entity 0: (0,2) (26,27) (26,34) (52,52) (60,60) (93,93) (125,125) (133,133) (136,136)
+Entity 1: (2,2) (33,34) (36,36) (90,91) (102,102) (101,109)
+Entity 2: (6,7) (54,55) (119,120)
+Entity 3: (17,18)
+Entity 4: (42,43) (42,45)
+Entity 5: (62,63) (95,96) (104,104)
+Entity 6: (67,70)
+Entity 7: (72,74)
+Entity 8: (73,73)
+Entity 9: (87,91)
+Entity 10: (113,113)
+====> (127248_CEO_of_GM_outlines_plan.txt.xml.coref_ne);:
+File (127248_CEO_of_GM_outlines_plan.txt.xml.coref_ne);:
+Entity 0: (0,2)
+Entity 1: (2,2) (7,7) (33,34) (55,55) (90,91) (102,102) (120,120)
+Entity 2: (4,7) (48,49)
+Entity 3: (6,7)
+Entity 4: (11,11)
+Entity 5: (17,18) (51,51)
+Entity 6: (26,27) (36,36) (52,52) (60,60) (93,93) (103,103) (104,104) (123,123) (125,125) (133,133) (136,136)
+Entity 7: (29,31)
+Entity 8: (45,45)
+Entity 9: (62,63)
+Entity 10: (67,68)
+Entity 11: (72,74)
+Entity 12: (77,80)
+Entity 13: (87,91)
+Entity 14: (95,96)
+Entity 15: (128,129) (139,144)
+:
+Total key mentions: 29
+Total response mentions: 35
+Strictly correct identified mentions: 20
+Partially correct identified mentions: 0
+No identified: 9
+Invented: 15
+
+====== TOTALS =======
+Identification of Mentions: Recall: (20 / 29) 68.96%	Precision: (20 / 35) 57.14%	F1: 62.5%
+--------------------------------------------------------------------------
+
+Coreference:
+Coreference links: Recall: (27 / 58) 46.55%	Precision: (27 / 79) 34.17%	F1: 39.41%
+--------------------------------------------------------------------------
+Non-coreference links: Recall: (134 / 348) 38.5%	Precision: (134 / 516) 25.96%	F1: 31.01%
+--------------------------------------------------------------------------
+BLANC: Recall: (0.425287356321839 / 1) 42.52%	Precision: (0.300731037189677 / 1) 30.07%	F1: 35.21%
+--------------------------------------------------------------------------

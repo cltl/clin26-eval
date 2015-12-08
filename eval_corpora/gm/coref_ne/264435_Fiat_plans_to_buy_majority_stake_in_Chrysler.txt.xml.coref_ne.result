@@ -1,0 +1,51 @@
+version: 8.01 /home/postma/analysis_submissions_clin_shared_task/clin26-eval/coref_scorer/coref-scorer-v8.01/lib/CorScorer.pm
+====> (264435_Fiat_plans_to_buy_majority_stake_in_Chrysler.txt.xml.coref_ne);:
+File (264435_Fiat_plans_to_buy_majority_stake_in_Chrysler.txt.xml.coref_ne);:
+Entity 0: (0,0) (8,8) (6,8) (13,13) (55,55) (63,63) (64,64) (92,92) (102,102)
+Entity 1: (2,4) (42,47)
+Entity 2: (4,4) (24,24) (23,24) (47,47) (112,112) (114,114)
+Entity 3: (7,7)
+Entity 4: (17,24) (17,34) (67,68)
+Entity 5: (33,33) (32,34) (57,57)
+Entity 6: (56,60)
+Entity 7: (93,100)
+Entity 8: (99,100)
+Entity 9: (106,112) (125,126)
+====> (264435_Fiat_plans_to_buy_majority_stake_in_Chrysler.txt.xml.coref_ne);:
+File (264435_Fiat_plans_to_buy_majority_stake_in_Chrysler.txt.xml.coref_ne);:
+Entity 0: (0,0) (8,8) (55,55) (92,92) (102,102)
+Entity 1: (2,4)
+Entity 2: (4,4) (24,24) (47,47) (112,112)
+Entity 3: (6,8)
+Entity 4: (13,13) (26,26) (63,63) (114,114) (135,135)
+Entity 5: (23,24)
+Entity 6: (32,34)
+Entity 7: (52,53) (64,64)
+Entity 8: (56,60)
+Entity 9: (60,60)
+Entity 10: (72,73)
+Entity 11: (96,100)
+Entity 12: (116,117)
+Entity 13: (119,120)
+Entity 14: (125,127)
+Entity 15: (137,141)
+Entity 16: (143,143)
+:
+Total key mentions: 29
+Total response mentions: 29
+Strictly correct identified mentions: 18
+Partially correct identified mentions: 0
+No identified: 11
+Invented: 11
+
+====== TOTALS =======
+Identification of Mentions: Recall: (18 / 29) 62.06%	Precision: (18 / 29) 62.06%	F1: 62.06%
+--------------------------------------------------------------------------
+
+Coreference:
+Coreference links: Recall: (17 / 59) 28.81%	Precision: (17 / 27) 62.96%	F1: 39.53%
+--------------------------------------------------------------------------
+Non-coreference links: Recall: (100 / 347) 28.81%	Precision: (100 / 379) 26.38%	F1: 27.54%
+--------------------------------------------------------------------------
+BLANC: Recall: (0.288160015630342 / 1) 28.81%	Precision: (0.446740936186847 / 1) 44.67%	F1: 33.54%
+--------------------------------------------------------------------------

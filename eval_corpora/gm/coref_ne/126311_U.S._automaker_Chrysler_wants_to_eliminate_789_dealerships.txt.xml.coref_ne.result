@@ -1,0 +1,45 @@
+version: 8.01 /home/postma/analysis_submissions_clin_shared_task/clin26-eval/coref_scorer/coref-scorer-v8.01/lib/CorScorer.pm
+====> (126311_U.S._automaker_Chrysler_wants_to_eliminate_789_dealerships.txt.xml.coref_ne);:
+File (126311_U.S._automaker_Chrysler_wants_to_eliminate_789_dealerships.txt.xml.coref_ne);:
+Entity 0: (0,0) (9,9) (57,57)
+Entity 1: (2,2) (0,2) (11,12) (8,12) (36,37) (72,72) (74,74) (76,76) (90,90)
+Entity 2: (5,5) (26,26) (41,41)
+Entity 3: (47,48)
+Entity 4: (56,58)
+Entity 5: (60,61)
+Entity 6: (83,84) (83,90)
+====> (126311_U.S._automaker_Chrysler_wants_to_eliminate_789_dealerships.txt.xml.coref_ne);:
+File (126311_U.S._automaker_Chrysler_wants_to_eliminate_789_dealerships.txt.xml.coref_ne);:
+Entity 0: (0,2)
+Entity 1: (2,2) (90,90)
+Entity 2: (8,12) (43,43) (72,72) (74,74)
+Entity 3: (11,12)
+Entity 4: (16,16)
+Entity 5: (17,17)
+Entity 6: (31,34)
+Entity 7: (36,37)
+Entity 8: (47,48)
+Entity 9: (56,58)
+Entity 10: (60,61)
+Entity 11: (66,66) (76,76)
+Entity 12: (83,84)
+Entity 13: (87,88) (86,88)
+:
+Total key mentions: 20
+Total response mentions: 20
+Strictly correct identified mentions: 13
+Partially correct identified mentions: 0
+No identified: 7
+Invented: 7
+
+====== TOTALS =======
+Identification of Mentions: Recall: (13 / 20) 65%	Precision: (13 / 20) 65%	F1: 65%
+--------------------------------------------------------------------------
+
+Coreference:
+Coreference links: Recall: (4 / 43) 9.3%	Precision: (4 / 9) 44.44%	F1: 15.38%
+--------------------------------------------------------------------------
+Non-coreference links: Recall: (42 / 147) 28.57%	Precision: (42 / 181) 23.2%	F1: 25.6%
+--------------------------------------------------------------------------
+BLANC: Recall: (0.18936877076412 / 1) 18.93%	Precision: (0.338244321669736 / 1) 33.82%	F1: 20.49%
+--------------------------------------------------------------------------

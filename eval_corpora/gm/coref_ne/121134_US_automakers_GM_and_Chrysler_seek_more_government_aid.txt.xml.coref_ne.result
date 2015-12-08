@@ -1,0 +1,45 @@
+version: 8.01 /home/postma/analysis_submissions_clin_shared_task/clin26-eval/coref_scorer/coref-scorer-v8.01/lib/CorScorer.pm
+====> (121134_US_automakers_GM_and_Chrysler_seek_more_government_aid.txt.xml.coref_ne);:
+File (121134_US_automakers_GM_and_Chrysler_seek_more_government_aid.txt.xml.coref_ne);:
+Entity 0: (0,0) (12,12) (26,26) (25,27) (106,107)
+Entity 1: (0,4)
+Entity 2: (2,2) (96,99) (92,99) (105,105) (121,121)
+Entity 3: (4,4) (9,9) (9,22) (45,45) (55,56) (78,78)
+Entity 4: (7,7) (109,114)
+Entity 5: (47,47) (68,72)
+Entity 6: (61,61)
+Entity 7: (83,85)
+Entity 8: (87,88)
+Entity 9: (90,90)
+====> (121134_US_automakers_GM_and_Chrysler_seek_more_government_aid.txt.xml.coref_ne);:
+File (121134_US_automakers_GM_and_Chrysler_seek_more_government_aid.txt.xml.coref_ne);:
+Entity 0: (0,4)
+Entity 1: (2,2) (96,97) (99,99)
+Entity 2: (4,4) (9,9) (11,13) (14,14) (9,22) (78,78) (120,120)
+Entity 3: (16,17)
+Entity 4: (45,45) (105,105)
+Entity 5: (55,56) (57,57)
+Entity 6: (63,63)
+Entity 7: (71,72)
+Entity 8: (84,85) (83,85) (121,121)
+Entity 9: (87,88)
+Entity 10: (90,90)
+:
+Total key mentions: 25
+Total response mentions: 23
+Strictly correct identified mentions: 13
+Partially correct identified mentions: 0
+No identified: 12
+Invented: 10
+
+====== TOTALS =======
+Identification of Mentions: Recall: (13 / 25) 52%	Precision: (13 / 23) 56.52%	F1: 54.16%
+--------------------------------------------------------------------------
+
+Coreference:
+Coreference links: Recall: (6 / 37) 16.21%	Precision: (6 / 29) 20.68%	F1: 18.18%
+--------------------------------------------------------------------------
+Non-coreference links: Recall: (58 / 263) 22.05%	Precision: (58 / 224) 25.89%	F1: 23.81%
+--------------------------------------------------------------------------
+BLANC: Recall: (0.191347240776899 / 1) 19.13%	Precision: (0.232912561576355 / 1) 23.29%	F1: 21%
+--------------------------------------------------------------------------

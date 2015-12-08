@@ -1,0 +1,57 @@
+version: 8.01 /home/postma/analysis_submissions_clin_shared_task/clin26-eval/coref_scorer/coref-scorer-v8.01/lib/CorScorer.pm
+====> (41882_Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era.txt.xml.coref_ne);:
+File (41882_Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era.txt.xml.coref_ne);:
+Entity 0: (0,0) (10,12) (48,48)
+Entity 1: (2,3) (16,18) (93,96) (98,100)
+Entity 2: (5,5) (20,21) (41,42) (64,64) (90,91)
+Entity 3: (8,8) (35,36) (118,119)
+Entity 4: (18,18) (95,96)
+Entity 5: (26,27) (108,109)
+Entity 6: (29,29)
+Entity 7: (44,48) (51,51) (63,63)
+Entity 8: (69,73)
+Entity 9: (81,82) (84,91)
+Entity 10: (105,109) (111,119)
+Entity 11: (115,116)
+Entity 12: (127,129) (131,131)
+====> (41882_Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era.txt.xml.coref_ne);:
+File (41882_Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era.txt.xml.coref_ne);:
+Entity 0: (0,0) (48,48) (95,95)
+Entity 1: (5,5)
+Entity 2: (8,8)
+Entity 3: (10,12)
+Entity 4: (20,21) (41,42) (63,63) (90,91)
+Entity 5: (26,27) (108,109)
+Entity 6: (29,29)
+Entity 7: (32,36)
+Entity 8: (44,46) (51,51) (64,64)
+Entity 9: (69,73) (101,101)
+Entity 10: (73,73)
+Entity 11: (81,82)
+Entity 12: (84,84)
+Entity 13: (86,91)
+Entity 14: (86,88)
+Entity 15: (105,109)
+Entity 16: (115,116)
+Entity 17: (118,119)
+Entity 18: (121,121)
+Entity 19: (136,136)
+:
+Total key mentions: 31
+Total response mentions: 29
+Strictly correct identified mentions: 19
+Partially correct identified mentions: 0
+No identified: 12
+Invented: 10
+
+====== TOTALS =======
+Identification of Mentions: Recall: (19 / 31) 61.29%	Precision: (19 / 29) 65.51%	F1: 63.33%
+--------------------------------------------------------------------------
+
+Coreference:
+Coreference links: Recall: (5 / 30) 16.66%	Precision: (5 / 14) 35.71%	F1: 22.72%
+--------------------------------------------------------------------------
+Non-coreference links: Recall: (151 / 435) 34.71%	Precision: (151 / 392) 38.52%	F1: 36.51%
+--------------------------------------------------------------------------
+BLANC: Recall: (0.256896551724138 / 1) 25.68%	Precision: (0.371173469387755 / 1) 37.11%	F1: 29.62%
+--------------------------------------------------------------------------

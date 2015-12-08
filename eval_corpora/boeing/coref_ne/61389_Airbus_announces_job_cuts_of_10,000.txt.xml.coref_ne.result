@@ -1,0 +1,52 @@
+version: 8.01 /home/postma/analysis_submissions_clin_shared_task/clin26-eval/coref_scorer/coref-scorer-v8.01/lib/CorScorer.pm
+====> (61389_Airbus_announces_job_cuts_of_10,000.txt.xml.coref_ne);:
+File (61389_Airbus_announces_job_cuts_of_10,000.txt.xml.coref_ne);:
+Entity 0: (0,0) (6,6) (5,6) (8,12) (5,12) (31,32) (38,39) (50,50) (55,56)
+Entity 1: (12,12)
+Entity 2: (23,24)
+Entity 3: (45,46) (48,50) (45,50)
+Entity 4: (59,77) (81,86)
+Entity 5: (59,61)
+Entity 6: (63,63)
+Entity 7: (67,67)
+Entity 8: (71,73)
+Entity 9: (77,77)
+Entity 10: (88,88)
+Entity 11: (90,91)
+====> (61389_Airbus_announces_job_cuts_of_10,000.txt.xml.coref_ne);:
+File (61389_Airbus_announces_job_cuts_of_10,000.txt.xml.coref_ne);:
+Entity 0: (0,0) (6,6) (8,12) (6,12) (50,50)
+Entity 1: (12,12)
+Entity 2: (31,32)
+Entity 3: (32,32)
+Entity 4: (33,35)
+Entity 5: (38,39) (55,56)
+Entity 6: (45,46)
+Entity 7: (48,50)
+Entity 8: (58,58)
+Entity 9: (59,65)
+Entity 10: (63,63)
+Entity 11: (67,67)
+Entity 12: (72,73) (71,73)
+Entity 13: (77,77)
+Entity 14: (85,86)
+Entity 15: (90,91)
+:
+Total key mentions: 23
+Total response mentions: 22
+Strictly correct identified mentions: 15
+Partially correct identified mentions: 0
+No identified: 8
+Invented: 7
+
+====== TOTALS =======
+Identification of Mentions: Recall: (15 / 23) 65.21%	Precision: (15 / 22) 68.18%	F1: 66.66%
+--------------------------------------------------------------------------
+
+Coreference:
+Coreference links: Recall: (7 / 40) 17.5%	Precision: (7 / 12) 58.33%	F1: 26.92%
+--------------------------------------------------------------------------
+Non-coreference links: Recall: (83 / 213) 38.96%	Precision: (83 / 219) 37.89%	F1: 38.42%
+--------------------------------------------------------------------------
+BLANC: Recall: (0.282335680751174 / 1) 28.23%	Precision: (0.481164383561644 / 1) 48.11%	F1: 32.67%
+--------------------------------------------------------------------------

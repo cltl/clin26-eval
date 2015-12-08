@@ -1,0 +1,55 @@
+version: 8.01 /home/postma/analysis_submissions_clin_shared_task/clin26-eval/coref_scorer/coref-scorer-v8.01/lib/CorScorer.pm
+====> (87805_Indonesia_transport_minister.txt.xml.coref_ne);:
+File (87805_Indonesia_transport_minister.txt.xml.coref_ne);:
+Entity 0: (0,0) (0,3) (5,5) (14,16) (19,19) (18,22) (25,26) (57,57) (55,58) (71,71) (82,82) (116,116) (133,133) (154,154)
+Entity 1: (8,8) (33,33) (48,52) (68,69) (121,121) (159,159)
+Entity 2: (8,9) (29,29) (119,119) (119,121) (156,156)
+Entity 3: (33,34) (37,37)
+Entity 4: (58,58)
+Entity 5: (60,64)
+Entity 6: (71,72)
+Entity 7: (94,95)
+Entity 8: (100,101)
+Entity 9: (106,110)
+Entity 10: (135,135)
+Entity 11: (137,137)
+====> (87805_Indonesia_transport_minister.txt.xml.coref_ne);:
+File (87805_Indonesia_transport_minister.txt.xml.coref_ne);:
+Entity 0: (3,3) (22,22)
+Entity 1: (5,5) (64,64) (154,154)
+Entity 2: (12,12)
+Entity 3: (14,16) (18,22) (14,22) (133,133)
+Entity 4: (25,26)
+Entity 5: (33,34)
+Entity 6: (37,37) (36,37)
+Entity 7: (39,39)
+Entity 8: (49,50) (48,50) (52,52) (69,69) (68,69)
+Entity 9: (60,64)
+Entity 10: (82,82)
+Entity 11: (94,95) (100,102)
+Entity 12: (100,101)
+Entity 13: (121,121) (159,159)
+Entity 14: (125,126)
+Entity 15: (135,135)
+Entity 16: (137,137)
+Entity 17: (138,139)
+Entity 18: (151,151)
+:
+Total key mentions: 35
+Total response mentions: 32
+Strictly correct identified mentions: 17
+Partially correct identified mentions: 0
+No identified: 18
+Invented: 15
+
+====== TOTALS =======
+Identification of Mentions: Recall: (17 / 35) 48.57%	Precision: (17 / 32) 53.12%	F1: 50.74%
+--------------------------------------------------------------------------
+
+Coreference:
+Coreference links: Recall: (5 / 117) 4.27%	Precision: (5 / 23) 21.73%	F1: 7.14%
+--------------------------------------------------------------------------
+Non-coreference links: Recall: (111 / 478) 23.22%	Precision: (111 / 473) 23.46%	F1: 23.34%
+--------------------------------------------------------------------------
+BLANC: Recall: (0.1374763079784 / 1) 13.74%	Precision: (0.226031804393786 / 1) 22.6%	F1: 15.24%
+--------------------------------------------------------------------------

@@ -1,0 +1,39 @@
+version: 8.01 /home/postma/analysis_submissions_clin_shared_task/clin26-eval/coref_scorer/coref-scorer-v8.01/lib/CorScorer.pm
+====> (115587_Global_stock_markets_plunge.txt.xml.coref_ne);:
+File (115587_Global_stock_markets_plunge.txt.xml.coref_ne);:
+Entity 0: (0,0) (8,9)
+Entity 1: (20,22)
+Entity 2: (29,31)
+Entity 3: (30,30) (41,41)
+Entity 4: (35,36) (34,36)
+Entity 5: (40,43) (56,57)
+====> (115587_Global_stock_markets_plunge.txt.xml.coref_ne);:
+File (115587_Global_stock_markets_plunge.txt.xml.coref_ne);:
+Entity 0: (3,4)
+Entity 1: (8,9)
+Entity 2: (13,13)
+Entity 3: (18,22)
+Entity 4: (20,22)
+Entity 5: (35,36)
+Entity 6: (46,48)
+Entity 7: (56,57)
+Entity 8: (59,60)
+:
+Total key mentions: 10
+Total response mentions: 9
+Strictly correct identified mentions: 4
+Partially correct identified mentions: 0
+No identified: 6
+Invented: 5
+
+====== TOTALS =======
+Identification of Mentions: Recall: (4 / 10) 40%	Precision: (4 / 9) 44.44%	F1: 42.1%
+--------------------------------------------------------------------------
+
+Coreference:
+Coreference links: Recall: (0 / 4) 0%	Precision: (0 / 0) 0%	F1: 0%
+--------------------------------------------------------------------------
+Non-coreference links: Recall: (6 / 41) 14.63%	Precision: (6 / 36) 16.66%	F1: 15.58%
+--------------------------------------------------------------------------
+BLANC: Recall: (0.0731707317073171 / 1) 7.31%	Precision: (0.0833333333333333 / 1) 8.33%	F1: 7.79%
+--------------------------------------------------------------------------

@@ -1,0 +1,50 @@
+version: 8.01 /home/postma/analysis_submissions_clin_shared_task/clin26-eval/coref_scorer/coref-scorer-v8.01/lib/CorScorer.pm
+====> (251007_Japanese_stocks_continue_to_fall_after_earthquake.txt.xml.coref_ne);:
+File (251007_Japanese_stocks_continue_to_fall_after_earthquake.txt.xml.coref_ne);:
+Entity 0: (0,0) (9,9)
+Entity 1: (0,1) (47,48) (57,58)
+Entity 2: (10,11) (7,12)
+Entity 3: (78,78)
+Entity 4: (78,79)
+Entity 5: (86,93)
+Entity 6: (99,102)
+Entity 7: (108,110)
+Entity 8: (109,109)
+====> (251007_Japanese_stocks_continue_to_fall_after_earthquake.txt.xml.coref_ne);:
+File (251007_Japanese_stocks_continue_to_fall_after_earthquake.txt.xml.coref_ne);:
+Entity 0: (0,1) (47,48)
+Entity 1: (5,5)
+Entity 2: (10,11) (68,68) (70,70)
+Entity 3: (20,22)
+Entity 4: (28,28)
+Entity 5: (30,33)
+Entity 6: (33,33)
+Entity 7: (35,38)
+Entity 8: (42,45)
+Entity 9: (50,50)
+Entity 10: (57,58)
+Entity 11: (83,84)
+Entity 12: (87,89) (86,89)
+Entity 13: (93,93)
+Entity 14: (99,102) (98,102)
+Entity 15: (110,110) (108,110)
+Entity 16: (120,121)
+:
+Total key mentions: 13
+Total response mentions: 23
+Strictly correct identified mentions: 6
+Partially correct identified mentions: 0
+No identified: 7
+Invented: 17
+
+====== TOTALS =======
+Identification of Mentions: Recall: (6 / 13) 46.15%	Precision: (6 / 23) 26.08%	F1: 33.33%
+--------------------------------------------------------------------------
+
+Coreference:
+Coreference links: Recall: (1 / 5) 20%	Precision: (1 / 7) 14.28%	F1: 16.66%
+--------------------------------------------------------------------------
+Non-coreference links: Recall: (12 / 73) 16.43%	Precision: (12 / 246) 4.87%	F1: 7.52%
+--------------------------------------------------------------------------
+BLANC: Recall: (0.182191780821918 / 1) 18.21%	Precision: (0.0958188153310104 / 1) 9.58%	F1: 12.09%
+--------------------------------------------------------------------------

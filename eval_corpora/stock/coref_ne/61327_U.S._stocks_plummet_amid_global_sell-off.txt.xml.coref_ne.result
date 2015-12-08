@@ -1,0 +1,48 @@
+version: 8.01 /home/postma/analysis_submissions_clin_shared_task/clin26-eval/coref_scorer/coref-scorer-v8.01/lib/CorScorer.pm
+====> (61327_U.S._stocks_plummet_amid_global_sell-off.txt.xml.coref_ne);:
+File (61327_U.S._stocks_plummet_amid_global_sell-off.txt.xml.coref_ne);:
+Entity 0: (0,0) (13,13) (102,102)
+Entity 1: (0,1)
+Entity 2: (16,18) (10,18)
+Entity 3: (39,40)
+Entity 4: (61,63)
+Entity 5: (62,62)
+Entity 6: (65,75)
+Entity 7: (70,70)
+Entity 8: (72,75)
+Entity 9: (92,96)
+Entity 10: (101,103)
+====> (61327_U.S._stocks_plummet_amid_global_sell-off.txt.xml.coref_ne);:
+File (61327_U.S._stocks_plummet_amid_global_sell-off.txt.xml.coref_ne);:
+Entity 0: (3,6)
+Entity 1: (6,6)
+Entity 2: (17,18) (16,18)
+Entity 3: (23,23)
+Entity 4: (30,30)
+Entity 5: (32,37) (52,53)
+Entity 6: (39,40)
+Entity 7: (61,63)
+Entity 8: (70,70) (69,70)
+Entity 9: (72,75)
+Entity 10: (92,96)
+Entity 11: (95,96)
+Entity 12: (101,103)
+:
+Total key mentions: 14
+Total response mentions: 16
+Strictly correct identified mentions: 7
+Partially correct identified mentions: 0
+No identified: 7
+Invented: 9
+
+====== TOTALS =======
+Identification of Mentions: Recall: (7 / 14) 50%	Precision: (7 / 16) 43.75%	F1: 46.66%
+--------------------------------------------------------------------------
+
+Coreference:
+Coreference links: Recall: (0 / 4) 0%	Precision: (0 / 3) 0%	F1: 0%
+--------------------------------------------------------------------------
+Non-coreference links: Recall: (21 / 87) 24.13%	Precision: (21 / 117) 17.94%	F1: 20.58%
+--------------------------------------------------------------------------
+BLANC: Recall: (0.120689655172414 / 1) 12.06%	Precision: (0.0897435897435897 / 1) 8.97%	F1: 10.29%
+--------------------------------------------------------------------------

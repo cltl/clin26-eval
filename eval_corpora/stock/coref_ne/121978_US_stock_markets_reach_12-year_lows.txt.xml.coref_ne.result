@@ -1,0 +1,53 @@
+version: 8.01 /home/postma/analysis_submissions_clin_shared_task/clin26-eval/coref_scorer/coref-scorer-v8.01/lib/CorScorer.pm
+====> (121978_US_stock_markets_reach_12-year_lows.txt.xml.coref_ne);:
+File (121978_US_stock_markets_reach_12-year_lows.txt.xml.coref_ne);:
+Entity 0: (0,0) (10,10) (36,36)
+Entity 1: (0,1) (9,11)
+Entity 2: (3,4) (14,16) (62,64)
+Entity 3: (24,26)
+Entity 4: (30,30)
+Entity 5: (38,39) (35,39)
+Entity 6: (44,48) (112,114)
+Entity 7: (72,74)
+Entity 8: (88,94) (130,133)
+Entity 9: (109,114)
+Entity 10: (119,119)
+Entity 11: (126,133)
+====> (121978_US_stock_markets_reach_12-year_lows.txt.xml.coref_ne);:
+File (121978_US_stock_markets_reach_12-year_lows.txt.xml.coref_ne);:
+Entity 0: (0,1) (9,11)
+Entity 1: (3,4) (14,16)
+Entity 2: (21,26)
+Entity 3: (24,26)
+Entity 4: (30,30)
+Entity 5: (31,31)
+Entity 6: (32,32)
+Entity 7: (35,39)
+Entity 8: (38,39)
+Entity 9: (45,48) (44,48) (65,65) (113,114) (112,114)
+Entity 10: (73,74) (72,74)
+Entity 11: (89,91) (88,91)
+Entity 12: (88,94)
+Entity 13: (109,119)
+Entity 14: (119,119)
+Entity 15: (130,133) (129,133)
+Entity 16: (135,136)
+:
+Total key mentions: 20
+Total response mentions: 26
+Strictly correct identified mentions: 14
+Partially correct identified mentions: 0
+No identified: 6
+Invented: 12
+
+====== TOTALS =======
+Identification of Mentions: Recall: (14 / 20) 70%	Precision: (14 / 26) 53.84%	F1: 60.86%
+--------------------------------------------------------------------------
+
+Coreference:
+Coreference links: Recall: (3 / 10) 30%	Precision: (3 / 15) 20%	F1: 24%
+--------------------------------------------------------------------------
+Non-coreference links: Recall: (86 / 180) 47.77%	Precision: (86 / 310) 27.74%	F1: 35.1%
+--------------------------------------------------------------------------
+BLANC: Recall: (0.388888888888889 / 1) 38.88%	Precision: (0.238709677419355 / 1) 23.87%	F1: 29.55%
+--------------------------------------------------------------------------

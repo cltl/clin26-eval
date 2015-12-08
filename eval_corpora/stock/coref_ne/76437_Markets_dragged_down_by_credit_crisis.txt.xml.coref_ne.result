@@ -1,0 +1,57 @@
+version: 8.01 /home/postma/analysis_submissions_clin_shared_task/clin26-eval/coref_scorer/coref-scorer-v8.01/lib/CorScorer.pm
+====> (76437_Markets_dragged_down_by_credit_crisis.txt.xml.coref_ne);:
+File (76437_Markets_dragged_down_by_credit_crisis.txt.xml.coref_ne);:
+Entity 0: (0,0) (6,7)
+Entity 1: (2,2)
+Entity 2: (16,16)
+Entity 3: (24,26)
+Entity 4: (28,32)
+Entity 5: (62,63) (60,63)
+Entity 6: (61,61)
+Entity 7: (73,74) (71,74)
+Entity 8: (72,72)
+Entity 9: (82,84)
+Entity 10: (86,87)
+Entity 11: (88,88) (93,94)
+Entity 12: (90,91)
+Entity 13: (102,104) (105,105)
+Entity 14: (109,110)
+====> (76437_Markets_dragged_down_by_credit_crisis.txt.xml.coref_ne);:
+File (76437_Markets_dragged_down_by_credit_crisis.txt.xml.coref_ne);:
+Entity 0: (2,4)
+Entity 1: (4,4) (16,16) (105,105)
+Entity 2: (6,7)
+Entity 3: (21,26)
+Entity 4: (25,26) (24,26)
+Entity 5: (29,32) (28,32) (34,34)
+Entity 6: (37,38) (49,50)
+Entity 7: (40,41)
+Entity 8: (60,63)
+Entity 9: (72,74) (71,74)
+Entity 10: (82,84)
+Entity 11: (86,87)
+Entity 12: (88,88)
+Entity 13: (90,91)
+Entity 14: (93,94)
+Entity 15: (102,104) (102,107)
+Entity 16: (106,106)
+Entity 17: (109,110)
+:
+Total key mentions: 20
+Total response mentions: 26
+Strictly correct identified mentions: 14
+Partially correct identified mentions: 0
+No identified: 6
+Invented: 12
+
+====== TOTALS =======
+Identification of Mentions: Recall: (14 / 20) 70%	Precision: (14 / 26) 53.84%	F1: 60.86%
+--------------------------------------------------------------------------
+
+Coreference:
+Coreference links: Recall: (0 / 5) 0%	Precision: (0 / 10) 0%	F1: 0%
+--------------------------------------------------------------------------
+Non-coreference links: Recall: (88 / 185) 47.56%	Precision: (88 / 315) 27.93%	F1: 35.2%
+--------------------------------------------------------------------------
+BLANC: Recall: (0.237837837837838 / 1) 23.78%	Precision: (0.13968253968254 / 1) 13.96%	F1: 17.6%
+--------------------------------------------------------------------------

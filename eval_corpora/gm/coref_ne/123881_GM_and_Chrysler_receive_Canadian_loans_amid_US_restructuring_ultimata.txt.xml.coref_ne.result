@@ -1,0 +1,50 @@
+version: 8.01 /home/postma/analysis_submissions_clin_shared_task/clin26-eval/coref_scorer/coref-scorer-v8.01/lib/CorScorer.pm
+====> (123881_GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata.txt.xml.coref_ne);:
+File (123881_GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata.txt.xml.coref_ne);:
+Entity 0: (0,0) (14,17)
+Entity 1: (0,2) (14,20) (48,48) (49,49)
+Entity 2: (2,2) (20,20)
+Entity 3: (5,5) (45,45) (45,46) (72,74)
+Entity 4: (5,9)
+Entity 5: (10,12) (32,33) (53,53)
+Entity 6: (11,11) (24,24) (23,25) (43,43) (42,46) (61,61) (66,66) (76,76) (72,76) (77,77) (98,98)
+Entity 7: (31,31) (27,31)
+Entity 8: (60,62)
+Entity 9: (92,93) (92,98)
+====> (123881_GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata.txt.xml.coref_ne);:
+File (123881_GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata.txt.xml.coref_ne);:
+Entity 0: (0,0) (14,15) (17,17)
+Entity 1: (2,2) (20,20)
+Entity 2: (5,9) (49,49) (66,66)
+Entity 3: (10,12)
+Entity 4: (14,20)
+Entity 5: (23,25) (42,46)
+Entity 6: (27,31)
+Entity 7: (31,31)
+Entity 8: (32,33)
+Entity 9: (48,48)
+Entity 10: (53,53) (77,77)
+Entity 11: (60,62)
+Entity 12: (73,74) (72,74)
+Entity 13: (76,76) (72,76) (98,98)
+Entity 14: (83,85)
+Entity 15: (92,93) (95,98)
+:
+Total key mentions: 32
+Total response mentions: 27
+Strictly correct identified mentions: 22
+Partially correct identified mentions: 0
+No identified: 10
+Invented: 5
+
+====== TOTALS =======
+Identification of Mentions: Recall: (22 / 32) 68.75%	Precision: (22 / 27) 81.48%	F1: 74.57%
+--------------------------------------------------------------------------
+
+Coreference:
+Coreference links: Recall: (5 / 74) 6.75%	Precision: (5 / 14) 35.71%	F1: 11.36%
+--------------------------------------------------------------------------
+Non-coreference links: Recall: (198 / 422) 46.91%	Precision: (198 / 337) 58.75%	F1: 52.17%
+--------------------------------------------------------------------------
+BLANC: Recall: (0.268380940181888 / 1) 26.83%	Precision: (0.472339974565494 / 1) 47.23%	F1: 31.76%
+--------------------------------------------------------------------------

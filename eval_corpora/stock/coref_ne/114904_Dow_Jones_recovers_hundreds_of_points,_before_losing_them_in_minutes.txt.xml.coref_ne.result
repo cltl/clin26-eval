@@ -1,0 +1,35 @@
+version: 8.01 /home/postma/analysis_submissions_clin_shared_task/clin26-eval/coref_scorer/coref-scorer-v8.01/lib/CorScorer.pm
+====> (114904_Dow_Jones_recovers_hundreds_of_points,_before_losing_them_in_minutes.txt.xml.coref_ne);:
+File (114904_Dow_Jones_recovers_hundreds_of_points,_before_losing_them_in_minutes.txt.xml.coref_ne);:
+Entity 0: (0,1) (23,27) (28,28) (34,35) (40,40) (52,53) (67,69) (77,78) (83,84) (85,85)
+====> (114904_Dow_Jones_recovers_hundreds_of_points,_before_losing_them_in_minutes.txt.xml.coref_ne);:
+File (114904_Dow_Jones_recovers_hundreds_of_points,_before_losing_them_in_minutes.txt.xml.coref_ne);:
+Entity 0: (0,1) (68,69)
+Entity 1: (7,7)
+Entity 2: (9,10) (42,43)
+Entity 3: (17,21)
+Entity 4: (20,21)
+Entity 5: (24,27) (23,27) (28,28) (67,69) (85,85)
+Entity 6: (40,40)
+Entity 7: (52,53) (83,84)
+Entity 8: (71,72)
+Entity 9: (77,78) (86,86)
+:
+Total key mentions: 10
+Total response mentions: 18
+Strictly correct identified mentions: 9
+Partially correct identified mentions: 0
+No identified: 1
+Invented: 9
+
+====== TOTALS =======
+Identification of Mentions: Recall: (9 / 10) 90%	Precision: (9 / 18) 50%	F1: 64.28%
+--------------------------------------------------------------------------
+
+Coreference:
+Coreference links: Recall: (7 / 45) 15.55%	Precision: (7 / 14) 50%	F1: 23.72%
+--------------------------------------------------------------------------
+Non-coreference links: Recall: (0 / 0) 0%	Precision: (0 / 139) 0%	F1: 0%
+--------------------------------------------------------------------------
+BLANC: Recall: (0.155555555555556 / 1) 15.55%	Precision: (0.5 / 1) 50%	F1: 23.72%
+--------------------------------------------------------------------------

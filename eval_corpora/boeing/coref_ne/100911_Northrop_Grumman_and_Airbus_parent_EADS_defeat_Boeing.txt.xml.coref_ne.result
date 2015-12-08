@@ -1,0 +1,59 @@
+version: 8.01 /home/postma/analysis_submissions_clin_shared_task/clin26-eval/coref_scorer/coref-scorer-v8.01/lib/CorScorer.pm
+====> (100911_Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing.txt.xml.coref_ne);:
+File (100911_Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing.txt.xml.coref_ne);:
+Entity 0: (0,1) (17,18)
+Entity 1: (0,4) (17,36)
+Entity 2: (3,3) (36,36)
+Entity 3: (3,4) (20,31) (33,36)
+Entity 4: (6,6) (40,40) (103,103)
+Entity 5: (8,11) (43,51) (83,83) (85,90) (141,145)
+Entity 6: (59,61) (139,140)
+Entity 7: (65,69) (71,71)
+Entity 8: (75,76)
+Entity 9: (92,95) (98,99) (112,113)
+Entity 10: (105,106) (109,110)
+Entity 11: (117,118) (116,121)
+Entity 12: (120,121)
+Entity 13: (133,140)
+====> (100911_Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing.txt.xml.coref_ne);:
+File (100911_Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing.txt.xml.coref_ne);:
+Entity 0: (0,1) (17,18)
+Entity 1: (3,4)
+Entity 2: (4,4) (30,30)
+Entity 3: (6,6) (40,40) (103,103)
+Entity 4: (28,28) (33,36) (20,36)
+Entity 5: (36,36)
+Entity 6: (48,48) (148,148)
+Entity 7: (53,53)
+Entity 8: (66,69) (65,69) (71,71)
+Entity 9: (75,76)
+Entity 10: (78,78)
+Entity 11: (83,83) (89,89) (101,101)
+Entity 12: (92,95)
+Entity 13: (105,106)
+Entity 14: (109,110)
+Entity 15: (112,113) (144,148)
+Entity 16: (116,121)
+Entity 17: (117,118)
+Entity 18: (120,121)
+Entity 19: (124,130)
+Entity 20: (139,140)
+:
+Total key mentions: 31
+Total response mentions: 33
+Strictly correct identified mentions: 20
+Partially correct identified mentions: 0
+No identified: 11
+Invented: 13
+
+====== TOTALS =======
+Identification of Mentions: Recall: (20 / 31) 64.51%	Precision: (20 / 33) 60.6%	F1: 62.5%
+--------------------------------------------------------------------------
+
+Coreference:
+Coreference links: Recall: (5 / 26) 19.23%	Precision: (5 / 16) 31.25%	F1: 23.8%
+--------------------------------------------------------------------------
+Non-coreference links: Recall: (181 / 439) 41.23%	Precision: (181 / 512) 35.35%	F1: 38.06%
+--------------------------------------------------------------------------
+BLANC: Recall: (0.302304187839495 / 1) 30.23%	Precision: (0.3330078125 / 1) 33.3%	F1: 30.93%
+--------------------------------------------------------------------------

@@ -1,0 +1,41 @@
+version: 8.01 /home/postma/analysis_submissions_clin_shared_task/clin26-eval/coref_scorer/coref-scorer-v8.01/lib/CorScorer.pm
+====> (120578_Automobile_sales_in_the_United_States_down_sharply.txt.xml.coref_ne);:
+File (120578_Automobile_sales_in_the_United_States_down_sharply.txt.xml.coref_ne);:
+Entity 0: (2,3) (14,16)
+Entity 1: (10,12)
+Entity 2: (31,31) (33,33) (65,67)
+Entity 3: (33,34)
+Entity 4: (39,41)
+Entity 5: (52,53)
+Entity 6: (61,61)
+====> (120578_Automobile_sales_in_the_United_States_down_sharply.txt.xml.coref_ne);:
+File (120578_Automobile_sales_in_the_United_States_down_sharply.txt.xml.coref_ne);:
+Entity 0: (2,3) (15,16)
+Entity 1: (14,16)
+Entity 2: (26,28)
+Entity 3: (31,31) (33,33)
+Entity 4: (36,37)
+Entity 5: (39,41)
+Entity 6: (52,53)
+Entity 7: (61,61)
+Entity 8: (63,63)
+Entity 9: (65,67)
+:
+Total key mentions: 10
+Total response mentions: 12
+Strictly correct identified mentions: 8
+Partially correct identified mentions: 0
+No identified: 2
+Invented: 4
+
+====== TOTALS =======
+Identification of Mentions: Recall: (8 / 10) 80%	Precision: (8 / 12) 66.66%	F1: 72.72%
+--------------------------------------------------------------------------
+
+Coreference:
+Coreference links: Recall: (1 / 4) 25%	Precision: (1 / 2) 50%	F1: 33.33%
+--------------------------------------------------------------------------
+Non-coreference links: Recall: (24 / 41) 58.53%	Precision: (24 / 64) 37.5%	F1: 45.71%
+--------------------------------------------------------------------------
+BLANC: Recall: (0.417682926829268 / 1) 41.76%	Precision: (0.4375 / 1) 43.75%	F1: 39.52%
+--------------------------------------------------------------------------

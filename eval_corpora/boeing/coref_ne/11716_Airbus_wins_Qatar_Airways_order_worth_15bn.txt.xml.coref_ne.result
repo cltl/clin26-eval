@@ -1,0 +1,49 @@
+version: 8.01 /home/postma/analysis_submissions_clin_shared_task/clin26-eval/coref_scorer/coref-scorer-v8.01/lib/CorScorer.pm
+====> (11716_Airbus_wins_Qatar_Airways_order_worth_15bn.txt.xml.coref_ne);:
+File (11716_Airbus_wins_Qatar_Airways_order_worth_15bn.txt.xml.coref_ne);:
+Entity 0: (0,0) (11,14) (55,55) (71,71) (104,104)
+Entity 1: (8,9) (19,20) (66,67) (69,69) (94,94)
+Entity 2: (12,12)
+Entity 3: (24,27)
+Entity 4: (27,27) (70,72)
+Entity 5: (57,57) (78,78) (88,88)
+Entity 6: (75,78)
+Entity 7: (84,88)
+Entity 8: (86,86)
+Entity 9: (99,104) (107,107)
+Entity 10: (111,111)
+Entity 11: (111,112)
+====> (11716_Airbus_wins_Qatar_Airways_order_worth_15bn.txt.xml.coref_ne);:
+File (11716_Airbus_wins_Qatar_Airways_order_worth_15bn.txt.xml.coref_ne);:
+Entity 0: (0,0) (14,14) (55,55) (104,104)
+Entity 1: (8,9) (19,20) (66,67)
+Entity 2: (11,14)
+Entity 3: (16,20)
+Entity 4: (29,29) (48,48) (69,69) (107,107)
+Entity 5: (44,46)
+Entity 6: (52,57)
+Entity 7: (57,57) (78,78) (88,88)
+Entity 8: (61,63)
+Entity 9: (71,72) (70,72)
+Entity 10: (84,88)
+Entity 11: (94,94)
+Entity 12: (111,112)
+:
+Total key mentions: 24
+Total response mentions: 24
+Strictly correct identified mentions: 16
+Partially correct identified mentions: 0
+No identified: 8
+Invented: 8
+
+====== TOTALS =======
+Identification of Mentions: Recall: (16 / 24) 66.66%	Precision: (16 / 24) 66.66%	F1: 66.66%
+--------------------------------------------------------------------------
+
+Coreference:
+Coreference links: Recall: (9 / 25) 36%	Precision: (9 / 19) 47.36%	F1: 40.9%
+--------------------------------------------------------------------------
+Non-coreference links: Recall: (100 / 251) 39.84%	Precision: (100 / 257) 38.91%	F1: 39.37%
+--------------------------------------------------------------------------
+BLANC: Recall: (0.379203187250996 / 1) 37.92%	Precision: (0.431394634446037 / 1) 43.13%	F1: 40.13%
+--------------------------------------------------------------------------

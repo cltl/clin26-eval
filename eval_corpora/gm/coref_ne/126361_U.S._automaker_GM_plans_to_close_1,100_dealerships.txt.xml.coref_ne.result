@@ -1,0 +1,40 @@
+version: 8.01 /home/postma/analysis_submissions_clin_shared_task/clin26-eval/coref_scorer/coref-scorer-v8.01/lib/CorScorer.pm
+====> (126361_U.S._automaker_GM_plans_to_close_1,100_dealerships.txt.xml.coref_ne);:
+File (126361_U.S._automaker_GM_plans_to_close_1,100_dealerships.txt.xml.coref_ne);:
+Entity 0: (0,0) (9,9) (49,49)
+Entity 1: (2,2) (0,2) (11,14) (8,14) (66,66)
+Entity 2: (4,5) (20,24) (67,70) (74,83)
+Entity 3: (45,45) (45,50) (64,64)
+Entity 4: (55,56) (57,57)
+====> (126361_U.S._automaker_GM_plans_to_close_1,100_dealerships.txt.xml.coref_ne);:
+File (126361_U.S._automaker_GM_plans_to_close_1,100_dealerships.txt.xml.coref_ne);:
+Entity 0: (0,2)
+Entity 1: (2,2) (11,12) (14,14) (66,66)
+Entity 2: (20,24) (57,57)
+Entity 3: (31,32)
+Entity 4: (36,37)
+Entity 5: (45,45) (47,50) (45,50) (64,64) (75,75)
+Entity 6: (67,70)
+Entity 7: (75,76)
+Entity 8: (78,80)
+Entity 9: (86,91)
+Entity 10: (90,91)
+:
+Total key mentions: 17
+Total response mentions: 19
+Strictly correct identified mentions: 9
+Partially correct identified mentions: 0
+No identified: 8
+Invented: 10
+
+====== TOTALS =======
+Identification of Mentions: Recall: (9 / 17) 52.94%	Precision: (9 / 19) 47.36%	F1: 50%
+--------------------------------------------------------------------------
+
+Coreference:
+Coreference links: Recall: (4 / 23) 17.39%	Precision: (4 / 17) 23.52%	F1: 19.99%
+--------------------------------------------------------------------------
+Non-coreference links: Recall: (28 / 113) 24.77%	Precision: (28 / 154) 18.18%	F1: 20.97%
+--------------------------------------------------------------------------
+BLANC: Recall: (0.210850327048865 / 1) 21.08%	Precision: (0.20855614973262 / 1) 20.85%	F1: 20.48%
+--------------------------------------------------------------------------

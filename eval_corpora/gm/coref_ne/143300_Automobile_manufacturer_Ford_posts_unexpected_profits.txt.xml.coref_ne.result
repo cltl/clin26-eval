@@ -1,0 +1,50 @@
+version: 8.01 /home/postma/analysis_submissions_clin_shared_task/clin26-eval/coref_scorer/coref-scorer-v8.01/lib/CorScorer.pm
+====> (143300_Automobile_manufacturer_Ford_posts_unexpected_profits.txt.xml.coref_ne);:
+File (143300_Automobile_manufacturer_Ford_posts_unexpected_profits.txt.xml.coref_ne);:
+Entity 0: (1,1) (0,1) (9,9) (6,9) (12,12) (45,46) (89,89)
+Entity 1: (7,7)
+Entity 2: (28,30)
+Entity 3: (38,39) (41,41) (72,75)
+Entity 4: (59,59)
+Entity 5: (65,70)
+Entity 6: (101,102) (101,110)
+====> (143300_Automobile_manufacturer_Ford_posts_unexpected_profits.txt.xml.coref_ne);:
+File (143300_Automobile_manufacturer_Ford_posts_unexpected_profits.txt.xml.coref_ne);:
+Entity 0: (0,1)
+Entity 1: (1,1) (9,9) (89,89)
+Entity 2: (3,4)
+Entity 3: (6,9) (45,46)
+Entity 4: (12,12)
+Entity 5: (14,16)
+Entity 6: (17,20)
+Entity 7: (20,20)
+Entity 8: (28,30) (51,52)
+Entity 9: (36,36)
+Entity 10: (41,41) (71,71)
+Entity 11: (47,47)
+Entity 12: (59,59) (70,70)
+Entity 13: (72,75)
+Entity 14: (82,83)
+Entity 15: (91,93)
+Entity 16: (94,95)
+Entity 17: (101,102) (104,107)
+Entity 18: (109,110)
+:
+Total key mentions: 16
+Total response mentions: 26
+Strictly correct identified mentions: 12
+Partially correct identified mentions: 0
+No identified: 4
+Invented: 14
+
+====== TOTALS =======
+Identification of Mentions: Recall: (12 / 16) 75%	Precision: (12 / 26) 46.15%	F1: 57.14%
+--------------------------------------------------------------------------
+
+Coreference:
+Coreference links: Recall: (4 / 25) 16%	Precision: (4 / 8) 50%	F1: 24.24%
+--------------------------------------------------------------------------
+Non-coreference links: Recall: (44 / 95) 46.31%	Precision: (44 / 317) 13.88%	F1: 21.35%
+--------------------------------------------------------------------------
+BLANC: Recall: (0.311578947368421 / 1) 31.15%	Precision: (0.319400630914827 / 1) 31.94%	F1: 22.8%
+--------------------------------------------------------------------------

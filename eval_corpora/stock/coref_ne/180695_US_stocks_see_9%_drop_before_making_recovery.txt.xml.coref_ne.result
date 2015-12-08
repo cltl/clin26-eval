@@ -1,0 +1,46 @@
+version: 8.01 /home/postma/analysis_submissions_clin_shared_task/clin26-eval/coref_scorer/coref-scorer-v8.01/lib/CorScorer.pm
+====> (180695_US_stocks_see_9%_drop_before_making_recovery.txt.xml.coref_ne);:
+File (180695_US_stocks_see_9%_drop_before_making_recovery.txt.xml.coref_ne);:
+Entity 0: (0,0) (9,9)
+Entity 1: (0,1) (8,10) (37,37) (38,38)
+Entity 2: (19,25) (46,47) (64,65)
+Entity 3: (42,43) (147,148)
+Entity 4: (85,86)
+Entity 5: (94,100)
+Entity 6: (122,123) (124,124)
+Entity 7: (136,137)
+Entity 8: (145,148)
+====> (180695_US_stocks_see_9%_drop_before_making_recovery.txt.xml.coref_ne);:
+File (180695_US_stocks_see_9%_drop_before_making_recovery.txt.xml.coref_ne);:
+Entity 0: (0,1) (8,10)
+Entity 1: (6,6)
+Entity 2: (13,15)
+Entity 3: (20,23) (19,23) (37,37) (38,38)
+Entity 4: (30,30) (115,117)
+Entity 5: (42,43)
+Entity 6: (46,47)
+Entity 7: (64,65) (67,67)
+Entity 8: (86,86) (85,86)
+Entity 9: (95,97) (94,97)
+Entity 10: (122,123) (113,123) (124,124)
+Entity 11: (144,148)
+Entity 12: (147,148)
+:
+Total key mentions: 17
+Total response mentions: 23
+Strictly correct identified mentions: 11
+Partially correct identified mentions: 0
+No identified: 6
+Invented: 12
+
+====== TOTALS =======
+Identification of Mentions: Recall: (11 / 17) 64.7%	Precision: (11 / 23) 47.82%	F1: 55%
+--------------------------------------------------------------------------
+
+Coreference:
+Coreference links: Recall: (3 / 12) 25%	Precision: (3 / 14) 21.42%	F1: 23.07%
+--------------------------------------------------------------------------
+Non-coreference links: Recall: (46 / 124) 37.09%	Precision: (46 / 239) 19.24%	F1: 25.34%
+--------------------------------------------------------------------------
+BLANC: Recall: (0.310483870967742 / 1) 31.04%	Precision: (0.203377166766288 / 1) 20.33%	F1: 24.21%
+--------------------------------------------------------------------------

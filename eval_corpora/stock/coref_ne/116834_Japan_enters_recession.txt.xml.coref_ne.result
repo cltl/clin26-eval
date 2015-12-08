@@ -1,0 +1,51 @@
+version: 8.01 /home/postma/analysis_submissions_clin_shared_task/clin26-eval/coref_scorer/coref-scorer-v8.01/lib/CorScorer.pm
+====> (116834_Japan_enters_recession.txt.xml.coref_ne);:
+File (116834_Japan_enters_recession.txt.xml.coref_ne);:
+Entity 0: (4,4) (6,6) (8,8) (31,31) (55,55)
+Entity 1: (15,16)
+Entity 2: (30,32) (67,68)
+Entity 3: (51,52) (51,59)
+Entity 4: (73,75)
+Entity 5: (79,79)
+Entity 6: (96,98)
+Entity 7: (100,100)
+Entity 8: (104,104)
+Entity 9: (114,114)
+Entity 10: (114,116)
+Entity 11: (116,116)
+====> (116834_Japan_enters_recession.txt.xml.coref_ne);:
+File (116834_Japan_enters_recession.txt.xml.coref_ne);:
+Entity 0: (0,0)
+Entity 1: (4,4) (6,6) (8,8) (62,62)
+Entity 2: (15,16)
+Entity 3: (24,25)
+Entity 4: (30,32) (67,68)
+Entity 5: (51,52) (54,59) (104,104)
+Entity 6: (63,68)
+Entity 7: (73,75)
+Entity 8: (79,79)
+Entity 9: (82,82)
+Entity 10: (85,87)
+Entity 11: (97,98) (96,98)
+Entity 12: (100,100)
+Entity 13: (105,105)
+Entity 14: (116,116)
+:
+Total key mentions: 18
+Total response mentions: 22
+Strictly correct identified mentions: 13
+Partially correct identified mentions: 0
+No identified: 5
+Invented: 9
+
+====== TOTALS =======
+Identification of Mentions: Recall: (13 / 18) 72.22%	Precision: (13 / 22) 59.09%	F1: 65%
+--------------------------------------------------------------------------
+
+Coreference:
+Coreference links: Recall: (4 / 12) 33.33%	Precision: (4 / 11) 36.36%	F1: 34.78%
+--------------------------------------------------------------------------
+Non-coreference links: Recall: (73 / 141) 51.77%	Precision: (73 / 220) 33.18%	F1: 40.44%
+--------------------------------------------------------------------------
+BLANC: Recall: (0.425531914893617 / 1) 42.55%	Precision: (0.347727272727273 / 1) 34.77%	F1: 37.61%
+--------------------------------------------------------------------------

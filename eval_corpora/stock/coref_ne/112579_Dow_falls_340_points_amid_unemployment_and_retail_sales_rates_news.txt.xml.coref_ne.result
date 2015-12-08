@@ -1,0 +1,54 @@
+version: 8.01 /home/postma/analysis_submissions_clin_shared_task/clin26-eval/coref_scorer/coref-scorer-v8.01/lib/CorScorer.pm
+====> (112579_Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news.txt.xml.coref_ne);:
+File (112579_Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news.txt.xml.coref_ne);:
+Entity 0: (0,0) (11,15) (11,29)
+Entity 1: (5,9)
+Entity 2: (6,6) (62,64) (65,65) (89,95)
+Entity 3: (8,9) (80,83)
+Entity 4: (17,18)
+Entity 5: (26,26) (71,71)
+Entity 6: (26,27)
+Entity 7: (48,48)
+Entity 8: (54,57) (105,108)
+Entity 9: (70,74)
+Entity 10: (86,87)
+====> (112579_Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news.txt.xml.coref_ne);:
+File (112579_Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news.txt.xml.coref_ne);:
+Entity 0: (0,0) (19,19)
+Entity 1: (5,5)
+Entity 2: (12,15) (11,15) (23,27)
+Entity 3: (26,27)
+Entity 4: (34,38)
+Entity 5: (37,38)
+Entity 6: (42,44)
+Entity 7: (48,48)
+Entity 8: (51,52)
+Entity 9: (54,57) (105,108)
+Entity 10: (59,60)
+Entity 11: (62,64) (65,65)
+Entity 12: (70,74)
+Entity 13: (74,74)
+Entity 14: (80,83)
+Entity 15: (86,87)
+Entity 16: (89,91) (103,103)
+Entity 17: (93,95)
+Entity 18: (112,115)
+:
+Total key mentions: 19
+Total response mentions: 25
+Strictly correct identified mentions: 11
+Partially correct identified mentions: 0
+No identified: 8
+Invented: 14
+
+====== TOTALS =======
+Identification of Mentions: Recall: (11 / 19) 57.89%	Precision: (11 / 25) 44%	F1: 50%
+--------------------------------------------------------------------------
+
+Coreference:
+Coreference links: Recall: (2 / 12) 16.66%	Precision: (2 / 7) 28.57%	F1: 21.05%
+--------------------------------------------------------------------------
+Non-coreference links: Recall: (52 / 159) 32.7%	Precision: (52 / 293) 17.74%	F1: 23%
+--------------------------------------------------------------------------
+BLANC: Recall: (0.24685534591195 / 1) 24.68%	Precision: (0.231594344222331 / 1) 23.15%	F1: 22.03%
+--------------------------------------------------------------------------

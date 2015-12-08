@@ -1,0 +1,32 @@
+version: 8.01 /home/postma/analysis_submissions_clin_shared_task/clin26-eval/coref_scorer/coref-scorer-v8.01/lib/CorScorer.pm
+====> (121225_Dow_Jones_Industrial_Average_closes_at_lowest_level_in_six_years.txt.xml.coref_ne);:
+File (121225_Dow_Jones_Industrial_Average_closes_at_lowest_level_in_six_years.txt.xml.coref_ne);:
+Entity 0: (0,3) (15,19) (21,21) (38,39) (73,74)
+====> (121225_Dow_Jones_Industrial_Average_closes_at_lowest_level_in_six_years.txt.xml.coref_ne);:
+File (121225_Dow_Jones_Industrial_Average_closes_at_lowest_level_in_six_years.txt.xml.coref_ne);:
+Entity 0: (0,3) (16,19)
+Entity 1: (6,7)
+Entity 2: (15,19) (21,21) (74,74) (73,74)
+Entity 3: (35,35)
+Entity 4: (38,39)
+Entity 5: (46,48)
+Entity 6: (57,57)
+:
+Total key mentions: 5
+Total response mentions: 11
+Strictly correct identified mentions: 5
+Partially correct identified mentions: 0
+No identified: 0
+Invented: 6
+
+====== TOTALS =======
+Identification of Mentions: Recall: (5 / 5) 100%	Precision: (5 / 11) 45.45%	F1: 62.5%
+--------------------------------------------------------------------------
+
+Coreference:
+Coreference links: Recall: (3 / 10) 30%	Precision: (3 / 7) 42.85%	F1: 35.29%
+--------------------------------------------------------------------------
+Non-coreference links: Recall: (0 / 0) 0%	Precision: (0 / 48) 0%	F1: 0%
+--------------------------------------------------------------------------
+BLANC: Recall: (0.3 / 1) 30%	Precision: (0.428571428571429 / 1) 42.85%	F1: 35.29%
+--------------------------------------------------------------------------

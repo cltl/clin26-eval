@@ -1,0 +1,56 @@
+version: 8.01 /home/postma/analysis_submissions_clin_shared_task/clin26-eval/coref_scorer/coref-scorer-v8.01/lib/CorScorer.pm
+====> (62929_A380_makes_maiden_flight_to_US.txt.xml.coref_ne);:
+File (62929_A380_makes_maiden_flight_to_US.txt.xml.coref_ne);:
+Entity 0: (3,3) (8,10) (12,16) (8,16) (38,38) (61,62) (89,89)
+Entity 1: (5,6) (29,33) (93,93)
+Entity 2: (9,9) (54,54) (77,77)
+Entity 3: (35,38)
+Entity 4: (41,41)
+Entity 5: (43,43)
+Entity 6: (45,46)
+Entity 7: (49,51) (63,69)
+Entity 8: (73,74) (75,81)
+Entity 9: (75,77)
+Entity 10: (75,81)
+Entity 11: (79,81)
+Entity 12: (87,89)
+Entity 13: (91,91)
+====> (62929_A380_makes_maiden_flight_to_US.txt.xml.coref_ne);:
+File (62929_A380_makes_maiden_flight_to_US.txt.xml.coref_ne);:
+Entity 0: (3,3) (9,10) (8,10) (12,16) (8,16) (19,19) (54,54) (77,77) (89,89)
+Entity 1: (5,6)
+Entity 2: (16,16)
+Entity 3: (24,25)
+Entity 4: (30,33) (29,33) (93,93)
+Entity 5: (35,38)
+Entity 6: (37,38)
+Entity 7: (41,41)
+Entity 8: (43,43)
+Entity 9: (45,46)
+Entity 10: (56,56)
+Entity 11: (61,62)
+Entity 12: (73,74)
+Entity 13: (75,77)
+Entity 14: (81,81) (79,81)
+Entity 15: (87,89)
+Entity 16: (91,91)
+:
+Repeated mention in the key: 75, 81 2022
+Total key mentions: 25
+Total response mentions: 28
+Strictly correct identified mentions: 20
+Partially correct identified mentions: 0
+No identified: 5
+Invented: 9
+
+====== TOTALS =======
+Identification of Mentions: Recall: (20 / 25) 80%	Precision: (20 / 28) 71.42%	F1: 75.47%
+--------------------------------------------------------------------------
+
+Coreference:
+Coreference links: Recall: (12 / 29) 41.37%	Precision: (12 / 40) 30%	F1: 34.78%
+--------------------------------------------------------------------------
+Non-coreference links: Recall: (161 / 273) 58.97%	Precision: (161 / 338) 47.63%	F1: 52.7%
+--------------------------------------------------------------------------
+BLANC: Recall: (0.501768346595933 / 1) 50.17%	Precision: (0.388165680473373 / 1) 38.81%	F1: 43.74%
+--------------------------------------------------------------------------

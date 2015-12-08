@@ -1,0 +1,64 @@
+version: 8.01 /home/postma/analysis_submissions_clin_shared_task/clin26-eval/coref_scorer/coref-scorer-v8.01/lib/CorScorer.pm
+====> (60086_Ford_Taurus_to_be_revived.txt.xml.coref_ne);:
+File (60086_Ford_Taurus_to_be_revived.txt.xml.coref_ne);:
+Entity 0: (0,1) (23,23) (87,88) (98,101) (109,111) (112,112)
+Entity 1: (2,3)
+Entity 2: (7,8) (6,12) (45,45) (76,76)
+Entity 3: (10,12) (15,16) (51,51) (55,59) (68,69) (81,81)
+Entity 4: (17,20)
+Entity 5: (32,34)
+Entity 6: (38,40)
+Entity 7: (53,54)
+Entity 8: (78,81)
+Entity 9: (92,93)
+Entity 10: (113,117)
+Entity 11: (120,122)
+Entity 12: (121,121)
+Entity 13: (131,143)
+Entity 14: (145,148)
+Entity 15: (148,148)
+====> (60086_Ford_Taurus_to_be_revived.txt.xml.coref_ne);:
+File (60086_Ford_Taurus_to_be_revived.txt.xml.coref_ne);:
+Entity 0: (0,1) (23,23) (88,88) (86,88) (100,101)
+Entity 1: (7,8) (45,45) (76,76)
+Entity 2: (10,12)
+Entity 3: (15,16)
+Entity 4: (18,20) (17,20) (51,51) (81,81)
+Entity 5: (31,31)
+Entity 6: (32,34)
+Entity 7: (38,40)
+Entity 8: (48,51)
+Entity 9: (55,56)
+Entity 10: (58,59)
+Entity 11: (68,69)
+Entity 12: (83,84)
+Entity 13: (93,93)
+Entity 14: (95,96)
+Entity 15: (99,101)
+Entity 16: (109,111) (112,112)
+Entity 17: (113,117)
+Entity 18: (116,117)
+Entity 19: (120,122)
+Entity 20: (127,132)
+Entity 21: (139,143)
+Entity 22: (145,148)
+Entity 23: (148,148)
+:
+Total key mentions: 29
+Total response mentions: 34
+Strictly correct identified mentions: 19
+Partially correct identified mentions: 0
+No identified: 10
+Invented: 15
+
+====== TOTALS =======
+Identification of Mentions: Recall: (19 / 29) 65.51%	Precision: (19 / 34) 55.88%	F1: 60.31%
+--------------------------------------------------------------------------
+
+Coreference:
+Coreference links: Recall: (6 / 36) 16.66%	Precision: (6 / 20) 30%	F1: 21.42%
+--------------------------------------------------------------------------
+Non-coreference links: Recall: (150 / 370) 40.54%	Precision: (150 / 541) 27.72%	F1: 32.93%
+--------------------------------------------------------------------------
+BLANC: Recall: (0.286036036036036 / 1) 28.6%	Precision: (0.288632162661738 / 1) 28.86%	F1: 27.17%
+--------------------------------------------------------------------------

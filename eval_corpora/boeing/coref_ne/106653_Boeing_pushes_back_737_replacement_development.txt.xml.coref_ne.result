@@ -1,0 +1,49 @@
+version: 8.01 /home/postma/analysis_submissions_clin_shared_task/clin26-eval/coref_scorer/coref-scorer-v8.01/lib/CorScorer.pm
+====> (106653_Boeing_pushes_back_737_replacement_development.txt.xml.coref_ne);:
+File (106653_Boeing_pushes_back_737_replacement_development.txt.xml.coref_ne);:
+Entity 0: (0,0) (9,12) (22,22) (74,74)
+Entity 1: (6,6) (22,24) (83,85)
+Entity 2: (10,10)
+Entity 3: (19,20)
+Entity 4: (38,39)
+Entity 5: (46,47) (45,47) (90,90) (97,97) (106,106)
+Entity 6: (50,58)
+Entity 7: (62,63)
+Entity 8: (69,70)
+Entity 9: (77,77)
+====> (106653_Boeing_pushes_back_737_replacement_development.txt.xml.coref_ne);:
+File (106653_Boeing_pushes_back_737_replacement_development.txt.xml.coref_ne);:
+Entity 0: (0,0) (12,12) (74,74) (97,97)
+Entity 1: (9,12) (22,22)
+Entity 2: (16,23) (55,56)
+Entity 3: (24,28)
+Entity 4: (38,39)
+Entity 5: (45,47) (52,52)
+Entity 6: (46,47) (106,106)
+Entity 7: (62,64)
+Entity 8: (66,70)
+Entity 9: (69,70)
+Entity 10: (77,77)
+Entity 11: (83,85)
+Entity 12: (90,90)
+Entity 13: (92,93)
+Entity 14: (100,101)
+:
+Total key mentions: 19
+Total response mentions: 22
+Strictly correct identified mentions: 13
+Partially correct identified mentions: 0
+No identified: 6
+Invented: 9
+
+====== TOTALS =======
+Identification of Mentions: Recall: (13 / 19) 68.42%	Precision: (13 / 22) 59.09%	F1: 63.41%
+--------------------------------------------------------------------------
+
+Coreference:
+Coreference links: Recall: (3 / 19) 15.78%	Precision: (3 / 10) 30%	F1: 20.68%
+--------------------------------------------------------------------------
+Non-coreference links: Recall: (60 / 152) 39.47%	Precision: (60 / 221) 27.14%	F1: 32.17%
+--------------------------------------------------------------------------
+BLANC: Recall: (0.276315789473684 / 1) 27.63%	Precision: (0.285746606334842 / 1) 28.57%	F1: 26.43%
+--------------------------------------------------------------------------

@@ -1,0 +1,55 @@
+version: 8.01 /home/postma/analysis_submissions_clin_shared_task/clin26-eval/coref_scorer/coref-scorer-v8.01/lib/CorScorer.pm
+====> (79240_Ford_offers_78_million_for_Romanian_auto_plant.txt.xml.coref_ne);:
+File (79240_Ford_offers_78_million_for_Romanian_auto_plant.txt.xml.coref_ne);:
+Entity 0: (0,0) (10,12) (10,16) (50,52) (92,92)
+Entity 1: (7,7) (39,39) (46,46) (114,114) (113,115)
+Entity 2: (7,8) (41,42) (38,42) (117,118)
+Entity 3: (15,15)
+Entity 4: (32,42) (55,59)
+Entity 5: (45,47) (74,75) (74,84) (87,87) (96,96)
+Entity 6: (63,63)
+Entity 7: (84,84) (79,84)
+Entity 8: (99,100)
+Entity 9: (111,111)
+Entity 10: (120,120)
+Entity 11: (125,126)
+====> (79240_Ford_offers_78_million_for_Romanian_auto_plant.txt.xml.coref_ne);:
+File (79240_Ford_offers_78_million_for_Romanian_auto_plant.txt.xml.coref_ne);:
+Entity 0: (0,0) (92,92)
+Entity 1: (2,2) (25,25) (129,129)
+Entity 2: (7,8)
+Entity 3: (10,12) (50,52)
+Entity 4: (14,16) (117,120)
+Entity 5: (38,42)
+Entity 6: (41,42) (120,120)
+Entity 7: (45,47)
+Entity 8: (63,63)
+Entity 9: (66,66)
+Entity 10: (74,75) (79,82) (96,96)
+Entity 11: (81,82)
+Entity 12: (87,87)
+Entity 13: (88,92)
+Entity 14: (99,100)
+Entity 15: (108,111)
+Entity 16: (111,111)
+Entity 17: (113,115)
+Entity 18: (125,126)
+:
+Total key mentions: 29
+Total response mentions: 27
+Strictly correct identified mentions: 17
+Partially correct identified mentions: 0
+No identified: 12
+Invented: 10
+
+====== TOTALS =======
+Identification of Mentions: Recall: (17 / 29) 58.62%	Precision: (17 / 27) 62.96%	F1: 60.71%
+--------------------------------------------------------------------------
+
+Coreference:
+Coreference links: Recall: (3 / 38) 7.89%	Precision: (3 / 10) 30%	F1: 12.5%
+--------------------------------------------------------------------------
+Non-coreference links: Recall: (120 / 368) 32.6%	Precision: (120 / 341) 35.19%	F1: 33.85%
+--------------------------------------------------------------------------
+BLANC: Recall: (0.202517162471396 / 1) 20.25%	Precision: (0.325953079178886 / 1) 32.59%	F1: 23.17%
+--------------------------------------------------------------------------

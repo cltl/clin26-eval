@@ -1,0 +1,55 @@
+version: 8.01 /home/postma/analysis_submissions_clin_shared_task/clin26-eval/coref_scorer/coref-scorer-v8.01/lib/CorScorer.pm
+====> (39951_Australian_government_announces_52.5_million_financial_assistance_package_for_Ford.txt.xml.coref_ne);:
+File (39951_Australian_government_announces_52.5_million_financial_assistance_package_for_Ford.txt.xml.coref_ne);:
+Entity 0: (0,0) (0,1) (17,17) (33,35) (76,76) (113,113)
+Entity 1: (7,8) (38,50) (68,70)
+Entity 2: (10,10) (36,37) (74,74)
+Entity 3: (13,14) (13,18) (66,66)
+Entity 4: (21,22) (21,27)
+Entity 5: (55,60)
+Entity 6: (60,60) (58,60)
+Entity 7: (93,100) (107,110)
+Entity 8: (98,98)
+Entity 9: (100,100)
+====> (39951_Australian_government_announces_52.5_million_financial_assistance_package_for_Ford.txt.xml.coref_ne);:
+File (39951_Australian_government_announces_52.5_million_financial_assistance_package_for_Ford.txt.xml.coref_ne);:
+Entity 0: (0,1) (33,37)
+Entity 1: (7,10)
+Entity 2: (10,10) (74,74)
+Entity 3: (13,14) (66,66)
+Entity 4: (21,22)
+Entity 5: (24,27)
+Entity 6: (27,27)
+Entity 7: (36,37)
+Entity 8: (38,42)
+Entity 9: (42,42)
+Entity 10: (47,47)
+Entity 11: (54,60)
+Entity 12: (58,60)
+Entity 13: (60,60)
+Entity 14: (62,62)
+Entity 15: (68,70)
+Entity 16: (76,77)
+Entity 17: (87,105)
+Entity 18: (98,100) (97,100)
+Entity 19: (107,110)
+Entity 20: (113,113)
+:
+Total key mentions: 24
+Total response mentions: 25
+Strictly correct identified mentions: 12
+Partially correct identified mentions: 0
+No identified: 12
+Invented: 13
+
+====== TOTALS =======
+Identification of Mentions: Recall: (12 / 24) 50%	Precision: (12 / 25) 48%	F1: 48.97%
+--------------------------------------------------------------------------
+
+Coreference:
+Coreference links: Recall: (2 / 27) 7.4%	Precision: (2 / 4) 50%	F1: 12.9%
+--------------------------------------------------------------------------
+Non-coreference links: Recall: (60 / 249) 24.09%	Precision: (60 / 296) 20.27%	F1: 22.01%
+--------------------------------------------------------------------------
+BLANC: Recall: (0.15751896474788 / 1) 15.75%	Precision: (0.351351351351351 / 1) 35.13%	F1: 17.46%
+--------------------------------------------------------------------------

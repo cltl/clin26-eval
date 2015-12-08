@@ -1,0 +1,63 @@
+version: 8.01 /home/postma/analysis_submissions_clin_shared_task/clin26-eval/coref_scorer/coref-scorer-v8.01/lib/CorScorer.pm
+====> (127227_Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy.txt.xml.coref_ne);:
+File (127227_Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy.txt.xml.coref_ne);:
+Entity 0: (0,1) (46,47) (39,47) (65,65) (93,93) (113,113) (151,151)
+Entity 1: (6,6) (16,17) (19,20) (34,36) (89,90) (120,121) (174,175)
+Entity 2: (25,26)
+Entity 3: (35,35) (42,44) (56,58) (137,137) (136,138)
+Entity 4: (124,124)
+Entity 5: (143,148) (150,150)
+Entity 6: (146,146)
+Entity 7: (148,148)
+Entity 8: (153,156)
+Entity 9: (156,156)
+Entity 10: (159,160)
+Entity 11: (165,169)
+Entity 12: (168,169)
+Entity 13: (171,171)
+====> (127227_Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy.txt.xml.coref_ne);:
+File (127227_Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy.txt.xml.coref_ne);:
+Entity 0: (0,1) (46,47) (65,65) (93,93) (113,113) (151,151)
+Entity 1: (3,3)
+Entity 2: (5,6)
+Entity 3: (6,6) (16,17) (89,90) (120,121) (168,169) (174,175)
+Entity 4: (14,14) (54,54)
+Entity 5: (19,20)
+Entity 6: (25,26)
+Entity 7: (34,36)
+Entity 8: (43,44) (42,44)
+Entity 9: (57,58) (56,58)
+Entity 10: (60,61)
+Entity 11: (62,63)
+Entity 12: (67,68) (70,71) (125,126)
+Entity 13: (85,90)
+Entity 14: (95,95)
+Entity 15: (104,105)
+Entity 16: (116,121)
+Entity 17: (117,117)
+Entity 18: (123,124)
+Entity 19: (129,131)
+Entity 20: (136,138) (150,150) (153,156) (159,159)
+Entity 21: (146,146)
+Entity 22: (148,148)
+Entity 23: (156,156)
+Entity 24: (165,169)
+:
+Total key mentions: 31
+Total response mentions: 43
+Strictly correct identified mentions: 24
+Partially correct identified mentions: 0
+No identified: 7
+Invented: 19
+
+====== TOTALS =======
+Identification of Mentions: Recall: (24 / 31) 77.41%	Precision: (24 / 43) 55.81%	F1: 64.86%
+--------------------------------------------------------------------------
+
+Coreference:
+Coreference links: Recall: (25 / 53) 47.16%	Precision: (25 / 42) 59.52%	F1: 52.63%
+--------------------------------------------------------------------------
+Non-coreference links: Recall: (229 / 412) 55.58%	Precision: (229 / 861) 26.59%	F1: 35.97%
+--------------------------------------------------------------------------
+BLANC: Recall: (0.513761677962997 / 1) 51.37%	Precision: (0.430603948896632 / 1) 43.06%	F1: 44.3%
+--------------------------------------------------------------------------

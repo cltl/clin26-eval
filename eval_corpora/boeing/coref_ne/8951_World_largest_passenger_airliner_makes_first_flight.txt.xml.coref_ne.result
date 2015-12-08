@@ -1,0 +1,49 @@
+version: 8.01 /home/postma/analysis_submissions_clin_shared_task/clin26-eval/coref_scorer/coref-scorer-v8.01/lib/CorScorer.pm
+====> (8951_World_largest_passenger_airliner_makes_first_flight.txt.xml.coref_ne);:
+File (8951_World_largest_passenger_airliner_makes_first_flight.txt.xml.coref_ne);:
+Entity 0: (3,9) (11,12) (18,22) (24,26) (35,35) (40,41) (52,53)
+Entity 1: (25,25)
+Entity 2: (32,32)
+Entity 3: (34,34)
+Entity 4: (57,59)
+Entity 5: (61,65) (67,67) (68,68)
+Entity 6: (69,70)
+Entity 7: (74,75)
+Entity 8: (78,81)
+====> (8951_World_largest_passenger_airliner_makes_first_flight.txt.xml.coref_ne);:
+File (8951_World_largest_passenger_airliner_makes_first_flight.txt.xml.coref_ne);:
+Entity 0: (3,3) (4,4) (5,5)
+Entity 1: (9,9) (22,22)
+Entity 2: (12,12) (11,12)
+Entity 3: (25,26) (24,26) (18,26) (35,35)
+Entity 4: (30,32)
+Entity 5: (32,32)
+Entity 6: (34,34)
+Entity 7: (40,41)
+Entity 8: (46,46)
+Entity 9: (49,49)
+Entity 10: (52,53)
+Entity 11: (67,67)
+Entity 12: (69,70)
+Entity 13: (74,75)
+Entity 14: (81,83)
+Entity 15: (83,83)
+:
+Total key mentions: 17
+Total response mentions: 23
+Strictly correct identified mentions: 10
+Partially correct identified mentions: 0
+No identified: 7
+Invented: 13
+
+====== TOTALS =======
+Identification of Mentions: Recall: (10 / 17) 58.82%	Precision: (10 / 23) 43.47%	F1: 50%
+--------------------------------------------------------------------------
+
+Coreference:
+Coreference links: Recall: (1 / 24) 4.16%	Precision: (1 / 11) 9.09%	F1: 5.71%
+--------------------------------------------------------------------------
+Non-coreference links: Recall: (35 / 112) 31.25%	Precision: (35 / 242) 14.46%	F1: 19.77%
+--------------------------------------------------------------------------
+BLANC: Recall: (0.177083333333333 / 1) 17.7%	Precision: (0.117768595041322 / 1) 11.77%	F1: 12.74%
+--------------------------------------------------------------------------

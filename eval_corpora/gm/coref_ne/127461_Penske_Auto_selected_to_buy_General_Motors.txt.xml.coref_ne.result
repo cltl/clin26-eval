@@ -1,0 +1,52 @@
+version: 8.01 /home/postma/analysis_submissions_clin_shared_task/clin26-eval/coref_scorer/coref-scorer-v8.01/lib/CorScorer.pm
+====> (127461_Penske_Auto_selected_to_buy_General_Motors.txt.xml.coref_ne);:
+File (127461_Penske_Auto_selected_to_buy_General_Motors.txt.xml.coref_ne);:
+Entity 0: (0,1) (33,37)
+Entity 1: (4,4) (42,43) (64,64)
+Entity 2: (6,7) (12,16) (12,25) (32,32)
+Entity 3: (20,20)
+Entity 4: (59,64)
+Entity 5: (62,64)
+Entity 6: (66,69)
+Entity 7: (71,72)
+Entity 8: (74,81)
+Entity 9: (77,78)
+Entity 10: (80,81)
+Entity 11: (85,86)
+====> (127461_Penske_Auto_selected_to_buy_General_Motors.txt.xml.coref_ne);:
+File (127461_Penske_Auto_selected_to_buy_General_Motors.txt.xml.coref_ne);:
+Entity 0: (0,1)
+Entity 1: (4,4) (64,64)
+Entity 2: (6,7) (16,16)
+Entity 3: (12,14) (19,21) (22,22) (42,43)
+Entity 4: (23,23)
+Entity 5: (33,35) (32,35) (37,37)
+Entity 6: (32,37)
+Entity 7: (48,49)
+Entity 8: (56,57)
+Entity 9: (59,64)
+Entity 10: (62,64)
+Entity 11: (66,69)
+Entity 12: (71,72)
+Entity 13: (78,78) (77,78)
+Entity 14: (81,81) (80,81)
+Entity 15: (85,86)
+:
+Total key mentions: 18
+Total response mentions: 25
+Strictly correct identified mentions: 12
+Partially correct identified mentions: 0
+No identified: 6
+Invented: 13
+
+====== TOTALS =======
+Identification of Mentions: Recall: (12 / 18) 66.66%	Precision: (12 / 25) 48%	F1: 55.81%
+--------------------------------------------------------------------------
+
+Coreference:
+Coreference links: Recall: (1 / 10) 10%	Precision: (1 / 13) 7.69%	F1: 8.69%
+--------------------------------------------------------------------------
+Non-coreference links: Recall: (63 / 143) 44.05%	Precision: (63 / 287) 21.95%	F1: 29.3%
+--------------------------------------------------------------------------
+BLANC: Recall: (0.27027972027972 / 1) 27.02%	Precision: (0.148217636022514 / 1) 14.82%	F1: 18.99%
+--------------------------------------------------------------------------

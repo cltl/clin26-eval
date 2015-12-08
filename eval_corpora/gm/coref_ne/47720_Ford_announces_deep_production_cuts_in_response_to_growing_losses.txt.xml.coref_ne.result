@@ -1,0 +1,49 @@
+version: 8.01 /home/postma/analysis_submissions_clin_shared_task/clin26-eval/coref_scorer/coref-scorer-v8.01/lib/CorScorer.pm
+====> (47720_Ford_announces_deep_production_cuts_in_response_to_growing_losses.txt.xml.coref_ne);:
+File (47720_Ford_announces_deep_production_cuts_in_response_to_growing_losses.txt.xml.coref_ne);:
+Entity 0: (0,0) (11,11) (70,70) (72,79) (81,90) (95,96)
+Entity 1: (8,9)
+Entity 2: (24,24) (87,90)
+Entity 3: (26,26)
+Entity 4: (48,49) (50,50)
+Entity 5: (59,62)
+Entity 6: (65,66)
+Entity 7: (99,100)
+Entity 8: (102,104)
+====> (47720_Ford_announces_deep_production_cuts_in_response_to_growing_losses.txt.xml.coref_ne);:
+File (47720_Ford_announces_deep_production_cuts_in_response_to_growing_losses.txt.xml.coref_ne);:
+Entity 0: (0,0) (11,11) (70,70)
+Entity 1: (2,2)
+Entity 2: (3,3)
+Entity 3: (6,9)
+Entity 4: (8,9)
+Entity 5: (23,27)
+Entity 6: (34,35)
+Entity 7: (36,36)
+Entity 8: (38,40)
+Entity 9: (44,45)
+Entity 10: (48,49) (50,50)
+Entity 11: (79,79)
+Entity 12: (88,90) (87,90)
+Entity 13: (95,96)
+Entity 14: (99,100)
+Entity 15: (102,104)
+:
+Total key mentions: 16
+Total response mentions: 20
+Strictly correct identified mentions: 10
+Partially correct identified mentions: 0
+No identified: 6
+Invented: 10
+
+====== TOTALS =======
+Identification of Mentions: Recall: (10 / 16) 62.5%	Precision: (10 / 20) 50%	F1: 55.55%
+--------------------------------------------------------------------------
+
+Coreference:
+Coreference links: Recall: (4 / 17) 23.52%	Precision: (4 / 5) 80%	F1: 36.36%
+--------------------------------------------------------------------------
+Non-coreference links: Recall: (38 / 103) 36.89%	Precision: (38 / 185) 20.54%	F1: 26.38%
+--------------------------------------------------------------------------
+BLANC: Recall: (0.302113078241005 / 1) 30.21%	Precision: (0.502702702702703 / 1) 50.27%	F1: 31.37%
+--------------------------------------------------------------------------

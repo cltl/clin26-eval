@@ -1,0 +1,60 @@
+version: 8.01 /home/postma/analysis_submissions_clin_shared_task/clin26-eval/coref_scorer/coref-scorer-v8.01/lib/CorScorer.pm
+====> (78496_Airbus_A380_test_flight_delayed_after_accident.txt.xml.coref_ne);:
+File (78496_Airbus_A380_test_flight_delayed_after_accident.txt.xml.coref_ne);:
+Entity 0: (1,1) (12,12)
+Entity 1: (1,2) (10,14) (16,20) (10,20) (50,51) (52,52) (64,65)
+Entity 2: (30,31) (33,36)
+Entity 3: (30,38)
+Entity 4: (36,36)
+Entity 5: (38,38)
+Entity 6: (52,53)
+Entity 7: (58,61)
+Entity 8: (71,72) (74,74)
+Entity 9: (78,83)
+Entity 10: (81,82)
+Entity 11: (86,88) (96,97)
+Entity 12: (90,94)
+Entity 13: (102,103)
+Entity 14: (107,108)
+Entity 15: (113,115)
+====> (78496_Airbus_A380_test_flight_delayed_after_accident.txt.xml.coref_ne);:
+File (78496_Airbus_A380_test_flight_delayed_after_accident.txt.xml.coref_ne);:
+Entity 0: (2,2) (0,2) (12,13)
+Entity 1: (5,5)
+Entity 2: (10,14)
+Entity 3: (16,20)
+Entity 4: (20,20)
+Entity 5: (30,31) (33,36) (58,61)
+Entity 6: (36,36)
+Entity 7: (38,38)
+Entity 8: (40,42) (52,52)
+Entity 9: (46,47)
+Entity 10: (50,51) (64,65) (74,74)
+Entity 11: (56,61)
+Entity 12: (78,83)
+Entity 13: (81,83)
+Entity 14: (86,88)
+Entity 15: (90,94)
+Entity 16: (93,94)
+Entity 17: (96,97)
+Entity 18: (102,103)
+Entity 19: (107,108)
+:
+Total key mentions: 26
+Total response mentions: 27
+Strictly correct identified mentions: 17
+Partially correct identified mentions: 0
+No identified: 9
+Invented: 10
+
+====== TOTALS =======
+Identification of Mentions: Recall: (17 / 26) 65.38%	Precision: (17 / 27) 62.96%	F1: 64.15%
+--------------------------------------------------------------------------
+
+Coreference:
+Coreference links: Recall: (2 / 25) 8%	Precision: (2 / 10) 20%	F1: 11.42%
+--------------------------------------------------------------------------
+Non-coreference links: Recall: (120 / 300) 40%	Precision: (120 / 341) 35.19%	F1: 37.44%
+--------------------------------------------------------------------------
+BLANC: Recall: (0.24 / 1) 24%	Precision: (0.275953079178886 / 1) 27.59%	F1: 24.43%
+--------------------------------------------------------------------------

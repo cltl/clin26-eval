@@ -1,0 +1,57 @@
+version: 8.01 /home/postma/analysis_submissions_clin_shared_task/clin26-eval/coref_scorer/coref-scorer-v8.01/lib/CorScorer.pm
+====> (118147_US_automaker_bailout_deal_fails_to_pass_Senate.txt.xml.coref_ne);:
+File (118147_US_automaker_bailout_deal_fails_to_pass_Senate.txt.xml.coref_ne);:
+Entity 0: (0,2) (7,12) (40,41)
+Entity 1: (1,1) (17,17) (35,37) (95,96)
+Entity 2: (5,5) (32,37) (111,112)
+Entity 3: (14,25)
+Entity 4: (20,20)
+Entity 5: (22,22)
+Entity 6: (24,25)
+Entity 7: (47,49)
+Entity 8: (55,60)
+Entity 9: (59,60)
+Entity 10: (63,69) (98,99)
+Entity 11: (91,91)
+Entity 12: (91,96)
+====> (118147_US_automaker_bailout_deal_fails_to_pass_Senate.txt.xml.coref_ne);:
+File (118147_US_automaker_bailout_deal_fails_to_pass_Senate.txt.xml.coref_ne);:
+Entity 0: (5,5) (33,33) (32,37) (112,112) (111,112)
+Entity 1: (14,15)
+Entity 2: (20,20)
+Entity 3: (22,22)
+Entity 4: (24,25)
+Entity 5: (29,30) (118,119)
+Entity 6: (36,37) (35,37) (95,96) (94,96)
+Entity 7: (40,41) (89,89) (135,135)
+Entity 8: (45,49)
+Entity 9: (47,49)
+Entity 10: (55,60)
+Entity 11: (59,60) (58,60)
+Entity 12: (65,67) (99,99) (98,99)
+Entity 13: (74,75)
+Entity 14: (83,84)
+Entity 15: (91,96)
+Entity 16: (103,104)
+Entity 17: (108,112)
+Entity 18: (115,116)
+Entity 19: (139,140)
+:
+Total key mentions: 21
+Total response mentions: 33
+Strictly correct identified mentions: 14
+Partially correct identified mentions: 0
+No identified: 7
+Invented: 19
+
+====== TOTALS =======
+Identification of Mentions: Recall: (14 / 21) 66.66%	Precision: (14 / 33) 42.42%	F1: 51.85%
+--------------------------------------------------------------------------
+
+Coreference:
+Coreference links: Recall: (4 / 13) 30.76%	Precision: (4 / 24) 16.66%	F1: 21.62%
+--------------------------------------------------------------------------
+Non-coreference links: Recall: (87 / 197) 44.16%	Precision: (87 / 504) 17.26%	F1: 24.82%
+--------------------------------------------------------------------------
+BLANC: Recall: (0.374658336587271 / 1) 37.46%	Precision: (0.169642857142857 / 1) 16.96%	F1: 23.22%
+--------------------------------------------------------------------------

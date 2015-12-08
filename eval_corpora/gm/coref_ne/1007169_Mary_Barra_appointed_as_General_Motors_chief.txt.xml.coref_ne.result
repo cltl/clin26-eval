@@ -1,0 +1,40 @@
+version: 8.01 /home/postma/analysis_submissions_clin_shared_task/clin26-eval/coref_scorer/coref-scorer-v8.01/lib/CorScorer.pm
+====> (1007169_Mary_Barra_appointed_as_General_Motors_chief.txt.xml.coref_ne);:
+File (1007169_Mary_Barra_appointed_as_General_Motors_chief.txt.xml.coref_ne);:
+Entity 0: (0,1) (4,7) (22,23) (25,26) (28,28) (33,42) (44,44) (55,57) (60,60) (63,63)
+Entity 1: (6,7) (19,20) (11,20) (50,51) (67,67) (65,67) (87,87)
+Entity 2: (15,17) (41,41)
+Entity 3: (40,42)
+Entity 4: (70,77)
+Entity 5: (87,89)
+====> (1007169_Mary_Barra_appointed_as_General_Motors_chief.txt.xml.coref_ne);:
+File (1007169_Mary_Barra_appointed_as_General_Motors_chief.txt.xml.coref_ne);:
+Entity 0: (0,1) (22,23) (28,28) (28,30) (60,60)
+Entity 1: (4,7)
+Entity 2: (6,7) (19,20) (50,51) (67,67)
+Entity 3: (16,17) (15,17)
+Entity 4: (25,26)
+Entity 5: (37,42) (80,80) (92,92)
+Entity 6: (40,42)
+Entity 7: (44,44) (63,63)
+Entity 8: (66,67)
+Entity 9: (93,95)
+:
+Total key mentions: 22
+Total response mentions: 21
+Strictly correct identified mentions: 14
+Partially correct identified mentions: 0
+No identified: 8
+Invented: 7
+
+====== TOTALS =======
+Identification of Mentions: Recall: (14 / 22) 63.63%	Precision: (14 / 21) 66.66%	F1: 65.11%
+--------------------------------------------------------------------------
+
+Coreference:
+Coreference links: Recall: (13 / 67) 19.4%	Precision: (13 / 21) 61.9%	F1: 29.54%
+--------------------------------------------------------------------------
+Non-coreference links: Recall: (57 / 164) 34.75%	Precision: (57 / 189) 30.15%	F1: 32.29%
+--------------------------------------------------------------------------
+BLANC: Recall: (0.270795413178012 / 1) 27.07%	Precision: (0.46031746031746 / 1) 46.03%	F1: 30.92%
+--------------------------------------------------------------------------

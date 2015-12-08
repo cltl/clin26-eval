@@ -1,0 +1,49 @@
+version: 8.01 /home/postma/analysis_submissions_clin_shared_task/clin26-eval/coref_scorer/coref-scorer-v8.01/lib/CorScorer.pm
+====> (129865_Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster.txt.xml.coref_ne);:
+File (129865_Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster.txt.xml.coref_ne);:
+Entity 0: (0,0) (14,14) (82,82) (96,96) (100,100)
+Entity 1: (7,8) (44,46) (44,51)
+Entity 2: (11,12) (48,49)
+Entity 3: (53,56)
+Entity 4: (61,63)
+Entity 5: (66,70)
+Entity 6: (73,76)
+Entity 7: (94,94) (96,98)
+====> (129865_Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster.txt.xml.coref_ne);:
+File (129865_Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster.txt.xml.coref_ne);:
+Entity 0: (0,0) (14,14)
+Entity 1: (7,12)
+Entity 2: (10,12)
+Entity 3: (11,12) (48,49)
+Entity 4: (27,27)
+Entity 5: (53,56)
+Entity 6: (54,55)
+Entity 7: (62,63) (61,63)
+Entity 8: (70,70)
+Entity 9: (76,76) (73,76)
+Entity 10: (79,80) (85,85)
+Entity 11: (82,82)
+Entity 12: (91,94) (96,98)
+Entity 13: (94,94)
+Entity 14: (100,100)
+Entity 15: (102,103)
+Entity 16: (107,109)
+:
+Total key mentions: 16
+Total response mentions: 23
+Strictly correct identified mentions: 11
+Partially correct identified mentions: 0
+No identified: 5
+Invented: 12
+
+====== TOTALS =======
+Identification of Mentions: Recall: (11 / 16) 68.75%	Precision: (11 / 23) 47.82%	F1: 56.41%
+--------------------------------------------------------------------------
+
+Coreference:
+Coreference links: Recall: (2 / 15) 13.33%	Precision: (2 / 6) 33.33%	F1: 19.04%
+--------------------------------------------------------------------------
+Non-coreference links: Recall: (47 / 105) 44.76%	Precision: (47 / 247) 19.02%	F1: 26.7%
+--------------------------------------------------------------------------
+BLANC: Recall: (0.29047619047619 / 1) 29.04%	Precision: (0.261808367071525 / 1) 26.18%	F1: 22.87%
+--------------------------------------------------------------------------

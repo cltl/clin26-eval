@@ -1,0 +1,40 @@
+version: 8.01 /home/postma/analysis_submissions_clin_shared_task/clin26-eval/coref_scorer/coref-scorer-v8.01/lib/CorScorer.pm
+====> (31965_GM_posts_first_annual_loss_since_1992.txt.xml.coref_ne);:
+File (31965_GM_posts_first_annual_loss_since_1992.txt.xml.coref_ne);:
+Entity 0: (0,0) (7,11) (21,21) (49,49) (64,66) (74,74)
+Entity 1: (62,62)
+Entity 2: (68,70)
+====> (31965_GM_posts_first_annual_loss_since_1992.txt.xml.coref_ne);:
+File (31965_GM_posts_first_annual_loss_since_1992.txt.xml.coref_ne);:
+Entity 0: (0,0) (11,11) (21,21) (49,49) (74,74)
+Entity 1: (7,11)
+Entity 2: (7,9)
+Entity 3: (14,16) (23,26) (54,55)
+Entity 4: (26,26)
+Entity 5: (45,47)
+Entity 6: (62,66)
+Entity 7: (64,66)
+Entity 8: (66,66)
+Entity 9: (79,79) (77,83)
+Entity 10: (85,87)
+Entity 11: (94,94)
+Entity 12: (102,106) (101,106)
+:
+Total key mentions: 8
+Total response mentions: 21
+Strictly correct identified mentions: 6
+Partially correct identified mentions: 0
+No identified: 2
+Invented: 15
+
+====== TOTALS =======
+Identification of Mentions: Recall: (6 / 8) 75%	Precision: (6 / 21) 28.57%	F1: 41.37%
+--------------------------------------------------------------------------
+
+Coreference:
+Coreference links: Recall: (6 / 15) 40%	Precision: (6 / 15) 40%	F1: 40%
+--------------------------------------------------------------------------
+Non-coreference links: Recall: (0 / 13) 0%	Precision: (0 / 195) 0%	F1: 0%
+--------------------------------------------------------------------------
+BLANC: Recall: (0.2 / 1) 20%	Precision: (0.2 / 1) 20%	F1: 20%
+--------------------------------------------------------------------------

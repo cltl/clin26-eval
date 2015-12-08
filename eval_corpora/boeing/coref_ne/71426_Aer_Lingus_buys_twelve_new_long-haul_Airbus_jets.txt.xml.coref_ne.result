@@ -1,0 +1,58 @@
+version: 8.01 /home/postma/analysis_submissions_clin_shared_task/clin26-eval/coref_scorer/coref-scorer-v8.01/lib/CorScorer.pm
+====> (71426_Aer_Lingus_buys_twelve_new_long-haul_Airbus_jets.txt.xml.coref_ne);:
+File (71426_Aer_Lingus_buys_twelve_new_long-haul_Airbus_jets.txt.xml.coref_ne);:
+Entity 0: (0,1) (11,16) (27,27) (42,45) (80,81) (98,100) (144,145)
+Entity 1: (3,9) (18,20) (18,24) (46,48) (59,68) (70,70) (134,139)
+Entity 2: (5,5) (20,20) (75,75) (106,106)
+Entity 3: (12,12) (152,152)
+Entity 4: (27,28) (109,114) (116,121) (124,129)
+Entity 5: (32,34)
+Entity 6: (61,68) (90,90)
+Entity 7: (89,90) (91,91)
+Entity 8: (116,117)
+Entity 9: (117,117)
+Entity 10: (120,121)
+Entity 11: (121,121)
+Entity 12: (124,125)
+Entity 13: (125,125)
+Entity 14: (149,153)
+Entity 15: (150,150)
+====> (71426_Aer_Lingus_buys_twelve_new_long-haul_Airbus_jets.txt.xml.coref_ne);:
+File (71426_Aer_Lingus_buys_twelve_new_long-haul_Airbus_jets.txt.xml.coref_ne);:
+Entity 0: (0,1) (15,16) (80,81) (99,100)
+Entity 1: (7,9) (22,24) (127,129) (137,139)
+Entity 2: (11,16) (27,27)
+Entity 3: (32,34)
+Entity 4: (39,40)
+Entity 5: (42,45)
+Entity 6: (61,62)
+Entity 7: (64,66)
+Entity 8: (70,70) (91,91)
+Entity 9: (75,75) (106,106)
+Entity 10: (84,90)
+Entity 11: (104,106)
+Entity 12: (112,114)
+Entity 13: (117,117)
+Entity 14: (134,139)
+Entity 15: (141,142)
+Entity 16: (144,145)
+Entity 17: (149,153)
+:
+Total key mentions: 37
+Total response mentions: 27
+Strictly correct identified mentions: 14
+Partially correct identified mentions: 0
+No identified: 23
+Invented: 13
+
+====== TOTALS =======
+Identification of Mentions: Recall: (14 / 37) 37.83%	Precision: (14 / 27) 51.85%	F1: 43.75%
+--------------------------------------------------------------------------
+
+Coreference:
+Coreference links: Recall: (3 / 57) 5.26%	Precision: (3 / 15) 20%	F1: 8.33%
+--------------------------------------------------------------------------
+Non-coreference links: Recall: (73 / 609) 11.98%	Precision: (73 / 336) 21.72%	F1: 15.44%
+--------------------------------------------------------------------------
+BLANC: Recall: (0.0862501080286924 / 1) 8.62%	Precision: (0.208630952380952 / 1) 20.86%	F1: 11.89%
+--------------------------------------------------------------------------

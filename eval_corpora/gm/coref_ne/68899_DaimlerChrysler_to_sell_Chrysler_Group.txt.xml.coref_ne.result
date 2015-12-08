@@ -1,0 +1,48 @@
+version: 8.01 /home/postma/analysis_submissions_clin_shared_task/clin26-eval/coref_scorer/coref-scorer-v8.01/lib/CorScorer.pm
+====> (68899_DaimlerChrysler_to_sell_Chrysler_Group.txt.xml.coref_ne);:
+File (68899_DaimlerChrysler_to_sell_Chrysler_Group.txt.xml.coref_ne);:
+Entity 0: (0,0) (9,11) (48,48) (53,53)
+Entity 1: (2,3) (15,17) (56,56) (85,85)
+Entity 2: (26,28) (30,31) (73,73)
+Entity 3: (33,34)
+Entity 4: (36,37)
+Entity 5: (41,42)
+Entity 6: (44,46)
+Entity 7: (53,56)
+Entity 8: (60,63)
+Entity 9: (65,66)
+Entity 10: (68,71)
+Entity 11: (78,82)
+====> (68899_DaimlerChrysler_to_sell_Chrysler_Group.txt.xml.coref_ne);:
+File (68899_DaimlerChrysler_to_sell_Chrysler_Group.txt.xml.coref_ne);:
+Entity 0: (0,0) (48,48)
+Entity 1: (2,3) (16,17) (15,17)
+Entity 2: (10,11) (9,11)
+Entity 3: (15,19) (56,56) (85,85)
+Entity 4: (19,19)
+Entity 5: (26,28) (30,34) (53,53)
+Entity 6: (33,34)
+Entity 7: (36,37)
+Entity 8: (41,42)
+Entity 9: (44,46)
+Entity 10: (73,73)
+Entity 11: (81,82)
+:
+Total key mentions: 20
+Total response mentions: 20
+Strictly correct identified mentions: 14
+Partially correct identified mentions: 0
+No identified: 6
+Invented: 6
+
+====== TOTALS =======
+Identification of Mentions: Recall: (14 / 20) 70%	Precision: (14 / 20) 70%	F1: 70%
+--------------------------------------------------------------------------
+
+Coreference:
+Coreference links: Recall: (3 / 15) 20%	Precision: (3 / 11) 27.27%	F1: 23.07%
+--------------------------------------------------------------------------
+Non-coreference links: Recall: (77 / 175) 44%	Precision: (77 / 179) 43.01%	F1: 43.5%
+--------------------------------------------------------------------------
+BLANC: Recall: (0.32 / 1) 32%	Precision: (0.351447435246318 / 1) 35.14%	F1: 33.28%
+--------------------------------------------------------------------------

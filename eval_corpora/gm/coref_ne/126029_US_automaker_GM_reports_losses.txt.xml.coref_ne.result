@@ -1,0 +1,37 @@
+version: 8.01 /home/postma/analysis_submissions_clin_shared_task/clin26-eval/coref_scorer/coref-scorer-v8.01/lib/CorScorer.pm
+====> (126029_US_automaker_GM_reports_losses.txt.xml.coref_ne);:
+File (126029_US_automaker_GM_reports_losses.txt.xml.coref_ne);:
+Entity 0: (0,0) (10,10) (26,26)
+Entity 1: (2,2) (0,2) (12,13) (9,13) (37,38) (59,59) (79,80)
+Entity 2: (34,35)
+Entity 3: (49,49) (70,70) (88,88)
+Entity 4: (72,75)
+====> (126029_US_automaker_GM_reports_losses.txt.xml.coref_ne);:
+File (126029_US_automaker_GM_reports_losses.txt.xml.coref_ne);:
+Entity 0: (2,2) (12,13) (59,59)
+Entity 1: (7,7)
+Entity 2: (9,13) (79,80)
+Entity 3: (34,35)
+Entity 4: (37,38)
+Entity 5: (49,49) (70,70) (88,88)
+Entity 6: (52,57)
+Entity 7: (72,75)
+:
+Total key mentions: 15
+Total response mentions: 13
+Strictly correct identified mentions: 11
+Partially correct identified mentions: 0
+No identified: 4
+Invented: 2
+
+====== TOTALS =======
+Identification of Mentions: Recall: (11 / 15) 73.33%	Precision: (11 / 13) 84.61%	F1: 78.57%
+--------------------------------------------------------------------------
+
+Coreference:
+Coreference links: Recall: (7 / 27) 25.92%	Precision: (7 / 7) 100%	F1: 41.17%
+--------------------------------------------------------------------------
+Non-coreference links: Recall: (37 / 78) 47.43%	Precision: (37 / 71) 52.11%	F1: 49.66%
+--------------------------------------------------------------------------
+BLANC: Recall: (0.366809116809117 / 1) 36.68%	Precision: (0.76056338028169 / 1) 76.05%	F1: 45.42%
+--------------------------------------------------------------------------

@@ -1,0 +1,51 @@
+version: 8.01 /home/postma/analysis_submissions_clin_shared_task/clin26-eval/coref_scorer/coref-scorer-v8.01/lib/CorScorer.pm
+====> (113227_Russian_stock_markets_suspended_amid_market_turmoil.txt.xml.coref_ne);:
+File (113227_Russian_stock_markets_suspended_amid_market_turmoil.txt.xml.coref_ne);:
+Entity 0: (0,0) (11,11) (41,41)
+Entity 1: (0,1) (9,12) (33,34) (89,90)
+Entity 2: (25,31)
+Entity 3: (29,31)
+Entity 4: (40,47) (75,75) (88,88)
+Entity 5: (54,55)
+Entity 6: (57,58)
+Entity 7: (64,65) (64,69)
+Entity 8: (69,69)
+Entity 9: (79,79)
+====> (113227_Russian_stock_markets_suspended_amid_market_turmoil.txt.xml.coref_ne);:
+File (113227_Russian_stock_markets_suspended_amid_market_turmoil.txt.xml.coref_ne);:
+Entity 0: (0,1)
+Entity 1: (4,4)
+Entity 2: (9,12)
+Entity 3: (15,18)
+Entity 4: (29,31)
+Entity 5: (33,34)
+Entity 6: (41,43) (40,43)
+Entity 7: (46,47) (45,47)
+Entity 8: (49,49)
+Entity 9: (54,55) (79,79)
+Entity 10: (57,58)
+Entity 11: (64,65) (67,69)
+Entity 12: (69,69)
+Entity 13: (72,73)
+Entity 14: (75,75) (88,88)
+Entity 15: (81,81)
+Entity 16: (89,90)
+:
+Total key mentions: 18
+Total response mentions: 22
+Strictly correct identified mentions: 12
+Partially correct identified mentions: 0
+No identified: 6
+Invented: 10
+
+====== TOTALS =======
+Identification of Mentions: Recall: (12 / 18) 66.66%	Precision: (12 / 22) 54.54%	F1: 60%
+--------------------------------------------------------------------------
+
+Coreference:
+Coreference links: Recall: (1 / 13) 7.69%	Precision: (1 / 5) 20%	F1: 11.11%
+--------------------------------------------------------------------------
+Non-coreference links: Recall: (58 / 140) 41.42%	Precision: (58 / 226) 25.66%	F1: 31.69%
+--------------------------------------------------------------------------
+BLANC: Recall: (0.245604395604396 / 1) 24.56%	Precision: (0.228318584070796 / 1) 22.83%	F1: 21.4%
+--------------------------------------------------------------------------

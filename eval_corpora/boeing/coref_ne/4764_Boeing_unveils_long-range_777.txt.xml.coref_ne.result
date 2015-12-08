@@ -1,0 +1,61 @@
+version: 8.01 /home/postma/analysis_submissions_clin_shared_task/clin26-eval/coref_scorer/coref-scorer-v8.01/lib/CorScorer.pm
+====> (4764_Boeing_unveils_long-range_777.txt.xml.coref_ne);:
+File (4764_Boeing_unveils_long-range_777.txt.xml.coref_ne);:
+Entity 0: (0,0) (7,7) (81,81)
+Entity 1: (2,5) (13,14) (9,18) (21,21) (30,31) (47,47) (58,59) (82,82) (85,85) (98,99)
+Entity 2: (24,24) (102,102)
+Entity 3: (26,26) (104,104)
+Entity 4: (34,35)
+Entity 5: (48,55)
+Entity 6: (52,55)
+Entity 7: (62,62)
+Entity 8: (62,64)
+Entity 9: (64,64)
+Entity 10: (67,68)
+Entity 11: (70,70)
+Entity 12: (73,74)
+Entity 13: (76,76)
+Entity 14: (86,90)
+Entity 15: (90,90)
+Entity 16: (112,117)
+====> (4764_Boeing_unveils_long-range_777.txt.xml.coref_ne);:
+File (4764_Boeing_unveils_long-range_777.txt.xml.coref_ne);:
+Entity 0: (0,0) (7,7)
+Entity 1: (2,5) (21,21)
+Entity 2: (4,5)
+Entity 3: (24,24) (102,102)
+Entity 4: (26,26) (104,104)
+Entity 5: (30,31) (98,99)
+Entity 6: (37,37)
+Entity 7: (47,47) (85,85)
+Entity 8: (52,55) (93,93)
+Entity 9: (55,55)
+Entity 10: (58,59)
+Entity 11: (67,68)
+Entity 12: (70,70)
+Entity 13: (73,74)
+Entity 14: (76,76)
+Entity 15: (81,82)
+Entity 16: (90,90)
+Entity 17: (109,110)
+Entity 18: (112,117)
+Entity 19: (115,117)
+:
+Total key mentions: 30
+Total response mentions: 27
+Strictly correct identified mentions: 20
+Partially correct identified mentions: 0
+No identified: 10
+Invented: 7
+
+====== TOTALS =======
+Identification of Mentions: Recall: (20 / 30) 66.66%	Precision: (20 / 27) 74.07%	F1: 70.17%
+--------------------------------------------------------------------------
+
+Coreference:
+Coreference links: Recall: (6 / 50) 12%	Precision: (6 / 7) 85.71%	F1: 21.05%
+--------------------------------------------------------------------------
+Non-coreference links: Recall: (166 / 385) 43.11%	Precision: (166 / 344) 48.25%	F1: 45.54%
+--------------------------------------------------------------------------
+BLANC: Recall: (0.275584415584416 / 1) 27.55%	Precision: (0.66985049833887 / 1) 66.98%	F1: 33.29%
+--------------------------------------------------------------------------

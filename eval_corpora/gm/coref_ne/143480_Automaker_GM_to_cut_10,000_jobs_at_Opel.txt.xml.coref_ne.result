@@ -1,0 +1,45 @@
+version: 8.01 /home/postma/analysis_submissions_clin_shared_task/clin26-eval/coref_scorer/coref-scorer-v8.01/lib/CorScorer.pm
+====> (143480_Automaker_GM_to_cut_10,000_jobs_at_Opel.txt.xml.coref_ne);:
+File (143480_Automaker_GM_to_cut_10,000_jobs_at_Opel.txt.xml.coref_ne);:
+Entity 0: (1,1) (0,1) (11,12) (8,12) (15,15) (30,31) (37,37)
+Entity 1: (4,4) (17,17) (58,59)
+Entity 2: (6,6) (24,24) (21,24) (41,41)
+Entity 3: (33,34) (27,34) (47,47) (54,54)
+Entity 4: (49,50)
+Entity 5: (65,65)
+Entity 6: (65,66)
+Entity 7: (71,75)
+====> (143480_Automaker_GM_to_cut_10,000_jobs_at_Opel.txt.xml.coref_ne);:
+File (143480_Automaker_GM_to_cut_10,000_jobs_at_Opel.txt.xml.coref_ne);:
+Entity 0: (0,1)
+Entity 1: (1,1) (11,12) (37,37)
+Entity 2: (6,6) (24,24) (41,41)
+Entity 3: (8,12)
+Entity 4: (15,15)
+Entity 5: (21,24)
+Entity 6: (30,31)
+Entity 7: (33,34) (47,47) (54,54)
+Entity 8: (38,41)
+Entity 9: (49,50)
+Entity 10: (58,59)
+Entity 11: (65,67)
+Entity 12: (74,75)
+:
+Total key mentions: 22
+Total response mentions: 19
+Strictly correct identified mentions: 16
+Partially correct identified mentions: 0
+No identified: 6
+Invented: 3
+
+====== TOTALS =======
+Identification of Mentions: Recall: (16 / 22) 72.72%	Precision: (16 / 19) 84.21%	F1: 78.04%
+--------------------------------------------------------------------------
+
+Coreference:
+Coreference links: Recall: (9 / 36) 25%	Precision: (9 / 9) 100%	F1: 40%
+--------------------------------------------------------------------------
+Non-coreference links: Recall: (90 / 195) 46.15%	Precision: (90 / 162) 55.55%	F1: 50.42%
+--------------------------------------------------------------------------
+BLANC: Recall: (0.355769230769231 / 1) 35.57%	Precision: (0.777777777777778 / 1) 77.77%	F1: 45.21%
+--------------------------------------------------------------------------

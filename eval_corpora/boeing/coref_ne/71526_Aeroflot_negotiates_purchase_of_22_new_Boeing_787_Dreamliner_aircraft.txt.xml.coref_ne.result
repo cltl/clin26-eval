@@ -1,0 +1,51 @@
+version: 8.01 /home/postma/analysis_submissions_clin_shared_task/clin26-eval/coref_scorer/coref-scorer-v8.01/lib/CorScorer.pm
+====> (71526_Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft.txt.xml.coref_ne);:
+File (71526_Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft.txt.xml.coref_ne);:
+Entity 0: (0,0) (11,11) (13,16) (11,16)
+Entity 1: (5,9) (27,31) (27,38)
+Entity 2: (7,7) (29,29) (36,36)
+Entity 3: (7,9) (29,31) (35,35) (33,38) (42,42) (48,49) (51,71)
+Entity 4: (14,14) (91,92)
+Entity 5: (40,42)
+Entity 6: (58,63)
+Entity 7: (63,63)
+Entity 8: (69,71)
+Entity 9: (71,71)
+Entity 10: (83,85) (91,91)
+Entity 11: (88,92)
+Entity 12: (94,96)
+====> (71526_Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft.txt.xml.coref_ne);:
+File (71526_Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft.txt.xml.coref_ne);:
+Entity 0: (0,0) (11,11) (13,16) (11,16) (35,35) (33,38) (55,55) (82,82)
+Entity 1: (7,9) (29,31)
+Entity 2: (36,36)
+Entity 3: (40,42)
+Entity 4: (49,49) (48,49)
+Entity 5: (58,59)
+Entity 6: (63,63)
+Entity 7: (69,71)
+Entity 8: (73,74) (91,91)
+Entity 9: (83,85)
+Entity 10: (84,85)
+Entity 11: (88,92)
+Entity 12: (94,96)
+Entity 13: (98,99)
+:
+Total key mentions: 28
+Total response mentions: 24
+Strictly correct identified mentions: 17
+Partially correct identified mentions: 0
+No identified: 11
+Invented: 7
+
+====== TOTALS =======
+Identification of Mentions: Recall: (17 / 28) 60.71%	Precision: (17 / 24) 70.83%	F1: 65.38%
+--------------------------------------------------------------------------
+
+Coreference:
+Coreference links: Recall: (8 / 35) 22.85%	Precision: (8 / 31) 25.8%	F1: 24.24%
+--------------------------------------------------------------------------
+Non-coreference links: Recall: (111 / 343) 32.36%	Precision: (111 / 245) 45.3%	F1: 37.75%
+--------------------------------------------------------------------------
+BLANC: Recall: (0.276093294460641 / 1) 27.6%	Precision: (0.355562870309414 / 1) 35.55%	F1: 30.99%
+--------------------------------------------------------------------------

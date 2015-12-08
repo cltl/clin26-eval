@@ -1,0 +1,50 @@
+version: 8.01 /home/postma/analysis_submissions_clin_shared_task/clin26-eval/coref_scorer/coref-scorer-v8.01/lib/CorScorer.pm
+====> (115711_Asian_stock_markets_slide.txt.xml.coref_ne);:
+File (115711_Asian_stock_markets_slide.txt.xml.coref_ne);:
+Entity 0: (0,1) (22,22)
+Entity 1: (0,2) (20,22)
+Entity 2: (5,5) (27,27) (25,27) (92,93)
+Entity 3: (26,26) (62,62) (80,80)
+Entity 4: (32,32)
+Entity 5: (42,42)
+Entity 6: (58,59) (58,63)
+Entity 7: (67,71) (74,74)
+Entity 8: (105,107) (120,121)
+Entity 9: (106,106)
+Entity 10: (112,113) (123,123)
+====> (115711_Asian_stock_markets_slide.txt.xml.coref_ne);:
+File (115711_Asian_stock_markets_slide.txt.xml.coref_ne);:
+Entity 0: (1,2)
+Entity 1: (5,5) (93,93) (92,93)
+Entity 2: (20,22) (32,32)
+Entity 3: (22,22)
+Entity 4: (27,27) (25,27) (31,31)
+Entity 5: (42,42)
+Entity 6: (52,52)
+Entity 7: (58,59) (61,63) (58,63)
+Entity 8: (67,71)
+Entity 9: (70,71)
+Entity 10: (74,74)
+Entity 11: (80,80)
+Entity 12: (88,90)
+Entity 13: (105,107) (120,121)
+Entity 14: (112,113)
+:
+Total key mentions: 22
+Total response mentions: 23
+Strictly correct identified mentions: 16
+Partially correct identified mentions: 0
+No identified: 6
+Invented: 7
+
+====== TOTALS =======
+Identification of Mentions: Recall: (16 / 22) 72.72%	Precision: (16 / 23) 69.56%	F1: 71.11%
+--------------------------------------------------------------------------
+
+Coreference:
+Coreference links: Recall: (4 / 15) 26.66%	Precision: (4 / 11) 36.36%	F1: 30.76%
+--------------------------------------------------------------------------
+Non-coreference links: Recall: (110 / 216) 50.92%	Precision: (110 / 242) 45.45%	F1: 48.03%
+--------------------------------------------------------------------------
+BLANC: Recall: (0.387962962962963 / 1) 38.79%	Precision: (0.409090909090909 / 1) 40.9%	F1: 39.4%
+--------------------------------------------------------------------------

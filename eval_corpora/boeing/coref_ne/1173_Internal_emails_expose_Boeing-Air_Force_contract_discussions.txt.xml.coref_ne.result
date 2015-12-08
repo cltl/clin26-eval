@@ -1,0 +1,56 @@
+version: 8.01 /home/postma/analysis_submissions_clin_shared_task/clin26-eval/coref_scorer/coref-scorer-v8.01/lib/CorScorer.pm
+====> (1173_Internal_emails_expose_Boeing-Air_Force_contract_discussions.txt.xml.coref_ne);:
+File (1173_Internal_emails_expose_Boeing-Air_Force_contract_discussions.txt.xml.coref_ne);:
+Entity 0: (0,1) (12,23) (52,52)
+Entity 1: (5,5) (23,23) (22,23) (77,77) (113,113)
+Entity 2: (7,8) (31,35)
+Entity 3: (29,35)
+Entity 4: (32,33)
+Entity 5: (41,43) (66,66) (116,117) (119,124)
+Entity 6: (45,47)
+Entity 7: (47,47)
+Entity 8: (54,56)
+Entity 9: (74,75)
+Entity 10: (81,82)
+Entity 11: (92,95)
+Entity 12: (101,102)
+====> (1173_Internal_emails_expose_Boeing-Air_Force_contract_discussions.txt.xml.coref_ne);:
+File (1173_Internal_emails_expose_Boeing-Air_Force_contract_discussions.txt.xml.coref_ne);:
+Entity 0: (0,1)
+Entity 1: (3,8)
+Entity 2: (5,5) (23,23) (77,77) (113,113)
+Entity 3: (7,8)
+Entity 4: (12,15) (25,25)
+Entity 5: (14,15)
+Entity 6: (22,23)
+Entity 7: (32,35) (31,35)
+Entity 8: (38,38)
+Entity 9: (42,43) (66,66) (117,117)
+Entity 10: (45,47) (52,52)
+Entity 11: (55,56) (54,56)
+Entity 12: (69,72) (98,99) (108,113) (123,124)
+Entity 13: (81,82)
+Entity 14: (84,85)
+Entity 15: (92,92)
+Entity 16: (94,95)
+Entity 17: (102,102) (101,102)
+Entity 18: (116,117) (119,124)
+:
+Total key mentions: 23
+Total response mentions: 33
+Strictly correct identified mentions: 16
+Partially correct identified mentions: 0
+No identified: 7
+Invented: 17
+
+====== TOTALS =======
+Identification of Mentions: Recall: (16 / 23) 69.56%	Precision: (16 / 33) 48.48%	F1: 57.14%
+--------------------------------------------------------------------------
+
+Coreference:
+Coreference links: Recall: (7 / 20) 35%	Precision: (7 / 21) 33.33%	F1: 34.14%
+--------------------------------------------------------------------------
+Non-coreference links: Recall: (104 / 233) 44.63%	Precision: (104 / 507) 20.51%	F1: 28.1%
+--------------------------------------------------------------------------
+BLANC: Recall: (0.398175965665236 / 1) 39.81%	Precision: (0.269230769230769 / 1) 26.92%	F1: 31.12%
+--------------------------------------------------------------------------

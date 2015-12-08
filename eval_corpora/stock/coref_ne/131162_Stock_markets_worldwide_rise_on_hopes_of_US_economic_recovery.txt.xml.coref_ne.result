@@ -1,0 +1,47 @@
+version: 8.01 /home/postma/analysis_submissions_clin_shared_task/clin26-eval/coref_scorer/coref-scorer-v8.01/lib/CorScorer.pm
+====> (131162_Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery.txt.xml.coref_ne);:
+File (131162_Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery.txt.xml.coref_ne);:
+Entity 0: (0,0) (10,11)
+Entity 1: (6,6) (31,31)
+Entity 2: (15,17)
+Entity 3: (19,20) (19,26) (41,41) (65,65)
+Entity 4: (24,26)
+Entity 5: (30,32)
+Entity 6: (47,47)
+Entity 7: (81,82)
+Entity 8: (90,94)
+====> (131162_Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery.txt.xml.coref_ne);:
+File (131162_Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery.txt.xml.coref_ne);:
+Entity 0: (0,0)
+Entity 1: (4,8)
+Entity 2: (10,11)
+Entity 3: (15,17)
+Entity 4: (19,20) (25,26) (24,26) (22,26) (41,41) (65,65)
+Entity 5: (30,32)
+Entity 6: (33,33)
+Entity 7: (38,39)
+Entity 8: (44,47)
+Entity 9: (47,47)
+Entity 10: (54,55)
+Entity 11: (57,59)
+Entity 12: (91,94) (90,94)
+Entity 13: (105,106)
+:
+Total key mentions: 14
+Total response mentions: 20
+Strictly correct identified mentions: 10
+Partially correct identified mentions: 0
+No identified: 4
+Invented: 10
+
+====== TOTALS =======
+Identification of Mentions: Recall: (10 / 14) 71.42%	Precision: (10 / 20) 50%	F1: 58.82%
+--------------------------------------------------------------------------
+
+Coreference:
+Coreference links: Recall: (3 / 8) 37.5%	Precision: (3 / 16) 18.75%	F1: 25%
+--------------------------------------------------------------------------
+Non-coreference links: Recall: (38 / 83) 45.78%	Precision: (38 / 174) 21.83%	F1: 29.57%
+--------------------------------------------------------------------------
+BLANC: Recall: (0.416415662650602 / 1) 41.64%	Precision: (0.202945402298851 / 1) 20.29%	F1: 27.28%
+--------------------------------------------------------------------------

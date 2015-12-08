@@ -1,0 +1,49 @@
+version: 8.01 /home/postma/analysis_submissions_clin_shared_task/clin26-eval/coref_scorer/coref-scorer-v8.01/lib/CorScorer.pm
+====> (82548_First_Airbus_A380_delivered.txt.xml.coref_ne);:
+File (82548_First_Airbus_A380_delivered.txt.xml.coref_ne);:
+Entity 0: (0,2) (5,8) (10,10) (35,36) (53,54)
+Entity 1: (1,2) (7,8)
+Entity 2: (14,14)
+Entity 3: (24,28)
+Entity 4: (33,33) (77,77)
+Entity 5: (38,38)
+Entity 6: (40,40)
+Entity 7: (48,49)
+Entity 8: (58,61)
+Entity 9: (82,82)
+====> (82548_First_Airbus_A380_delivered.txt.xml.coref_ne);:
+File (82548_First_Airbus_A380_delivered.txt.xml.coref_ne);:
+Entity 0: (2,2) (0,2)
+Entity 1: (7,8)
+Entity 2: (10,10) (80,80)
+Entity 3: (14,14)
+Entity 4: (24,25)
+Entity 5: (27,27)
+Entity 6: (31,33)
+Entity 7: (33,33) (77,77)
+Entity 8: (35,36)
+Entity 9: (38,38) (38,40)
+Entity 10: (40,40)
+Entity 11: (53,54)
+Entity 12: (59,61)
+Entity 13: (71,73)
+Entity 14: (82,82)
+:
+Total key mentions: 16
+Total response mentions: 19
+Strictly correct identified mentions: 11
+Partially correct identified mentions: 0
+No identified: 5
+Invented: 8
+
+====== TOTALS =======
+Identification of Mentions: Recall: (11 / 16) 68.75%	Precision: (11 / 19) 57.89%	F1: 62.85%
+--------------------------------------------------------------------------
+
+Coreference:
+Coreference links: Recall: (1 / 12) 8.33%	Precision: (1 / 4) 25%	F1: 12.5%
+--------------------------------------------------------------------------
+Non-coreference links: Recall: (48 / 108) 44.44%	Precision: (48 / 167) 28.74%	F1: 34.9%
+--------------------------------------------------------------------------
+BLANC: Recall: (0.263888888888889 / 1) 26.38%	Precision: (0.268712574850299 / 1) 26.87%	F1: 23.7%
+--------------------------------------------------------------------------

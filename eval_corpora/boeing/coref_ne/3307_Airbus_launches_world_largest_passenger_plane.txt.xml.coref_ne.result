@@ -1,0 +1,54 @@
+version: 8.01 /home/postma/analysis_submissions_clin_shared_task/clin26-eval/coref_scorer/coref-scorer-v8.01/lib/CorScorer.pm
+====> (3307_Airbus_launches_world_largest_passenger_plane.txt.xml.coref_ne);:
+File (3307_Airbus_launches_world_largest_passenger_plane.txt.xml.coref_ne);:
+Entity 0: (0,0) (21,21) (124,124)
+Entity 1: (2,5) (24,25) (27,31) (61,63) (75,79) (102,103) (129,131)
+Entity 2: (12,18)
+Entity 3: (14,14)
+Entity 4: (35,36)
+Entity 5: (38,39)
+Entity 6: (44,46) (65,69)
+Entity 7: (45,45) (69,69) (68,69) (91,91)
+Entity 8: (50,51)
+Entity 9: (53,59)
+Entity 10: (82,85) (87,88)
+Entity 11: (116,117)
+Entity 12: (119,120) (122,124)
+Entity 13: (142,146)
+====> (3307_Airbus_launches_world_largest_passenger_plane.txt.xml.coref_ne);:
+File (3307_Airbus_launches_world_largest_passenger_plane.txt.xml.coref_ne);:
+Entity 0: (0,0) (124,124)
+Entity 1: (2,5)
+Entity 2: (5,5)
+Entity 3: (8,9)
+Entity 4: (21,25)
+Entity 5: (25,25) (24,25) (103,103) (102,103) (130,130)
+Entity 6: (45,46) (44,46) (69,69) (91,91)
+Entity 7: (61,63)
+Entity 8: (68,69)
+Entity 9: (71,72)
+Entity 10: (88,88) (87,88)
+Entity 11: (96,97)
+Entity 12: (119,120) (122,124)
+Entity 13: (138,138) (129,140)
+Entity 14: (142,146)
+Entity 15: (145,146)
+:
+Total key mentions: 28
+Total response mentions: 27
+Strictly correct identified mentions: 14
+Partially correct identified mentions: 0
+No identified: 14
+Invented: 13
+
+====== TOTALS =======
+Identification of Mentions: Recall: (14 / 28) 50%	Precision: (14 / 27) 51.85%	F1: 50.9%
+--------------------------------------------------------------------------
+
+Coreference:
+Coreference links: Recall: (4 / 33) 12.12%	Precision: (4 / 20) 20%	F1: 15.09%
+--------------------------------------------------------------------------
+Non-coreference links: Recall: (78 / 345) 22.6%	Precision: (78 / 331) 23.56%	F1: 23.07%
+--------------------------------------------------------------------------
+BLANC: Recall: (0.17364953886693 / 1) 17.36%	Precision: (0.217824773413897 / 1) 21.78%	F1: 19.08%
+--------------------------------------------------------------------------

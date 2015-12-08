@@ -1,0 +1,44 @@
+version: 8.01 /home/postma/analysis_submissions_clin_shared_task/clin26-eval/coref_scorer/coref-scorer-v8.01/lib/CorScorer.pm
+====> (128016_China_Eastern_Airlines_to_purchase_twenty_new_Airbus_A320_jets.txt.xml.coref_ne);:
+File (128016_China_Eastern_Airlines_to_purchase_twenty_new_Airbus_A320_jets.txt.xml.coref_ne);:
+Entity 0: (0,2) (10,12) (43,44) (46,52) (63,64) (86,87)
+Entity 1: (6,7) (4,7) (23,24) (22,25) (67,68)
+Entity 2: (17,18) (55,56)
+Entity 3: (52,52)
+Entity 4: (61,61)
+Entity 5: (72,73)
+Entity 6: (81,87)
+====> (128016_China_Eastern_Airlines_to_purchase_twenty_new_Airbus_A320_jets.txt.xml.coref_ne);:
+File (128016_China_Eastern_Airlines_to_purchase_twenty_new_Airbus_A320_jets.txt.xml.coref_ne);:
+Entity 0: (0,2) (10,12)
+Entity 1: (17,18)
+Entity 2: (23,24)
+Entity 3: (37,37)
+Entity 4: (52,52)
+Entity 5: (55,56)
+Entity 6: (61,61)
+Entity 7: (63,64)
+Entity 8: (67,68)
+Entity 9: (72,73)
+Entity 10: (75,76)
+Entity 11: (84,87)
+Entity 12: (86,87)
+:
+Total key mentions: 17
+Total response mentions: 14
+Strictly correct identified mentions: 11
+Partially correct identified mentions: 0
+No identified: 6
+Invented: 3
+
+====== TOTALS =======
+Identification of Mentions: Recall: (11 / 17) 64.7%	Precision: (11 / 14) 78.57%	F1: 70.96%
+--------------------------------------------------------------------------
+
+Coreference:
+Coreference links: Recall: (1 / 26) 3.84%	Precision: (1 / 1) 100%	F1: 7.4%
+--------------------------------------------------------------------------
+Non-coreference links: Recall: (47 / 110) 42.72%	Precision: (47 / 90) 52.22%	F1: 47%
+--------------------------------------------------------------------------
+BLANC: Recall: (0.232867132867133 / 1) 23.28%	Precision: (0.761111111111111 / 1) 76.11%	F1: 27.2%
+--------------------------------------------------------------------------

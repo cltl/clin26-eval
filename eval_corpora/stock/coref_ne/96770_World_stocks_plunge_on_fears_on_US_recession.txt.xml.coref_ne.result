@@ -1,0 +1,62 @@
+version: 8.01 /home/postma/analysis_submissions_clin_shared_task/clin26-eval/coref_scorer/coref-scorer-v8.01/lib/CorScorer.pm
+====> (96770_World_stocks_plunge_on_fears_on_US_recession.txt.xml.coref_ne);:
+File (96770_World_stocks_plunge_on_fears_on_US_recession.txt.xml.coref_ne);:
+Entity 0: (0,0) (10,11)
+Entity 1: (7,7) (28,30) (109,110)
+Entity 2: (17,17)
+Entity 3: (19,19)
+Entity 4: (43,44)
+Entity 5: (46,48)
+Entity 6: (66,66)
+Entity 7: (68,68)
+Entity 8: (70,70)
+Entity 9: (72,72)
+Entity 10: (74,74)
+Entity 11: (76,76)
+Entity 12: (92,93)
+Entity 13: (97,97)
+====> (96770_World_stocks_plunge_on_fears_on_US_recession.txt.xml.coref_ne);:
+File (96770_World_stocks_plunge_on_fears_on_US_recession.txt.xml.coref_ne);:
+Entity 0: (3,4)
+Entity 1: (6,6)
+Entity 2: (10,11)
+Entity 3: (17,17)
+Entity 4: (19,19)
+Entity 5: (22,26)
+Entity 6: (25,26)
+Entity 7: (29,30) (28,30) (109,110) (108,110)
+Entity 8: (31,33) (34,34) (91,91)
+Entity 9: (43,44)
+Entity 10: (47,48) (46,48)
+Entity 11: (53,55)
+Entity 12: (66,66)
+Entity 13: (68,68)
+Entity 14: (70,70)
+Entity 15: (72,72)
+Entity 16: (74,74)
+Entity 17: (76,76)
+Entity 18: (78,80)
+Entity 19: (88,90)
+Entity 20: (92,93)
+Entity 21: (97,97)
+Entity 22: (98,100)
+Entity 23: (105,110)
+:
+Total key mentions: 17
+Total response mentions: 30
+Strictly correct identified mentions: 15
+Partially correct identified mentions: 0
+No identified: 2
+Invented: 15
+
+====== TOTALS =======
+Identification of Mentions: Recall: (15 / 17) 88.23%	Precision: (15 / 30) 50%	F1: 63.82%
+--------------------------------------------------------------------------
+
+Coreference:
+Coreference links: Recall: (1 / 4) 25%	Precision: (1 / 10) 10%	F1: 14.28%
+--------------------------------------------------------------------------
+Non-coreference links: Recall: (104 / 132) 78.78%	Precision: (104 / 425) 24.47%	F1: 37.34%
+--------------------------------------------------------------------------
+BLANC: Recall: (0.518939393939394 / 1) 51.89%	Precision: (0.172352941176471 / 1) 17.23%	F1: 25.81%
+--------------------------------------------------------------------------
