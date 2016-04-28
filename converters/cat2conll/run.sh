@@ -1,0 +1,1 @@
+python converter_cat-chromer_conll.py 9549_Reactions_to_Apple_dutch.txt.xml 9549_Reactions_to_Apple_dutch.txt.xml.conll factuality_updated gold
