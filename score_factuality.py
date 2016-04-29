@@ -15,34 +15,28 @@ import pytest
 import numpy as np
 from util import first_n_sentences, next_line
 
-
 def read_event_spans_conll(f, path=''):
     spans = set()
     sent = 1
     line = next_line(f)
+    id2tokens = defaultdict(list)
     while line:
         if line == '\n':
             sent += 1
-            line = next_line(f)
-            continue
-        fields = line.strip().split('\t')
-        token = int(fields[0])
-        if fields[2] != '_':
-            tokens = [token]
-            while True:
-                line = next_line(f)
-                fields = line.strip().split('\t')
-                if (not line) or line == '\n' or fields[2] == 'B-E':
-                    break
-                assert fields[2] == 'I-E' or fields[2] == '_', \
-                    ("Format error in file %s, sentence %d, token %s: "
-                    "an event begins with strange marker: %s"
-                    %(path, sent, fields[0], fields[2]))
-                if fields[2] == 'I-E':
-                    tokens.append(int(fields[0]))
-            spans.add((sent, tuple(tokens)))
         else:
-            line = next_line(f)
+            fields = line.strip().split('\t')
+            if fields[2] != '_':
+                type_, label, event_id = fields[2].split('-')
+                assert type_ in ['I', 'B']
+                assert label == 'E'
+                assert (type_ == 'B' and len(id2tokens[event_id]) == 0) or \
+                        (type_ == 'I' and len(id2tokens[event_id]) > 0), \
+                        "Format error in file %s, sentence %d, token %s: %s" \
+                        %(path, sent, fields[0], fields[2])
+                id2tokens[event_id].append(int(fields[0])) 
+        line = next_line(f)
+    for _, tokens in id2tokens.iteritems():
+        spans.add((sent, tuple(tokens)))
     return spans
 
 
@@ -69,34 +63,34 @@ def read_tokens_conll(cols, f, path=''):
 
 def read_generic_spans_conll(col, f, path):
     spans = set()
-    last_spans = defaultdict(list)
+    id2tokens = defaultdict(list)
     sent = 1
     line = next_line(f)
     while line:
         if line == '\n':
-            for label in last_spans.keys():
-                spans.add((sent, tuple(last_spans[label]), label))
-            last_spans.clear()
             sent += 1
-            line = next_line(f)
-            continue
-        fields = line.strip().split('\t')
-        token = int(fields[0])
-        label = fields[col]
-        if label != '_':
-            type_ = label[:2]
-            label = label[2:]
-            if type_ == 'B-':
-                if label in last_spans:
-                    spans.add((sent, tuple(last_spans[label]), label))
-                    del last_spans[label]
-            else:
-                assert type_ == 'I-'
-            last_spans[label].append(token)
+        else:
+            fields = line.strip().split('\t')
+            token = int(fields[0])
+            label = fields[col]
+            if label != '_':
+                type_, label, id_ = label.split('-')
+                assert type_ in ['I', 'B']
+                assert (type_ == 'B' and len(id2tokens[(label, id_)]) == 0) or \
+                        (type_ == 'I' and len(id2tokens[(label, id_)]) > 0), \
+                        "Format error in file %s, sentence %d, token %s: %s" \
+                        %(path, sent, fields[0], fields[col])
+                id2tokens[(label, id_)].append(token)
         line = next_line(f)
-    for label in last_spans.keys():
-        spans.add((sent, tuple(last_spans[label]), label))
+    for (label, _), tokens in id2tokens.iteritems():
+        spans.add((sent, tuple(tokens), label))
     return spans
+
+def group_by_type(spans):
+    spans_by_type = defaultdict(list)
+    for span in spans:
+        spans_by_type[span[2]].append(span[:2])
+    return spans_by_type
 
 def read_polarity_spans_conll(f, path=''):
     return read_generic_spans_conll(4, f, path)
@@ -242,7 +236,7 @@ def test_read_spans_conll():
     assert len(read_event_spans_conll(StringIO(s))) == 0
     assert len(read_polarity_spans_conll(StringIO(s))) == 0
     assert len(read_certainty_spans_conll(StringIO(s))) == 0
-    s = '1\tB\tB-E\tB-CERTAIN\tB-POS'
+    s = '1\tB\tB-E-1\tB-CERTAIN-1\tB-POS-1'
     event_spans = read_event_spans_conll(StringIO(s))
     assert len(event_spans) == 1
     assert list(event_spans)[0] == (1, (1,))
@@ -252,8 +246,8 @@ def test_read_spans_conll():
     certainty_spans = read_certainty_spans_conll(StringIO(s))
     assert len(certainty_spans) == 1
     assert list(certainty_spans)[0] == (1, (1,), 'CERTAIN')
-    s = ('1\tA\tB-E\tB-CERTAIN\tB-POS\n'
-         '2\tB\tI-E\tI-CERTAIN\tI-POS')
+    s = ('1\tA\tB-E-1\tB-CERTAIN-1\tB-POS-1\n'
+         '2\tB\tI-E-1\tI-CERTAIN-1\tI-POS-1')
     event_spans = read_event_spans_conll(StringIO(s))
     assert len(event_spans) == 1
     assert list(event_spans)[0] == (1, (1, 2))
@@ -263,14 +257,14 @@ def test_read_spans_conll():
     certainty_spans = read_certainty_spans_conll(StringIO(s))
     assert len(certainty_spans) == 1
     assert list(certainty_spans)[0] == (1, (1, 2), 'CERTAIN')
-    s = ('1\tA\tB-E\tB-CERTAIN\tB-POS\n'
-         '2\tB\tB-E\tB-CERTAIN\tB-POS')
+    s = ('1\tA\tB-E-1\tB-CERTAIN-1\tB-POS-1\n'
+         '2\tB\tB-E-2\tB-CERTAIN-2\tB-POS-2')
     assert len(read_event_spans_conll(StringIO(s))) == 2
     assert len(read_polarity_spans_conll(StringIO(s))) == 2
     assert len(read_certainty_spans_conll(StringIO(s))) == 2
-    s = ('1\tA\tB-E\tB-CERTAIN\tB-POS\n'
+    s = ('1\tA\tB-E-1\tB-CERTAIN-1\tB-POS-1\n'
          '2\tB\t_\t_\t_\n'
-         '3\tC\tI-E\tI-CERTAIN\tI-POS')
+         '3\tC\tI-E-1\tI-CERTAIN-1\tI-POS-1')
     event_spans = read_event_spans_conll(StringIO(s))
     assert len(event_spans) == 1, 'Discontinuous event span'
     assert list(event_spans)[0] == (1, (1, 3))
@@ -280,26 +274,26 @@ def test_read_spans_conll():
     certainty_spans = read_certainty_spans_conll(StringIO(s))
     assert len(certainty_spans) == 1, 'Discontinuous certainty span'
     assert list(certainty_spans)[0] == (1, (1, 3), 'CERTAIN')
-    s = ('1\tA\tB-E\tB-CERTAIN\tB-POS\n'
+    s = ('1\tA\tB-E-1\tB-CERTAIN-1\tB-POS-1\n'
          '2\tB\t_\t_\t_\n'
-         '3\tC\tI-E\tI-CERTAIN\tI-POS\n'
-         '4\tD\tB-E\t_\t_')
+         '3\tC\tI-E-1\tI-CERTAIN-1\tI-POS-1\n'
+         '4\tD\tB-E-2\t_\t_')
     event_spans = read_event_spans_conll(StringIO(s))
     assert len(event_spans) == 2, 'Discontinuous span followed by singleton span'
     assert list(event_spans)[0] == (1, (1, 3))
     assert list(event_spans)[1] == (1, (4,))
     assert len(read_polarity_spans_conll(StringIO(s))) == 1
     assert len(read_certainty_spans_conll(StringIO(s))) == 1
-    s = ('1\tA\tB-E\tB-CERTAIN\tB-POS\n'
-         '2\tB\t_\t_\tB-NEG\n'
-         '3\tC\tI-E\tI-UNDERSPECIFIED\tI-POS\n'
-         '4\tD\tB-E\t_\t_')
+    s = ('1\tA\tB-E-1\tB-CERTAIN-1\tB-POS-1\n'
+         '2\tB\tB-E-2\t_\tB-NEG-2\n'
+         '3\tC\tI-E-1\tI-CERTAIN-1\tI-POS-1\n'
+         '4\tD\tI-E-2\t_\tI-NEG-2')
     event_spans = read_event_spans_conll(StringIO(s))
     assert len(read_polarity_spans_conll(StringIO(s))) == 2, 'Discontinuous, intertwined spans'
-    assert len(read_certainty_spans_conll(StringIO(s))) == 2, 'Should handle I- token without corresponding B- token'
+    assert len(read_certainty_spans_conll(StringIO(s))) == 1
     with pytest.raises(AssertionError):
-        s = ('1\tA\tB-E\tB-CERTAIN\tB-POS\n'
-             '2\tB\tB-X\tB-CERTAIN\tI-POS')
+        s = ('1\tA\tB-E-1\tB-CERTAIN-1\tB-POS-1\n'
+             '2\tB\tB-X-2\tB-CERTAIN-1\tI-POS-1')
         read_event_spans_conll(StringIO(s))
         
         
@@ -426,14 +420,14 @@ def test_all():
     test_read_tokens_conll()
     sys.stderr.write('Passed all tests.\n')
 
-test_all() # never run evaluation script without thorough testing
+#test_all() # never run evaluation script without thorough testing
 
 if __name__ == '__main__':
     import argparse
     parser = argparse.ArgumentParser(description='Score the response of a system at factuality.')
     parser.add_argument('key', help='path to a directory containing all key files')
     parser.add_argument('response', help='path to a directory containing all response files')
-    parser.add_argument('measurement', help='measure performance on tokens or spans. possible values: tokens, spans')
+    parser.add_argument('measurement', help='measure performance on tokens or spans. possible values: tokens, ')
     parser.add_argument('-n', type=int, default=5, help='number of sentences to consider, 0 for all')
     args = parser.parse_args()
 
@@ -457,7 +451,13 @@ if __name__ == '__main__':
                 res_event = res_polarity = res_certainty = set() 
             data['event'].append(compare_spans(key_event, res_event))
             data['polarity'].append(compare_dependent_spans(key_polarity, res_polarity, key_event, res_event))
+            key_by_type, res_by_type = group_by_type(key_polarity), group_by_type(res_polarity)
+            for type_ in set(key_by_type).union(set(res_by_type)):
+                data['polarity:' + type_].append(compare_dependent_spans(key_by_type[type_], res_by_type[type_], key_event, res_event))
             data['certainty'].append(compare_dependent_spans(key_certainty, res_certainty, key_event, res_event))
+            key_by_type, res_by_type = group_by_type(key_certainty), group_by_type(res_certainty)
+            for type_ in set(key_by_type).union(set(res_by_type)):
+                data['certainty:' + type_].append(compare_dependent_spans(key_by_type[type_], res_by_type[type_], key_event, res_event))
             data['polarity+certainty'].append(compare_dependent_spans2(key_polarity, res_polarity, key_certainty, res_certainty, key_event, res_event))
         elif args.measurement == 'tokens':
             path = os.path.join(args.key, fname)
@@ -474,7 +474,7 @@ if __name__ == '__main__':
             data['certainty'].append(compare_tokens(key_certainty, res_certainty))
         else:
             raise ValueError('Unsupported measurement: %s' %args.measurement)
-    for name in data:
+    for name in sorted(data.keys()):
         print('\n\nPerformance (%s %s):\n' %(name, args.measurement))
         p = compute_performance(data[name])
         print('# response total: %d\n'
