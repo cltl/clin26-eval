@@ -14,6 +14,7 @@ import pytest
 
 import numpy as np
 from util import first_n_sentences, next_line
+import re
 
 def read_event_spans_conll(f, path=''):
     spans = set()
@@ -54,7 +55,7 @@ def read_tokens_conll(cols, f, path=''):
         fields = line.strip().split('\t')
         token = int(fields[0])
         for i, col in enumerate(cols):
-            label = fields[col]
+            label = re.sub('-\w+$', '', fields[col])
             if label != '_':
                 tokens[i].add((sent, token, label))
         line = next_line(f)
@@ -89,7 +90,8 @@ def read_generic_spans_conll(col, f, path):
 def group_by_type(spans):
     spans_by_type = defaultdict(list)
     for span in spans:
-        spans_by_type[span[2]].append(span[:2])
+        type_ = re.sub('^[BI]-', '', span[2])
+        spans_by_type[type_].append(span[:2])
     return spans_by_type
 
 def read_polarity_spans_conll(f, path=''):
@@ -471,7 +473,13 @@ if __name__ == '__main__':
                 res_event = res_polarity = res_certainty = set() 
             data['event'].append(compare_tokens(key_event, res_event))
             data['polarity'].append(compare_tokens(key_polarity, res_polarity))
+            key_by_type, res_by_type = group_by_type(key_polarity), group_by_type(res_polarity)
+            for type_ in set(key_by_type).union(set(res_by_type)):
+                data['polarity:' + type_].append(compare_tokens(key_by_type[type_], res_by_type[type_]))
             data['certainty'].append(compare_tokens(key_certainty, res_certainty))
+            key_by_type, res_by_type = group_by_type(key_certainty), group_by_type(res_certainty)
+            for type_ in set(key_by_type).union(set(res_by_type)):
+                data['certainty:' + type_].append(compare_tokens(key_by_type[type_], res_by_type[type_]))
         else:
             raise ValueError('Unsupported measurement: %s' %args.measurement)
     for name in sorted(data.keys()):
