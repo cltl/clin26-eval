@@ -212,7 +212,7 @@ def test_read_tokens_conll():
     assert len(events) == 0
     assert len(certainty) == 0
     assert len(polarity) == 0
-    s = '1\tB\tB-E\tB-CERTAIN\tB-POS'
+    s = '1\tB\tB-E-1\tB-CERTAIN-1\tB-POS-1'
     events, certainty, polarity = read_tokens_conll((2, 3, 4), StringIO(s))
     assert len(events) == 1
     assert (1, 1, 'B-E') in events 
@@ -220,8 +220,8 @@ def test_read_tokens_conll():
     assert (1, 1, 'B-POS') in polarity
     assert len(certainty) == 1
     assert (1, 1, 'B-CERTAIN') in certainty
-    s = ('1\tA\tB-E\tB-CERTAIN\tB-POS\n'
-         '2\tB\tI-E\tI-CERTAIN\tI-POS')
+    s = ('1\tA\tB-E-1\tB-CERTAIN-1\tB-POS-1\n'
+         '2\tB\tI-E-1\tI-CERTAIN-1\tI-POS-1')
     events, certainty, polarity = read_tokens_conll((2, 3, 4), StringIO(s))
     assert len(events) == 2
     assert (1, 1, 'B-E') in events
@@ -422,7 +422,7 @@ def test_all():
     test_read_tokens_conll()
     sys.stderr.write('Passed all tests.\n')
 
-#test_all() # never run evaluation script without thorough testing
+test_all() # never run evaluation script without thorough testing
 
 if __name__ == '__main__':
     import argparse
