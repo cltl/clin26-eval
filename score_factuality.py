@@ -429,7 +429,7 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='Score the response of a system at factuality.')
     parser.add_argument('key', help='path to a directory containing all key files')
     parser.add_argument('response', help='path to a directory containing all response files')
-    parser.add_argument('measurement', help='measure performance on tokens or spans. possible values: tokens, ')
+    parser.add_argument('measurement', help='measure performance on tokens or spans. possible values: tokens, spans')
     parser.add_argument('-n', type=int, default=5, help='number of sentences to consider, 0 for all')
     args = parser.parse_args()
 
