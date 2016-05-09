@@ -100,6 +100,9 @@ def read_polarity_spans_conll(f, path=''):
 def read_certainty_spans_conll(f, path=''):
     return read_generic_spans_conll(3, f, path)
 
+def read_tense_spans_conll(f, path=''):
+    return read_generic_spans_conll(5, f, path)
+
 def compute_performance(data):
     data = np.asarray(data)
     assert 'int' in data.dtype.name
@@ -444,13 +447,15 @@ if __name__ == '__main__':
             with open(path) as f: key_event = read_event_spans_conll(first_n_sentences(f, args.n), path)
             with open(path) as f: key_polarity = read_polarity_spans_conll(first_n_sentences(f, args.n), path)
             with open(path) as f: key_certainty = read_certainty_spans_conll(first_n_sentences(f, args.n), path)
+            with open(path) as f: key_tense = read_tense_spans_conll(first_n_sentences(f, args.n), path)
             path = os.path.join(args.response, fname)
             if os.path.exists(path):
                 with open(path) as f: res_event = read_event_spans_conll(first_n_sentences(f, args.n), path)
                 with open(path) as f: res_polarity = read_polarity_spans_conll(first_n_sentences(f, args.n), path)
                 with open(path) as f: res_certainty = read_certainty_spans_conll(first_n_sentences(f, args.n), path)
+                with open(path) as f: res_tense = read_tense_spans_conll(first_n_sentences(f, args.n), path)
             else:
-                res_event = res_polarity = res_certainty = set() 
+                res_event = res_polarity = res_certainty = res_tense = set() 
             data['event'].append(compare_spans(key_event, res_event))
             data['polarity'].append(compare_dependent_spans(key_polarity, res_polarity, key_event, res_event))
             key_by_type, res_by_type = group_by_type(key_polarity), group_by_type(res_polarity)
@@ -461,16 +466,20 @@ if __name__ == '__main__':
             for type_ in set(key_by_type).union(set(res_by_type)):
                 data['certainty:' + type_].append(compare_dependent_spans(key_by_type[type_], res_by_type[type_], key_event, res_event))
             data['polarity+certainty'].append(compare_dependent_spans2(key_polarity, res_polarity, key_certainty, res_certainty, key_event, res_event))
+            data['tense'].append(compare_dependent_spans(key_tense, res_tense, key_event, res_event))
+            key_by_type, res_by_type = group_by_type(key_tense), group_by_type(res_tense)
+            for type_ in set(key_by_type).union(set(res_by_type)):
+                data['tense:' + type_].append(compare_dependent_spans(key_by_type[type_], res_by_type[type_], key_event, res_event))
         elif args.measurement == 'tokens':
             path = os.path.join(args.key, fname)
             with open(path) as f: 
-                key_event, key_polarity, key_certainty = read_tokens_conll((2, 3, 4), first_n_sentences(f, args.n), path)
+                key_event, key_polarity, key_certainty, key_tense = read_tokens_conll((2, 3, 4, 5), first_n_sentences(f, args.n), path)
             path = os.path.join(args.response, fname)
             if os.path.exists(path):
                 with open(path) as f:
-                    res_event, res_polarity, res_certainty = read_tokens_conll((2, 3, 4), first_n_sentences(f, args.n), path)
+                    res_event, res_polarity, res_certainty, res_tense = read_tokens_conll((2, 3, 4, 5), first_n_sentences(f, args.n), path)
             else:
-                res_event = res_polarity = res_certainty = set() 
+                res_event = res_polarity = res_certainty = res_tense = set() 
             data['event'].append(compare_tokens(key_event, res_event))
             data['polarity'].append(compare_tokens(key_polarity, res_polarity))
             key_by_type, res_by_type = group_by_type(key_polarity), group_by_type(res_polarity)
@@ -480,6 +489,10 @@ if __name__ == '__main__':
             key_by_type, res_by_type = group_by_type(key_certainty), group_by_type(res_certainty)
             for type_ in set(key_by_type).union(set(res_by_type)):
                 data['certainty:' + type_].append(compare_tokens(key_by_type[type_], res_by_type[type_]))
+            data['tense'].append(compare_tokens(key_tense, res_tense))
+            key_by_type, res_by_type = group_by_type(key_tense), group_by_type(res_tense)
+            for type_ in set(key_by_type).union(set(res_by_type)):
+                data['tense:' + type_].append(compare_tokens(key_by_type[type_], res_by_type[type_]))
         else:
             raise ValueError('Unsupported measurement: %s' %args.measurement)
     for name in sorted(data.keys()):
